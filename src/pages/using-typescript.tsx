@@ -9,9 +9,14 @@ type DataProps = {
   site: {
     buildTime: string
   }
-}
+};
 
-const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+type UsingTypescriptProps = {
+  data: DataProps,
+  path: string
+};
+
+const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }: UsingTypescriptProps) => (
   <Layout>
     <SEO title="Using TypeScript" />
     <h1>Gatsby supports TypeScript by default!</h1>
@@ -26,10 +31,10 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       <em>gatsby-*.js</em>
       {' '}
       files
-      (like gatsby-node.js) currently don't support TypeScript yet.
+      (like gatsby-node.js) currently don`t support TypeScript yet.
     </p>
     <p>
-      For type checking you'll want to install
+      For type checking you`ll want to install
       {' '}
       <em>typescript</em>
       {' '}
@@ -45,9 +50,9 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       file.
     </p>
     <p>
-      You're currently on the page "
+      You`re currently on the page
       {path}
-      " which was built on
+      which was built on
       {' '}
       {data.site.buildTime}
       .
