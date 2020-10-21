@@ -7,6 +7,5 @@ build:
     - npm run lint
     - npm run build
   environment:
-    DRUPAL_GRAPHQL_API_URL: 'localhost'
-    BASIC_AUTH_USER: 'user'
-    BASIC_AUTH_PASSWORD: 'password'
+    name: 'gatsby-build'
+    url: 'localhost'
