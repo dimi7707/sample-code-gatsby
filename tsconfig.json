@@ -1,0 +1,11 @@
+﻿{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": [ "src/core/*" ]
+    }
+  }
+}

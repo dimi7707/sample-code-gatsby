@@ -22,10 +22,18 @@
         "react",
         "@typescript-eslint"
     ],
+    "settings": {
+      "import/resolver": {
+        "alias": [
+          ["@core", "./src/core"]
+        ]
+      }
+    },
     "rules": {
         "react/jsx-filename-extension": [1, {
             "extensions": [".ts", ".tsx"]
         }],
+        "comma-dangle": ["error", "only-multiline"],
         "no-use-before-define": "off",
         "import/no-unresolved": "off",
         "import/extensions": "off"
