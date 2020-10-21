@@ -1,10 +1,10 @@
 ﻿image: node
 
-stage:
-  - lint
+build:
+  stage: build
+  script: npm install
 
-eslint:
-  stage: lint
-  script:
-    - npm install
-    - npm run lint
+test:
+  stage: test
+  script: npm run lint
+  needs: [build]
