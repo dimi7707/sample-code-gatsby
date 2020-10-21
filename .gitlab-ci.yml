@@ -2,11 +2,7 @@ image: node
 
 build:
   stage: build
-  script: npm install
-
-test:
-  stage: test
   script:
     - npm install
     - npm run lint
-  needs: [build]
+    - npm run build
