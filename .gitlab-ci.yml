@@ -6,5 +6,7 @@ build:
 
 test:
   stage: test
-  script: npm run lint
+  script:
+    - npm install
+    - npm run lint
   needs: [build]
