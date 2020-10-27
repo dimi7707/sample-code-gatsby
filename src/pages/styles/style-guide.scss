@@ -1,0 +1,309 @@
+@import './variables.scss';
+
+
+.custom-table-style-guide {
+  border: 0;
+
+  thead {
+    tr {
+      th {
+        border-top: 0;
+        border-bottom: 0;  
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        border-top: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: $light-blue-row-table;
+  }
+
+  .customBadgeHeader {
+    background-color: $blue-badge;
+    color: $black-font-badge;
+    font-weight: 500;
+    font-size: .85em;
+  }
+}
+
+ul.horizontal-list {
+  li {
+    display: inline-block;
+
+    button {
+      margin-right: 3px;
+    }
+  }
+}
+
+.frame-colors {
+  padding: .4em 1.3em .4em 1.3em;
+  margin-right: 2px;
+  color: $white;
+  border-radius: 4px;
+}
+
+.frame-colors-secondary{
+  padding: .4em 1.3em .4em 1.3em;
+  margin-right: 2px;
+  color: $black;
+  border-radius: 4px;
+}
+
+.background-color-primary {
+  background-color: $color-primary;
+}
+
+.background-color-secondary {
+  background-color: $color-secondary;
+}
+
+.background-color-tertiary {
+  background-color: $color-tertiary;
+}
+
+.background-color-light-blue-1 { 
+  background-color: $light-blue-1;
+}
+
+.background-color-light-blue-2 {
+  background-color: $light-blue-2;
+}
+
+.big-typography {
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography;
+}
+
+.standard-typography {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography;
+}
+
+h1, .h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h2, .h2 {
+  
+  font-size: 35px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h3, .h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h4, .h4 {
+  font-size: 25px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h5, .h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h6, .h6 {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+.custom-divider {
+  width: 100%;
+  border: 1px solid $grey-divider;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.body-1 {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-3 {
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-4 {
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+/* General styles for buttons */
+.btn-primary {
+  background-color: $color-primary-button;
+  border: 1px solid $color-primary-button;
+}
+
+.btn-primary:visited, .btn-primary:focus {
+  background-color: $color-primary-clicked-button !important;
+  border: $color-primary-clicked-button !important
+}
+
+.btn-primary:hover {
+  background-color: $color-primary-hover-button;
+  border: 1px solid $color-primary-button;
+}
+
+.btn-primary-permanent-hover {
+  background-color: $color-primary-hover-button;
+  border: 1px solid $color-primary-hover-button;
+}
+
+.btn-primary-visited {
+  background-color: $color-primary-clicked-button !important;
+  border: $color-primary-clicked-button !important;
+}
+
+.btn-secondary{
+  background-color: $color-secondary-button;
+  border: 1px solid $color-secondary-button;
+}
+
+.btn-secondary:hover {
+  background-color: $color-secondary-hover-button;
+  border: 1px solid $color-secondary-hover-button;
+}
+
+.btn-secondary-permanent-hover {
+  background-color: $color-secondary-hover-button;
+  border: $color-secondary-hover-button;  
+}
+
+.btn-secondary-visited {
+  background-color: $color-secondary-clicked-button;
+  border: 1px solid $color-secondary-clicked-button;
+}
+
+.errorOnForm{
+  .form-control{
+    border: 0;
+    border: 2px solid $red-error;
+  }
+  .form-control:focus{
+    border: 2px solid $red-error;
+  }
+}
+
+select.form-control {
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right $white;
+  -webkit-appearance: none;
+  background-position-x: 244px;
+}
+
+.form-input-with-background {
+  background-color: $warn-grey;
+  padding: 1.5em 0 1.5em 0;    
+  .form-group{
+    margin-left: 1em;
+    width: 85%;
+
+    input[type="text"], select {
+      border: 0;
+    }
+
+    select {
+      background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right $white;
+      -webkit-appearance: none;
+      background-position-x: 200px;
+    }
+  }
+}
+
+.alert {
+  span {
+    font-weight: bold;
+  }
+}
+
+.alert-danger{
+  background-color: $light-pink;
+}
+
