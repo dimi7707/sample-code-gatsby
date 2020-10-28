@@ -35,6 +35,8 @@
 }
 
 ul.horizontal-list {
+  margin-left: 0;
+  padding-left: 0;
   li {
     display: inline-block;
 
@@ -51,10 +53,9 @@ ul.horizontal-list {
   border-radius: 4px;
 }
 
-.frame-colors-secondary{
+.frame-colors-secondary, .frame-grey-scale {
   padding: .4em 1.3em .4em 1.3em;
   margin-right: 2px;
-  color: $black;
   border-radius: 4px;
 }
 
@@ -76,6 +77,62 @@ ul.horizontal-list {
 
 .background-color-light-blue-2 {
   background-color: $light-blue-2;
+}
+
+.background-color-melon {
+  background-color: $melon;
+}
+
+.background-color-light-orange {
+  background-color: $light-orange;
+}
+
+.background-color-orange {
+  background-color: $orange;
+}
+
+.background-color-green-apple {
+  background-color: $green-apple;
+}
+
+.background-color-blue-alternative {
+  background-color: $blue-alternative;
+}
+
+.background-color-dark-blue {
+  background-color: $dark-blue;
+}
+
+.background-color-water-blue {
+  background-color: $water-blue;
+}
+
+.background-color-dark-green {
+  background-color: $dark-green;
+}
+
+.background-color-beige {
+  background-color: $beige;
+}
+
+.background-color-pink{
+  background-color: $pink;
+}
+
+.background-color-body {
+  background-color: $color-body;
+}
+
+.background-color-warn-grey {
+  background-color: $warn-grey;
+}
+
+.background-color-soft-grey {
+  background-color: $soft-grey;
+}
+
+.background-color-soft-grey-variant {
+  background-color: $soft-grey-variant;
 }
 
 .big-typography {
@@ -217,8 +274,15 @@ h6, .h6 {
 }
 
 /* General styles for buttons */
+
+/* Primary button*/ 
 .btn-primary {
   background-color: $color-primary-button;
+  border: 1px solid $color-primary-button;
+}
+
+.btn-primary:hover {
+  background-color: $color-primary-hover-button;
   border: 1px solid $color-primary-button;
 }
 
@@ -227,10 +291,22 @@ h6, .h6 {
   border: $color-primary-clicked-button !important
 }
 
-.btn-primary:hover {
-  background-color: $color-primary-hover-button;
-  border: 1px solid $color-primary-button;
+/* Secondary button */
+.btn-secondary {
+  background-color: $color-secondary-button;
+  border: 1px solid $color-secondary-button;
 }
+
+.btn-secondary:hover {
+  background-color: $color-secondary-hover-button;
+  border: 1px solid $color-secondary-hover-button;
+}
+
+.btn-secondary:visited, .btn-secondary:focus {
+  background-color: $color-secondary-clicked-button;
+  border: 1px solid $color-secondary-clicked-button;
+}
+
 
 .btn-primary-permanent-hover {
   background-color: $color-primary-hover-button;
@@ -240,16 +316,6 @@ h6, .h6 {
 .btn-primary-visited {
   background-color: $color-primary-clicked-button !important;
   border: $color-primary-clicked-button !important;
-}
-
-.btn-secondary{
-  background-color: $color-secondary-button;
-  border: 1px solid $color-secondary-button;
-}
-
-.btn-secondary:hover {
-  background-color: $color-secondary-hover-button;
-  border: 1px solid $color-secondary-hover-button;
 }
 
 .btn-secondary-permanent-hover {
@@ -273,15 +339,21 @@ h6, .h6 {
 }
 
 select.form-control {
-  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right $white;
+  background: url(../../assets/images/down-arrow-small.png) no-repeat right $white;
   -webkit-appearance: none;
-  background-position-x: 244px;
+  background-position-x: 95%;
+}
+
+.form-group {
+  .form-label {
+    font-weight: 600;
+  }
 }
 
 .form-input-with-background {
-  background-color: $warn-grey;
+  background-color: $soft-grey-variant;
   padding: 1.5em 0 1.5em 0;    
-  .form-group{
+  .form-group {
     margin-left: 1em;
     width: 85%;
 
@@ -290,9 +362,9 @@ select.form-control {
     }
 
     select {
-      background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right $white;
+      background: url(../../assets/images/down-arrow-small.png) no-repeat right $white;
       -webkit-appearance: none;
-      background-position-x: 200px;
+      background-position-x: 95%;
     }
   }
 }
@@ -300,10 +372,57 @@ select.form-control {
 .alert {
   span {
     font-weight: bold;
+    margin-right: 5px;
   }
 }
 
-.alert-danger{
-  background-color: $light-pink;
+.pagination {
+  .page-link {
+    color: $color-secondary;
+  }
+
+  .page-item.active .page-link {
+    background-color: $color-secondary;
+    color: $white;
+  }
 }
 
+.style-carrousel {
+  margin-left: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    width: 2em;
+    height: .5em;
+    margin-right: 1em;
+    background-color: $grey-carousel;
+  }
+  li.active {
+    display: inline-block;
+    width: 2em;
+    height: .5em;
+    margin-right: 1em;
+    background-color: $orange-variant;
+  }
+}
+
+.style-carrousel-two{
+  margin-left: 0;
+  list-style-type: none;
+  li{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+    background-color: $grey-carousel;
+    border-radius: 50%;
+  }
+  li.active {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+    background-color: $orange-variant;
+    border-radius: 50%;
+  }
+}

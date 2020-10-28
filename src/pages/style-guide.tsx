@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../core/layout/layout';
 import Image from '../core/layout/image';
-import { Button, Table, Badge, Container, Row, Col, Form, Alert } from 'react-bootstrap';
+import { Button, Table, Badge, Container, Row, Col, Form, Alert, Pagination } from 'react-bootstrap';
 import SEO from '../core/layout/seo';
 import './styles/style-guide.scss';
 import  AlertDanger  from '@core/components/alert/alert-danger'; 
@@ -139,22 +139,24 @@ const StyleGuidePage = () => (
     </Table>
     <div className="custom-divider"></div>
     <h1>Colors</h1>
-    <div>
-      <p className="body-2">Primary colors</p>
-      <ul className="horizontal-list">
-        <li>
-          <div className="frame-colors background-color-primary">#fa8f04</div>
-        </li>
-        <li>
-          <div className="frame-colors background-color-secondary">#1466b4</div>
-        </li>
-        <li>
-          <div className="frame-colors background-color-tertiary">#0a233c</div>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <p className="body-2">Secondary colors</p>
+    <Container>
+      <Row>
+        <Col xs={12} md={4}>
+          <p className="body-2">Primary colors</p>
+          <ul className="horizontal-list">
+            <li>
+              <div className="frame-colors background-color-primary">#fa8f04</div>
+            </li>
+            <li>
+              <div className="frame-colors background-color-secondary">#1466b4</div>
+            </li>
+            <li>
+              <div className="frame-colors background-color-tertiary">#0a233c</div>
+            </li>
+          </ul>
+        </Col>
+        <Col xs={12} md={8}>
+        <p className="body-2">Secondary colors</p>
       <ul className="horizontal-list">
         <li>
           <div className="frame-colors-secondary background-color-light-blue-1">#bdd9f0</div>
@@ -163,64 +165,96 @@ const StyleGuidePage = () => (
           <div className="frame-colors-secondary background-color-light-blue-2">#e6edf3</div>
         </li>
         <li>
-          <div className="frame-colors-secondary">#fecfa2</div>
+          <div className="frame-colors-secondary background-color-melon">#fecfa2</div>
         </li>
         <li>
-          <div className="frame-colors-secondary">#faaa5e</div>
+          <div className="frame-colors-secondary background-color-light-orange text-white">#faaa5e</div>
         </li>
         <li>
-          <div className="frame-colors-secondary">#e38000</div>
+          <div className="frame-colors-secondary background-color-orange text-white">#e38000</div>
         </li>
         <li>
-          <div className="frame-colors-secondary">#5cc70c</div>
+          <div className="frame-colors-secondary background-color-green-apple text-white">#5cc70c</div>
+        </li>
+        <li>
+          <div className="frame-colors-secondary background-color-blue-alternative text-white">#3582cb</div>
+        </li>
+        <li>
+          <div className="frame-colors-secondary background-color-dark-blue text-white">#114b83</div>
+        </li>
+        <li>
+          <div className="frame-colors-secondary background-color-water-blue">#ddf4de</div>
+        </li>
+        <li>
+          <div className="frame-colors-secondary background-color-dark-green text-white">#177b1d</div>
+        </li>
+        <li>
+          <div className="frame-colors-secondary background-color-beige">#fef3f5</div>
+        </li>
+        <li>
+          <div className="frame-colors-secondary background-color-pink text-white">#e14a63</div>
         </li>
       </ul>
-      <ul className="horizontal-list">
-        <li>
-          <div className="frame-colors-secondary">#3582cb</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary">#114b83</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary">#ddf4de</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary">#177b1d</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary">#fef3f5</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary">#e14a63</div>
-        </li>
-      </ul>
+        </Col>
+      </Row>
+      <p className="body-2">Grey scale</p>
+      <Row>
+        <Col xs={12} md={8}>
+          <ul className="horizontal-list">
+            <li>
+              <div className="frame-grey-scale background-color-body text-white">#353535</div>
+            </li>
+            <li>
+              <div className="frame-grey-scale background-color-warn-grey text-white">#757272</div>
+            </li>
+            <li>
+              <div className="frame-grey-scale background-color-soft-grey">#e2e2e2</div>
+            </li>
+            <li>
+              <div className="frame-grey-scale background-color-soft-grey-variant">#ecedf1</div>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+    </Container>
+    <div>
+    </div>
+    <div>
+      
     </div>
     <div className="custom-divider"></div>
     <h1>Buttons</h1>
+    <p className="body-1">
+      <span className="font-weight-bold"> Important: </span>
+      Use always class <code> .shadow-none </code> to remove outline on buttons.
+    </p>
+    <p className="body-1">
+      For example for the first button the variant (class) attributte would be: 
+      <code>primary shadow-none</code>
+    </p>
     <div>
       <ul className="horizontal-list">
         <li>
-          <Button variant="primary">Button Default</Button>
+          <Button variant="primary shadow-none">Button Default</Button>
         </li>
         <li>
-          <Button variant="primary btn-primary-permanent-hover">Button Hover</Button>
+          <Button variant="primary shadow-none btn-primary-permanent-hover">Button Hover</Button>
         </li>
         <li>
-          <Button variant="primary btn-primary-visited">Button Pressed</Button>
+          <Button variant="primary shadow-none btn-primary-visited">Button Pressed</Button>
         </li>
       </ul>
     </div>
     <div>
       <ul className="horizontal-list">
         <li>
-          <Button variant="secondary">Button Default</Button>
+          <Button variant="secondary shadow-none">Button Default</Button>
         </li>
         <li>
-          <Button variant="secondary btn-secondary-permanent-hover">Button Hover</Button>
+          <Button variant="secondary shadow-none btn-secondary-permanent-hover">Button Hover</Button>
         </li>
         <li>
-          <Button variant="primary btn-secondary-visited">Button Pressed</Button>
+          <Button variant="secondary shadow-none btn-secondary-visited">Button Pressed</Button>
         </li>
       </ul>
     </div>
@@ -229,31 +263,29 @@ const StyleGuidePage = () => (
     <Container>
       <Row>
         <Col>
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId="formBasicName">
             <Form.Label>Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter email" />
+            <Form.Control type="text" className="shadow-none" placeholder="Enter name" />
           </Form.Group>
-          <Form.Group controlId="formBasicEmail" className="errorOnForm">
+          <Form.Group controlId="formBasicNameTwo" className="errorOnForm">
             <Form.Label>Name</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control type="email" className="shadow-none" placeholder="Enter name" />
             <Form.Text className="text-muted">
               This field is required
             </Form.Text>
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlSelect1">
             <Form.Label>Category type</Form.Label>
-            <Form.Control as="select">
+            <Form.Control as="select" className="shadow-none">
               <option>Category 1</option>
               <option>Category 2</option>
               <option>Category 3</option>
               <option>Category 4</option>
             </Form.Control>
           </Form.Group>
-        </Col>
-        <Col>
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} />
+            <Form.Control as="textarea" className="shadow-none" rows={3} />
           </Form.Group>
         </Col>
         <Col>
@@ -261,27 +293,66 @@ const StyleGuidePage = () => (
           <div className="form-input-with-background">
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter name" />
+              <Form.Control type="text" className="shadow-none" placeholder="Enter name" />
             </Form.Group>
             <Form.Group>
               <Form.Label>Category type</Form.Label>
-              <Form.Control as="select">
+              <Form.Control as="select" className="shadow-none">
                 <option>Category 1</option>
                 <option>Category 2</option>
                 <option>Category 3</option>
                 <option>Category 4</option>
               </Form.Control>
             </Form.Group>
-
+          </div>
+          <div className="mt-4">
+            <span className="body-2">Pagination an carousel</span>
+            <Container className="mt-4">
+              <Row>
+                <Col>
+                  <ul className="style-carrousel">
+                    <li></li>
+                    <li className="active"></li>
+                    <li></li>
+                  </ul>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ul className="style-carrousel-two">
+                    <li></li>
+                    <li className="active"></li>
+                    <li></li>
+                  </ul>
+                </Col>
+              </Row>
+            </Container>
+            <Pagination className="mt-4">
+              <Pagination.First />
+              <Pagination.Prev />
+              <Pagination.Item>{1}</Pagination.Item>
+              <Pagination.Item>{2}</Pagination.Item>
+              <Pagination.Item>{3}</Pagination.Item>
+              <Pagination.Item active>{4}</Pagination.Item>
+              <Pagination.Item>{5}</Pagination.Item>
+              <Pagination.Item>{6}</Pagination.Item>
+              <Pagination.Next />
+              <Pagination.Last />
+            </Pagination>
           </div>
         </Col>
       </Row>
     </Container>
     <div className="custom-divider"></div>
     <h1>Alert messages</h1>
-    <AlertDanger></AlertDanger>
-    
-    
+    <Alert variant="danger" dismissible>
+      <span>Error!</span>
+      Es necesario llenar todos los campos obligatorios del formulario. 
+    </Alert>
+    <Alert variant="success" dismissible>
+      <span>Enviado con éxito.</span>
+      Usted se ha registrado para el proximo evento.
+    </Alert>
   </Layout>
 );
 
