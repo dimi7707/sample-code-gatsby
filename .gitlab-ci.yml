@@ -1,0 +1,7 @@
+image: node
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run lint
