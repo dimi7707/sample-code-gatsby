@@ -1,5 +1,15 @@
 import React from 'react';
-import { Button, Table, Badge, Container, Row, Col, Form, Alert, Pagination } from 'react-bootstrap';
+import {
+  Button,
+  Table,
+  Badge,
+  Container,
+  Row,
+  Col,
+  Form,
+  Alert,
+  Pagination
+} from 'react-bootstrap';
 import Layout from '../core/layout/layout';
 import SEO from '../core/layout/seo';
 import './styles/style-guide.scss';
