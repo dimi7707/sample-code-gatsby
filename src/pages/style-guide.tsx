@@ -252,7 +252,7 @@ const StyleGuidePage = () => (
     <div className="custom-divider" />
     <h1>Buttons</h1>
     <p className="body-1">
-      <span className="font-weight-bold"> Important: </span>
+      <span className="font-weight-bold">Important:</span>
       Use always class
       <code> .shadow-none </code>
       to remove outline on buttons.
