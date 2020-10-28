@@ -49,6 +49,15 @@ module.exports = {
       options: {
         includePaths: ['bootstrap/scss/bootstrap'],
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'roboto'
+        ],
+        display: 'swap'
+      }
     }
   ]
 };
