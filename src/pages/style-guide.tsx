@@ -10,8 +10,8 @@ import {
   Alert,
   Pagination
 } from 'react-bootstrap';
-import Layout from '../core/layout/layout';
-import SEO from '../core/layout/seo';
+import Layout from '@core/layout/layout';
+import SEO from '@core/layout/seo';
 import './styles/style-guide.scss';
 
 const StyleGuidePage = () => (
@@ -22,10 +22,10 @@ const StyleGuidePage = () => (
       <thead>
         <tr>
           <th>
-            <Badge variant="secondary" className="customBadgeHeader">Type</Badge>
+            <Badge variant="secondary" className="custom-badge-header">Type</Badge>
           </th>
           <th>
-            <Badge variant="secondary" className="customBadgeHeader">Preview</Badge>
+            <Badge variant="secondary" className="custom-badge-header">Preview</Badge>
           </th>
         </tr>
       </thead>
@@ -71,7 +71,7 @@ const StyleGuidePage = () => (
           <td>
             <h1>H1</h1>
           </td>
-          <td> .h1 / h1 </td>
+          <td>.h1 / h1</td>
           <td>
             <h1>How Can Software Development</h1>
           </td>
@@ -80,7 +80,7 @@ const StyleGuidePage = () => (
           <td>
             <h2>H2</h2>
           </td>
-          <td> .h2 / h2 </td>
+          <td>.h2 / h2</td>
           <td>
             <h2>How Can Software Development </h2>
           </td>
@@ -89,7 +89,7 @@ const StyleGuidePage = () => (
           <td>
             <h3>H3</h3>
           </td>
-          <td> .h3 / h3 </td>
+          <td>.h3 / h3</td>
           <td>
             <h3>How Can Software Development </h3>
           </td>
@@ -98,7 +98,7 @@ const StyleGuidePage = () => (
           <td>
             <h4>H4</h4>
           </td>
-          <td> .h4 / h4 </td>
+          <td>.h4 / h4</td>
           <td>
             <h4>How Can Software Development </h4>
           </td>
@@ -107,7 +107,7 @@ const StyleGuidePage = () => (
           <td>
             <h5>H5</h5>
           </td>
-          <td> .h5 / h5 </td>
+          <td>.h5 / h5</td>
           <td>
             <h5>How Can Software Development</h5>
           </td>
@@ -116,7 +116,7 @@ const StyleGuidePage = () => (
           <td>
             <h6>H6</h6>
           </td>
-          <td> .h6 / h6 </td>
+          <td>.h6 / h6</td>
           <td>
             <h6>How Can Software Development</h6>
           </td>
@@ -376,11 +376,11 @@ const StyleGuidePage = () => (
     <h1>Alert messages</h1>
     <Alert variant="danger" dismissible>
       <span>Error!</span>
-      Es necesario llenar todos los campos obligatorios del formulario.
+      It is necessary to fill in all the mandatory fields of the form.
     </Alert>
     <Alert variant="success" dismissible>
-      <span>Enviado con éxito.</span>
-      Usted se ha registrado para el proximo evento.
+      <span>Sent successfully.</span>
+      You have registered for the next event.
     </Alert>
   </Layout>
 );
