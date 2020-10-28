@@ -1,11 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Layout from '../core/layout/layout';
-import Image from '../core/layout/image';
 import { Button, Table, Badge, Container, Row, Col, Form, Alert, Pagination } from 'react-bootstrap';
+import Layout from '../core/layout/layout';
 import SEO from '../core/layout/seo';
 import './styles/style-guide.scss';
-import  AlertDanger  from '@core/components/alert/alert-danger'; 
 
 const StyleGuidePage = () => (
   <Layout>
@@ -33,72 +30,96 @@ const StyleGuidePage = () => (
               Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Ñn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
             </p>
             <p className="big-typography">1234567890 !@#$%^&()</p>
-            <p className="standard-typography"> 
-              The settings are more understandable and the Odoo warnings are now integrated into the Odoobot. In the
-              configuration, we find the documentation corresponding to each setting with a practical link and the 
-              permissions can be changed in the corresponding module. There are countless changes in the functions 
-              of each module.
+            <p className="standard-typography">
+              The settings are more understandable and the Odoo warnings are now integrated into
+              the Odoobot. In the configuration, we find the documentation corresponding to each
+              setting with a practical link and the permissions can be changed in the
+              corresponding module. There are countless changes in the functions of each module.
             </p>
           </td>
         </tr>
       </tbody>
     </Table>
-    <div className="custom-divider"></div>
+    <div className="custom-divider" />
     <h1>Font size</h1>
     <Table className="custom-table-style-guide">
-    <thead>
-      <tr>
-        <th>
-          <Badge variant="secondary" className="customBadgeHeader">Title</Badge>
-        </th>
-        <th>
-        <Badge variant="secondary" className="customBadgeHeader">Class name / tag</Badge>
-        </th>
-        <th>
-          <Badge variant="secondary" className="customBadgeHeader">Preview</Badge>
-        </th>
-      </tr>
+      <thead>
+        <tr>
+          <th>
+            <Badge variant="secondary" className="customBadgeHeader">Title</Badge>
+          </th>
+          <th>
+            <Badge variant="secondary" className="customBadgeHeader">Class name / tag</Badge>
+          </th>
+          <th>
+            <Badge variant="secondary" className="customBadgeHeader">Preview</Badge>
+          </th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <td><h1>H1</h1></td>
+          <td>
+            <h1>H1</h1>
+          </td>
           <td> .h1 / h1 </td>
-          <td> <h1>How Can Software Development </h1></td>
+          <td>
+            <h1>How Can Software Development</h1>
+          </td>
         </tr>
         <tr>
-          <td><h2>H2</h2></td>
+          <td>
+            <h2>H2</h2>
+          </td>
           <td> .h2 / h2 </td>
-          <td> <h2>How Can Software Development </h2></td>
+          <td>
+            <h2>How Can Software Development </h2>
+          </td>
         </tr>
         <tr>
-          <td><h3>H3</h3></td>
+          <td>
+            <h3>H3</h3>
+          </td>
           <td> .h3 / h3 </td>
-          <td> <h3>How Can Software Development </h3></td>
+          <td>
+            <h3>How Can Software Development </h3>
+          </td>
         </tr>
         <tr>
-          <td><h4>H4</h4></td>
+          <td>
+            <h4>H4</h4>
+          </td>
           <td> .h4 / h4 </td>
-          <td> <h4>How Can Software Development </h4></td>
+          <td>
+            <h4>How Can Software Development </h4>
+          </td>
         </tr>
         <tr>
-          <td><h5>H5</h5></td>
+          <td>
+            <h5>H5</h5>
+          </td>
           <td> .h5 / h5 </td>
-          <td> <h5>How Can Software Development </h5></td>
+          <td>
+            <h5>How Can Software Development</h5>
+          </td>
         </tr>
         <tr>
-          <td><h6>H6</h6></td>
+          <td>
+            <h6>H6</h6>
+          </td>
           <td> .h6 / h6 </td>
-          <td><h6>How Can Software Development </h6></td>
+          <td>
+            <h6>How Can Software Development</h6>
+          </td>
         </tr>
         <tr>
           <td>Body 1</td>
           <td> .body-1</td>
           <td>
             <div className="body-1">
-              The settings are more understandable and the Odoo warnings are now integrated into the Odoobot. 
-              In the configuration, we find the documentation corresponding to each setting with a practical
-              link and the permissions can be changed in the corresponding module. There are countless changes
-              in the functions of each module.
+              The settings are more understandable and the Odoo warnings are now integrated into
+              the Odoobot. In the configuration, we find the documentation corresponding to each
+              setting with a practical link and the permissions can be changed in the
+              corresponding module. There are countless changes in the functions of each module.
             </div>
           </td>
         </tr>
@@ -107,10 +128,10 @@ const StyleGuidePage = () => (
           <td> .body-2</td>
           <td>
             <div className="body-2">
-              The settings are more understandable and the Odoo warnings are now integrated into the Odoobot. 
-              In the configuration, we find the documentation corresponding to each setting with a practical
-              link and the permissions can be changed in the corresponding module. There are countless changes
-              in the functions of each module.
+              The settings are more understandable and the Odoo warnings are now integrated into
+              the Odoobot. In the configuration, we find the documentation corresponding to each
+              setting with a practical link and the permissions can be changed in the
+              corresponding module. There are countless changes in the functions of each module.
             </div>
           </td>
         </tr>
@@ -119,10 +140,10 @@ const StyleGuidePage = () => (
           <td> .body-3</td>
           <td>
             <div className="body-3">
-              The settings are more understandable and the Odoo warnings are now integrated into the Odoobot. 
-              In the configuration, we find the documentation corresponding to each setting with a practical
-              link and the permissions can be changed in the corresponding module. There are countless changes
-              in the functions of each module.
+              The settings are more understandable and the Odoo warnings are now integrated into
+              the Odoobot. In the configuration, we find the documentation corresponding to each
+              setting with a practical link and the permissions can be changed in the
+              corresponding module. There are countless changes in the functions of each module.
             </div>
           </td>
         </tr>
@@ -131,13 +152,14 @@ const StyleGuidePage = () => (
           <td> .body-4</td>
           <td>
             <div className="body-4">
-              The settings are more understandable and the Odoo warnings are now integrated into the Odoobot.
+              The settings are more understandable and the Odoo warnings are now integrated into
+              the Odoobot.
             </div>
           </td>
         </tr>
       </tbody>
     </Table>
-    <div className="custom-divider"></div>
+    <div className="custom-divider" />
     <h1>Colors</h1>
     <Container>
       <Row>
@@ -156,45 +178,45 @@ const StyleGuidePage = () => (
           </ul>
         </Col>
         <Col xs={12} md={8}>
-        <p className="body-2">Secondary colors</p>
-      <ul className="horizontal-list">
-        <li>
-          <div className="frame-colors-secondary background-color-light-blue-1">#bdd9f0</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-light-blue-2">#e6edf3</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-melon">#fecfa2</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-light-orange text-white">#faaa5e</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-orange text-white">#e38000</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-green-apple text-white">#5cc70c</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-blue-alternative text-white">#3582cb</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-dark-blue text-white">#114b83</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-water-blue">#ddf4de</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-dark-green text-white">#177b1d</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-beige">#fef3f5</div>
-        </li>
-        <li>
-          <div className="frame-colors-secondary background-color-pink text-white">#e14a63</div>
-        </li>
-      </ul>
+          <p className="body-2">Secondary colors</p>
+          <ul className="horizontal-list">
+            <li>
+              <div className="frame-colors-secondary background-color-light-blue-1">#bdd9f0</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-light-blue-2">#e6edf3</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-melon">#fecfa2</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-light-orange text-white">#faaa5e</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-orange text-white">#e38000</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-green-apple text-white">#5cc70c</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-blue-alternative text-white">#3582cb</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-dark-blue text-white">#114b83</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-water-blue">#ddf4de</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-dark-green text-white">#177b1d</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-beige">#fef3f5</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-pink text-white">#e14a63</div>
+            </li>
+          </ul>
         </Col>
       </Row>
       <p className="body-2">Grey scale</p>
@@ -217,19 +239,16 @@ const StyleGuidePage = () => (
         </Col>
       </Row>
     </Container>
-    <div>
-    </div>
-    <div>
-      
-    </div>
-    <div className="custom-divider"></div>
+    <div className="custom-divider" />
     <h1>Buttons</h1>
     <p className="body-1">
       <span className="font-weight-bold"> Important: </span>
-      Use always class <code> .shadow-none </code> to remove outline on buttons.
+      Use always class
+      <code> .shadow-none </code>
+      to remove outline on buttons.
     </p>
     <p className="body-1">
-      For example for the first button the variant (class) attributte would be: 
+      For example for the first button the variant (class) attributte would be:
       <code>primary shadow-none</code>
     </p>
     <div>
@@ -258,7 +277,7 @@ const StyleGuidePage = () => (
         </li>
       </ul>
     </div>
-    <div className="custom-divider"></div>
+    <div className="custom-divider" />
     <h1>Form elements</h1>
     <Container>
       <Row>
@@ -311,18 +330,18 @@ const StyleGuidePage = () => (
               <Row>
                 <Col>
                   <ul className="style-carrousel">
-                    <li></li>
-                    <li className="active"></li>
-                    <li></li>
+                    <li />
+                    <li className="active" />
+                    <li />
                   </ul>
                 </Col>
               </Row>
               <Row>
                 <Col>
                   <ul className="style-carrousel-two">
-                    <li></li>
-                    <li className="active"></li>
-                    <li></li>
+                    <li />
+                    <li className="active" />
+                    <li />
                   </ul>
                 </Col>
               </Row>
@@ -343,11 +362,11 @@ const StyleGuidePage = () => (
         </Col>
       </Row>
     </Container>
-    <div className="custom-divider"></div>
+    <div className="custom-divider" />
     <h1>Alert messages</h1>
     <Alert variant="danger" dismissible>
       <span>Error!</span>
-      Es necesario llenar todos los campos obligatorios del formulario. 
+      Es necesario llenar todos los campos obligatorios del formulario.
     </Alert>
     <Alert variant="success" dismissible>
       <span>Enviado con éxito.</span>
