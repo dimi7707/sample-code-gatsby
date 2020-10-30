@@ -4,19 +4,12 @@ import { Link } from 'gatsby';
 import Layout from '../core/layout/layout';
 import Image from '../core/layout/image';
 import SEO from '../core/layout/seo';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <a href="#">
-      Test font awesome
-      <FontAwesomeIcon icon={faCoffee} />
-    </a>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       <Image />
