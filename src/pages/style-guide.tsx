@@ -123,7 +123,7 @@ const StyleGuidePage = () => (
         </tr>
         <tr>
           <td>Body 1</td>
-          <td> .body-1</td>
+          <td>.body-1</td>
           <td>
             <div className="body-1">
               The settings are more understandable and the Odoo warnings are now integrated into
@@ -135,7 +135,7 @@ const StyleGuidePage = () => (
         </tr>
         <tr>
           <td>Body 2</td>
-          <td> .body-2</td>
+          <td>.body-2</td>
           <td>
             <div className="body-2">
               The settings are more understandable and the Odoo warnings are now integrated into
@@ -147,7 +147,7 @@ const StyleGuidePage = () => (
         </tr>
         <tr>
           <td>Body 3</td>
-          <td> .body-3</td>
+          <td>.body-3</td>
           <td>
             <div className="body-3">
               The settings are more understandable and the Odoo warnings are now integrated into
@@ -159,7 +159,7 @@ const StyleGuidePage = () => (
         </tr>
         <tr>
           <td>Body 4</td>
-          <td> .body-4</td>
+          <td>.body-4</td>
           <td>
             <div className="body-4">
               The settings are more understandable and the Odoo warnings are now integrated into
@@ -254,7 +254,7 @@ const StyleGuidePage = () => (
     <p className="body-1">
       <span className="font-weight-bold">Important:</span>
       Use always class
-      <code> .shadow-none </code>
+      <code>.shadow-none</code>
       to remove outline on buttons.
     </p>
     <p className="body-1">
