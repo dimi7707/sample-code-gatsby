@@ -1,0 +1,423 @@
+@import './variables.scss';
+
+.custom-table-style-guide {
+  border: 0;
+
+  thead {
+    tr {
+      th {
+        border-top: 0;
+        border-bottom: 0;  
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        border-top: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: $light-blue-row-table;
+  }
+
+  .custom-badge-header {
+    background-color: $blue-badge;
+    color: $black-font-badge;
+    font-weight: 500;
+    font-size: .85em;
+  }
+}
+
+ul.horizontal-list {
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    display: inline-block;
+
+    button {
+      margin-right: 3px;
+    }
+  }
+}
+
+.frame-colors {
+  padding: .4em 1.3em .4em 1.3em;
+  margin-right: 2px;
+  color: $white;
+  border-radius: 4px;
+}
+
+.frame-colors-secondary, .frame-grey-scale {
+  padding: .4em 1.3em .4em 1.3em;
+  margin-right: 2px;
+  border-radius: 4px;
+}
+
+.background-color-primary {
+  background-color: $color-primary;
+}
+
+.background-color-secondary {
+  background-color: $color-secondary;
+}
+
+.background-color-tertiary {
+  background-color: $color-tertiary;
+}
+
+.background-color-light-blue-1 { 
+  background-color: $light-blue-1;
+}
+
+.background-color-light-blue-2 {
+  background-color: $light-blue-2;
+}
+
+.background-color-melon {
+  background-color: $melon;
+}
+
+.background-color-light-orange {
+  background-color: $light-orange;
+}
+
+.background-color-orange {
+  background-color: $orange;
+}
+
+.background-color-green-apple {
+  background-color: $green-apple;
+}
+
+.background-color-blue-alternative {
+  background-color: $blue-alternative;
+}
+
+.background-color-dark-blue {
+  background-color: $dark-blue;
+}
+
+.background-color-water-blue {
+  background-color: $water-blue;
+}
+
+.background-color-dark-green {
+  background-color: $dark-green;
+}
+
+.background-color-beige {
+  background-color: $beige;
+}
+
+.background-color-pink {
+  background-color: $pink;
+}
+
+.background-color-body {
+  background-color: $color-body;
+}
+
+.background-color-warn-grey {
+  background-color: $warn-grey;
+}
+
+.background-color-soft-grey {
+  background-color: $soft-grey;
+}
+
+.background-color-soft-grey-variant {
+  background-color: $soft-grey-variant;
+}
+
+.big-typography {
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography;
+}
+
+.standard-typography {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography;
+}
+
+h1, .h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h2, .h2 {
+  font-size: 35px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h3, .h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h4, .h4 {
+  font-size: 25px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h5, .h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h6, .h6 {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+.custom-divider {
+  width: 100%;
+  border: 1px solid $grey-divider;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.body-1 {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-3 {
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-4 {
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.btn-primary {
+  background-color: $color-primary-button;
+  border: 1px solid $color-primary-button;
+}
+
+.btn-primary:hover {
+  background-color: $color-primary-hover-button;
+  border: 1px solid $color-primary-button;
+}
+
+.btn-primary:visited, .btn-primary:focus {
+  background-color: $color-primary-clicked-button !important;
+  border: $color-primary-clicked-button !important;
+}
+
+.btn-secondary {
+  background-color: $color-secondary-button;
+  border: 1px solid $color-secondary-button;
+}
+
+.btn-secondary:hover {
+  background-color: $color-secondary-hover-button;
+  border: 1px solid $color-secondary-hover-button;
+}
+
+.btn-secondary:visited, .btn-secondary:focus {
+  background-color: $color-secondary-clicked-button;
+  border: 1px solid $color-secondary-clicked-button;
+}
+
+.btn-primary-permanent-hover {
+  background-color: $color-primary-hover-button;
+  border: 1px solid $color-primary-hover-button;
+}
+
+.btn-primary-visited {
+  background-color: $color-primary-clicked-button !important;
+  border: $color-primary-clicked-button !important;
+}
+
+.btn-secondary-permanent-hover {
+  background-color: $color-secondary-hover-button;
+  border: $color-secondary-hover-button;  
+}
+
+.btn-secondary-visited {
+  background-color: $color-secondary-clicked-button;
+  border: 1px solid $color-secondary-clicked-button;
+}
+
+.errorOnForm{
+  .form-control{
+    border: 0;
+    border: 2px solid $red-error;
+  }
+  .form-control:focus{
+    border: 2px solid $red-error;
+  }
+}
+
+select {
+  background: url(#{$path-assets}/images/down-arrow-small.png) no-repeat right $white;
+  -webkit-appearance: none;
+  background-position-x: 95%;
+}
+
+.form-group {
+  .form-label {
+    font-weight: 600;
+  }
+}
+
+.form-input-with-background {
+  background-color: $soft-grey-variant;
+  padding: 1.5em 0 1.5em 0;
+  .form-group {
+    margin-left: 1em;
+    width: 85%;
+
+    input[type="text"], select {
+      border: 0;
+    }
+
+    select {
+      background: url(#{$path-assets}/images/down-arrow-small.png) no-repeat right $white;
+      -webkit-appearance: none;
+      background-position-x: 95%;
+    }
+  }
+}
+
+.alert {
+  span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+.pagination {
+  .page-link {
+    color: $color-secondary;
+  }
+
+  .page-item.active .page-link {
+    background-color: $color-secondary;
+    color: $white;
+  }
+}
+
+.style-carrousel {
+  margin-left: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    width: 2em;
+    height: .5em;
+    margin-right: 1em;
+    background-color: $grey-carousel;
+  }
+
+  li.active {
+    display: inline-block;
+    width: 2em;
+    height: .5em;
+    margin-right: 1em;
+    background-color: $orange-variant;
+  }
+}
+
+.style-carrousel-two{
+  margin-left: 0;
+  list-style-type: none;
+  li{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+    background-color: $grey-carousel;
+    border-radius: 50%;
+  }
+
+  li.active {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+    background-color: $orange-variant;
+    border-radius: 50%;
+  }
+}
