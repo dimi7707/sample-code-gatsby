@@ -2,11 +2,9 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
-@import '@styles/variables.scss';
+@import '../../assets/styles/variables.scss';
 
 .hero {
-  background: gray;
-
   &-content {
     min-height: 250px;
 
