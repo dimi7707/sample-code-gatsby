@@ -28,7 +28,7 @@ export default function Layout({ content }: HeroProps): React.ReactElement {
       <Hero
         title={title}
         subtitle={title}
-        backgroundImage={undefined}
+        backgroundImage="imagen-for-hero.png"
         backgroundColor={{ background: 'red' }}
       />
       <div>

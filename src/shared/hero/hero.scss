@@ -5,15 +5,33 @@
 @import '../../assets/styles/variables.scss';
 
 .hero {
+  @include media-breakpoint-up(xs) {
+    .gatsby-image-wrapper {
+      height: 250px;
+    }
+  }
+
   &-content {
     min-height: 250px;
 
     @include media-breakpoint-up(md) {
-      min-height: 350px;
+      min-height: 300px;
+
+      .hero-title, .hero-subtitle {
+        padding-left: 25%;
+      }
     }
 
     @include media-breakpoint-up(lg) {
-      min-height: 500px;
+      min-height: 300px;
+
+      .hero-title, .hero-subtitle {
+        padding-left: 25%;
+      }
     }
+  }
+
+  .hero-container {
+    top: 0;
   }
 }
