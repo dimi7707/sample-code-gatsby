@@ -2,8 +2,6 @@ import React from 'react';
 
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Hero from '@shared/hero/hero';
-
 import './layout.scss';
 
 type HeroProps = {
@@ -25,12 +23,6 @@ export default function Layout({ content }: HeroProps): React.ReactElement {
 
   return (
     <>
-      <Hero
-        title={title}
-        subtitle={title}
-        backgroundImage="imagen-for-hero.png"
-        backgroundColor={{ background: 'red' }}
-      />
       <div>
         <main>{content}</main>
       </div>
