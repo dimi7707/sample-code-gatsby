@@ -5,7 +5,8 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
-      "@core/*": [ "src/core/*" ]
+      "@core/*": [ "src/core/*" ],
+      "@shared/*": [ "src/shared/*" ]
     }
   }
 }
