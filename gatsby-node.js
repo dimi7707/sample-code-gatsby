@@ -10,6 +10,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx'],
       alias: {
+        '@assets': path.resolve(__dirname, 'src/assets'),
         '@styles': path.resolve(__dirname, 'src/assets/styles'),
         '@core': path.resolve(__dirname, 'src/core'),
         '@shared': path.resolve(__dirname, 'src/shared')

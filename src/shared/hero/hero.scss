@@ -2,36 +2,32 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
-@import '../../assets/styles/variables.scss';
+@import '@styles/variables.scss';
+
+$default-bg-color: $dark-blue;
+
+$hero-height-sm: 250px;
+$hero-height-md: 300px;
+$hero-height-lg: 300px;
 
 .hero {
+  background-color: $default-bg-color;
+
   @include media-breakpoint-up(xs) {
     .gatsby-image-wrapper {
-      height: 250px;
+      height: $hero-height-sm;
     }
   }
 
   &-content {
-    min-height: 250px;
+    min-height: $hero-height-sm;
 
     @include media-breakpoint-up(md) {
-      min-height: 300px;
-
-      .hero-title, .hero-subtitle {
-        padding-left: 25%;
-      }
+      min-height: $hero-height-md;
     }
 
     @include media-breakpoint-up(lg) {
-      min-height: 300px;
-
-      .hero-title, .hero-subtitle {
-        padding-left: 25%;
-      }
+      min-height: $hero-height-lg;
     }
-  }
-
-  .hero-container {
-    top: 0;
   }
 }
