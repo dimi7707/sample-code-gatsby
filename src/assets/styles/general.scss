@@ -1,0 +1,167 @@
+@import './variables.scss';
+
+h1, .h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: $color-typography-header;
+}
+
+h2, .h2 {
+  font-size: 35px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h3, .h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h4, .h4 {
+  font-size: 25px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h5, .h5 {
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+h6, .h6 {
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-typography-header;
+}
+
+.body-1 {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-3 {
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+.body-4 {
+  font-size: 29px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-body;
+}
+
+select {
+  background: url(../images/down-arrow.png) no-repeat right $white;
+  -webkit-appearance: none;
+  background-position-x: 95%;
+}
+
+.form-group {
+  .form-label {
+    font-weight: 600;
+  }
+}
+
+.pagination {
+  .page-link {
+    color: $color-secondary;
+  }
+
+  .page-item.active .page-link {
+    background-color: $color-secondary;
+    color: $white;
+  }
+}
+
+.orange-text {
+  color: $orange-image-title;
+}
+
+.pt-big-space {
+  padding-top: 2.5em;
+}
+
+.pb-big-space {
+  padding-bottom: 2.5em;
+}
+
+.pl-big-space {
+  padding-left: 10%;
+}
+
+.pr-big-space {
+  padding-right: 10%;
+}
+
+.btn-secondary {
+  border-radius: 3.1px;
+  background-color: $color-secondary-button;
+  border: 1px solid $color-secondary-button;
+}
+
+.btn-secondary:hover {
+  background-color: $color-secondary-hover-button;
+  border: 1px solid $color-secondary-hover-button;
+}
+
+.btn-secondary:visited, .btn-secondary:focus {
+  background-color: $color-secondary-clicked-button;
+  border: 1px solid $color-secondary-clicked-button;
+}

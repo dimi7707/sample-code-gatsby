@@ -25,7 +25,8 @@
   "settings": {
     "import/resolver": {
       "alias": [
-        ["@core", "./src/core"]
+        ["@core", "./src/core"],
+        ["@shared", "./src/shared"]
       ]
     }
   },
