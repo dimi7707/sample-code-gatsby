@@ -15,7 +15,7 @@ export default function Layout({ content }: HeroProps): React.ReactElement {
         <Hero
           title="rootstack"
           subtitle="soy un subtitulo"
-          backgroundImage="imagen-for-hero.png"
+          backgroundImage={undefined}
           backgroundColor={{ background: 'red' }}
         />
         <main>{content}</main>
