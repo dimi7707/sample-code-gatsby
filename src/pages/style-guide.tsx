@@ -12,7 +12,7 @@ import {
 } from 'react-bootstrap';
 
 import Layout from '@core/layout/layout';
-import SEO from '@core/layout/seo';
+import SEO from '@core/seo/seo';
 
 import '@styles/style-guide.scss';
 
