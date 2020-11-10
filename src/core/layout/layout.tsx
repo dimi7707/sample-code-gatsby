@@ -1,41 +1,39 @@
 import React from 'react';
-
-import './layout.scss';
-import '@styles/general.scss';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Hero from '@shared/hero/hero';
 import Card from '@shared/card/card';
-import { Container, Row, Col } from 'react-bootstrap';
+
+import { CardProps } from '@props/card';
+
+import '@styles/general.scss';
+import './layout.scss';
 
 type HeroProps = {
   content: React.ReactElement;
 };
 
 export default function Layout({ content }: HeroProps): React.ReactElement {
-  const cards = [
+  const entries = [
     {
-      id: 1,
-      title: 'Soy el card 1'
-    },
-    {
-      id: 2,
-      title: 'Soy el card 2'
-    },
-    {
-      id: 3,
-      title: 'Soy el card 3'
+      title: 'Soy el card 1',
+      description: 'Soy el description del card',
+      image: 'gatsby-astronaut.png',
+      link: '/'
     }
-  ];
-  const cardsContent = cards.map((cardElement) => (
-    <Col key={cardElement.id} xs={12} md={4}>
+  ] as CardProps[];
+
+  const cardsContent = entries.map((entry: CardProps, index: number) => (
+    <Col key={index.valueOf()} xs={12} md={4}>
       <Card
-        title={cardElement.title}
-        description="Soy el description del card"
-        image="gatsby-astronaut.png"
-        link="/"
+        title={entry.title}
+        description={entry.description}
+        image={entry.image}
+        link={entry.link}
       />
     </Col>
   ));
+
   return (
     <>
       <div>

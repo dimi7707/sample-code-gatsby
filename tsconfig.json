@@ -8,7 +8,9 @@
       "@assets/*": [ "src/assets/*" ],
       "@styles/*": [ "src/assets/styles/*" ],
       "@core/*": [ "src/core/*" ],
-      "@shared/*": [ "src/shared/*" ]
+      "@shared/*": [ "src/shared/*" ],
+      "@models/*": [ "src/shared/models/*" ],
+      "@props/*": [ "src/shared/props/*" ]
     }
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,7 +10,7 @@ export default function Card({
   title, description, image, link
 }: CardProps): React.ReactElement {
   return (
-    <div className="card">
+    <div>
       <ImageProvider fileName={image} alt={title} />
       <h5 className="text-center">{title}</h5>
       <div className="text-center">
