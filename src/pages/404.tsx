@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Layout from '../core/layout/layout';
-import SEO from '../core/layout/seo';
+import Layout from '@core/layout/layout';
+import SEO from '@core/seo/seo';
 
 function NotFoundPageContent(): React.ReactElement {
   return (
