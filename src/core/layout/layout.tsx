@@ -13,13 +13,13 @@ type HeroProps = {
 export default function Layout({ content }: HeroProps): React.ReactElement {
   return (
     <>
-      <div>
-        <Hero
-          title="rootstack"
-          subtitle="soy un subtitulo"
-          backgroundImage={undefined}
-          backgroundColor={{ background: 'red' }}
-        />
+      <Hero
+        title="rootstack"
+        subtitle="soy un subtitulo"
+        backgroundImage={undefined}
+        backgroundColor={{ background: 'red' }}
+      />
+      <div className="container">
         <UtilityText
           textContent="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ut fugit
           repudiandae quia assumenda dolores labore, repellat modi aliquid minima consequatur

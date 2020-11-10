@@ -4,13 +4,13 @@ import { graphql, useStaticQuery } from 'gatsby';
 import './hero.scss';
 
 type HeroProps = {
-  title: string,
-  subtitle: string,
-  backgroundImage: string,
-  backgroundColor: object,
+  title: string;
+  subtitle: string;
+  backgroundImage: string;
+  backgroundColor: object;
 };
 
-const getSourceImage = (fileName) => {
+const getSourceImage = (fileName: string) => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -24,14 +24,14 @@ const getSourceImage = (fileName) => {
     }
   `);
 
-  const { fluid } = allImageSharp.nodes.find((n) => n.fluid.originalName === fileName);
+  const { fluid } = allImageSharp.nodes.find((node) => node.fluid.originalName === fileName);
 
   return fluid;
 };
 
 export default function Hero({
   title, subtitle, backgroundColor, backgroundImage
-}: HeroProps) {
+}: HeroProps): React.ReactElement {
   let styleHero = backgroundColor;
 
   if (backgroundImage) {
