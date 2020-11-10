@@ -1,8 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import ImageProvider from '@core/providers/image-provider/image-provider';
-
 import './hero.scss';
 
 type HeroProps = {
@@ -29,7 +27,7 @@ const getSourceImage = (fileName) => {
   const { fluid } = allImageSharp.nodes.find((n) => n.fluid.originalName === fileName);
 
   return fluid;
-}
+};
 
 export default function Hero({
   title, subtitle, backgroundColor, backgroundImage
