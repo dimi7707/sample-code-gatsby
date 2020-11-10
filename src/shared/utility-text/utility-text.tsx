@@ -1,13 +1,13 @@
 import React from 'react';
 
 type UtilityProps = {
-  textContent: string;
+  text: string;
 };
 
-export default function UtilityText({ textContent }: UtilityProps): React.ReactElement {
+export default function UtilityText({ text }: UtilityProps): React.ReactElement {
   return (
     <div className="mt-4 pt-big-space pb-big-space">
-      <p className="body-2 w-75 mx-auto text-center">{textContent}</p>
+      <p className="body-2 w-75 mx-auto text-center">{text}</p>
     </div>
   );
 }

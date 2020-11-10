@@ -5,7 +5,7 @@ import './hero.scss';
 
 type HeroProps = {
   title: string;
-  subtitle: string;
+  subTitle: string;
   backgroundImage: string;
   backgroundColor: object;
 };
@@ -30,7 +30,7 @@ const getSourceImage = (fileName: string) => {
 };
 
 export default function Hero({
-  title, subtitle, backgroundColor, backgroundImage
+  title, subTitle, backgroundColor, backgroundImage
 }: HeroProps): React.ReactElement {
   let styleHero = backgroundColor;
 
@@ -51,7 +51,7 @@ export default function Hero({
       <div className="hero-container container">
         <div className="hero-content d-flex flex-column justify-content-center">
           <h1 className="hero-title mb-2 text-white">{title}</h1>
-          <p className="hero-subtitle text-white">{subtitle}</p>
+          <p className="hero-subtitle text-white">{subTitle}</p>
         </div>
       </div>
     </div>

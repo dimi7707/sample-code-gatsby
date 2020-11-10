@@ -14,38 +14,39 @@ type HeroProps = {
   content: React.ReactElement;
 };
 
+const entries = [
+  {
+    title: 'Soy el card 1',
+    description: 'Soy el description del card',
+    image: 'gatsby-astronaut.png',
+    link: '/'
+  }
+] as CardProps[];
+
+const cardsContent = entries.map((entry: CardProps, index: number) => (
+  <Col key={index.valueOf()} xs={12} md={4}>
+    <Card
+      title={entry.title}
+      description={entry.description}
+      image={entry.image}
+      link={entry.link}
+    />
+  </Col>
+));
+
 export default function Layout({ content }: HeroProps): React.ReactElement {
-  const entries = [
-    {
-      title: 'Soy el card 1',
-      description: 'Soy el description del card',
-      image: 'gatsby-astronaut.png',
-      link: '/'
-    }
-  ] as CardProps[];
-
-  const cardsContent = entries.map((entry: CardProps, index: number) => (
-    <Col key={index.valueOf()} xs={12} md={4}>
-      <Card
-        title={entry.title}
-        description={entry.description}
-        image={entry.image}
-        link={entry.link}
-      />
-    </Col>
-  ));
-
   return (
-    <>
+    <div className="mb-5">
       <Hero
         title="rootstack"
-        subtitle="soy un subtitulo"
+        subTitle="soy un subtitulo"
         backgroundImage={undefined}
         backgroundColor={{ background: 'red' }}
       />
+
       <div className="container">
         <UtilityText
-          textContent="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ut fugit
+          text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ut fugit
           repudiandae quia assumenda dolores labore, repellat modi aliquid minima consequatur
           corporis odio odit voluptatibus."
         />
@@ -56,6 +57,6 @@ export default function Layout({ content }: HeroProps): React.ReactElement {
         </Container>
         <main>{content}</main>
       </div>
-    </>
+    </div>
   );
 }
