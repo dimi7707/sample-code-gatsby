@@ -14,6 +14,7 @@ import {
 import SEO from '@core/seo/seo';
 
 import Hero from '@shared/hero/hero';
+import Banner from '@shared/banner/banner';
 
 import '@styles/base.scss';
 
@@ -59,37 +60,6 @@ export default function StyleGuidePage(): React.ReactElement {
           </tr>
         </tbody>
       </Table>
-      <div className="custom-divider" />
-
-      <h1>Hero</h1>
-      <Hero
-        title="With background image"
-        subTitle={loremIpsu}
-        backgroundImage="imagen-for-hero.png"
-        backgroundColor={{ background: 'red' }}
-      />
-
-      <Hero
-        title="With background color"
-        subTitle={loremIpsu}
-        backgroundImage=""
-        backgroundColor={{ background: 'red' }}
-      />
-
-      <Hero
-        title="Default background"
-        subTitle={loremIpsu}
-        backgroundImage=""
-        backgroundColor={{}}
-      />
-
-      <Hero
-        title="Hero - Large"
-        subTitle={loremIpsu}
-        backgroundImage="imagen-for-hero.png"
-        backgroundColor={{ background: 'red' }}
-        size="lg"
-      />
 
       <div className="custom-divider" />
 
@@ -425,6 +395,59 @@ export default function StyleGuidePage(): React.ReactElement {
         <span>Sent successfully.</span>
         You have registered for the next event.
       </Alert>
+
+      <div className="custom-divider" />
+      <h1>Components</h1>
+
+      <div className="custom-divider" />
+      <h1>Hero</h1>
+      <Hero
+        title="With background image"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+      />
+
+      <Hero
+        title="With background color"
+        subTitle={loremIpsu}
+        backgroundImage=""
+        backgroundColor={{ background: 'red' }}
+      />
+
+      <Hero
+        title="Default background"
+        subTitle={loremIpsu}
+        backgroundImage=""
+        backgroundColor={{}}
+      />
+
+      <Hero
+        title="Hero - Large"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+        size="lg"
+      />
+      <div className="custom-divider" />
+      <h1>Banner</h1>
+      <h4>Default (Image to left)</h4>
+      <Banner
+        image="img-test-banner.jpg"
+        altImage="Banner image"
+        text="Soy el texto del banner, esto solo es una prueba del componente"
+        imageToLeft
+        buttonText="Let's to talk"
+      />
+      <div className="custom-divider" />
+      <h4>Image to right</h4>
+      <Banner
+        image="img-test-banner.jpg"
+        altImage="Banner image"
+        text="Soy el texto del banner, esto solo es una prueba del componente"
+        imageToLeft={false}
+        buttonText="Let's to talk"
+      />
     </Container>
   );
 }
