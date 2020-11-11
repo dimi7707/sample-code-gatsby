@@ -1,5 +1,8 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { Container } from 'react-bootstrap';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+
+import { LinkProps } from '@props/link';
 
 import './hero.scss';
 
@@ -8,6 +11,13 @@ type HeroProps = {
   subTitle: string;
   backgroundImage: string;
   backgroundColor: object;
+  size?: string;
+  link?: LinkProps;
+};
+
+Hero.defaultProps = {
+  size: '',
+  link: undefined
 };
 
 const getSourceImage = (fileName: string) => {
@@ -30,7 +40,7 @@ const getSourceImage = (fileName: string) => {
 };
 
 export default function Hero({
-  title, subTitle, backgroundColor, backgroundImage
+  title, subTitle, link, size, backgroundColor, backgroundImage
 }: HeroProps): React.ReactElement {
   let styleHero = backgroundColor;
 
@@ -43,17 +53,20 @@ export default function Hero({
     };
   }
 
+  const heroClass = (size) ? `hero-${size}` : 'hero';
+
   return (
     <div
-      className="hero"
+      className={heroClass}
       style={styleHero}
     >
-      <div className="hero-container container">
+      <Container className="hero-container">
         <div className="hero-content d-flex flex-column justify-content-center">
           <h1 className="hero-title mb-2 text-white">{title}</h1>
           <p className="hero-subtitle text-white">{subTitle}</p>
+          {link && <Link to={link.link}>{link.label}</Link>}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

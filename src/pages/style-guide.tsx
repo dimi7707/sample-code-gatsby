@@ -11,14 +11,20 @@ import {
   Pagination
 } from 'react-bootstrap';
 
-import Layout from '@core/layout/layout';
 import SEO from '@core/seo/seo';
 
-import '@styles/style-guide.scss';
+import Hero from '@shared/hero/hero';
 
-function StyleGuidePageContent(): React.ReactElement {
+import '@styles/base.scss';
+
+const loremIpsu = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nisi
+labore expedita odit dolorem beatae, voluptatem fuga, non magnam quas nihil.
+Quae doloremque doloribus nam ab, commodi non nisi iure!
+`;
+
+export default function StyleGuidePage(): React.ReactElement {
   return (
-    <>
+    <Container>
       <SEO title="Home" />
       <h1>Typography</h1>
       <Table className="custom-table-style-guide">
@@ -54,6 +60,39 @@ function StyleGuidePageContent(): React.ReactElement {
         </tbody>
       </Table>
       <div className="custom-divider" />
+
+      <h1>Hero</h1>
+      <Hero
+        title="With background image"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+      />
+
+      <Hero
+        title="With background color"
+        subTitle={loremIpsu}
+        backgroundImage=""
+        backgroundColor={{ background: 'red' }}
+      />
+
+      <Hero
+        title="Default background"
+        subTitle={loremIpsu}
+        backgroundImage=""
+        backgroundColor={{}}
+      />
+
+      <Hero
+        title="Hero - Large"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+        size="lg"
+      />
+
+      <div className="custom-divider" />
+
       <h1>Font size</h1>
       <Table className="custom-table-style-guide">
         <thead>
@@ -85,7 +124,7 @@ function StyleGuidePageContent(): React.ReactElement {
             </td>
             <td>.h2 / h2</td>
             <td>
-              <h2>How Can Software Development </h2>
+              <h2>How Can Software Development</h2>
             </td>
           </tr>
           <tr>
@@ -94,7 +133,7 @@ function StyleGuidePageContent(): React.ReactElement {
             </td>
             <td>.h3 / h3</td>
             <td>
-              <h3>How Can Software Development </h3>
+              <h3>How Can Software Development</h3>
             </td>
           </tr>
           <tr>
@@ -103,7 +142,7 @@ function StyleGuidePageContent(): React.ReactElement {
             </td>
             <td>.h4 / h4</td>
             <td>
-              <h4>How Can Software Development </h4>
+              <h4>How Can Software Development</h4>
             </td>
           </tr>
           <tr>
@@ -173,6 +212,7 @@ function StyleGuidePageContent(): React.ReactElement {
         </tbody>
       </Table>
       <div className="custom-divider" />
+
       <h1>Colors</h1>
       <Container>
         <Row>
@@ -385,10 +425,6 @@ function StyleGuidePageContent(): React.ReactElement {
         <span>Sent successfully.</span>
         You have registered for the next event.
       </Alert>
-    </>
+    </Container>
   );
-}
-
-export default function StyleGuidePage(): React.ReactElement {
-  return <Layout content={StyleGuidePageContent()} />;
 }

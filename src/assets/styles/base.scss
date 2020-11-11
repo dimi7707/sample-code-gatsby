@@ -1,0 +1,67 @@
+@import './variables';
+@import '~bootstrap/scss/bootstrap';
+
+@import './typography';
+
+select {
+  background: url(../images/down-arrow.png) no-repeat right $white;
+  -webkit-appearance: none;
+  background-position-x: 95%;
+}
+
+.form-group {
+  .form-label {
+    font-weight: 600;
+  }
+}
+
+.pagination {
+  .page-link {
+    color: $color-secondary;
+  }
+
+  .page-item.active .page-link {
+    background-color: $color-secondary;
+    color: $white;
+  }
+}
+
+.orange-text {
+  color: $orange-image-title;
+}
+
+.pt-big-space {
+  padding-top: 2.5em;
+}
+
+.pb-big-space {
+  padding-bottom: 2.5em;
+}
+
+.pl-big-space {
+  padding-left: 10%;
+}
+
+.pr-big-space {
+  padding-right: 10%;
+}
+
+.btn-secondary {
+  border-radius: 3.1px;
+  background-color: $color-secondary-button;
+  border: 1px solid $color-secondary-button;
+}
+
+.btn-secondary:hover {
+  background-color: $color-secondary-hover-button;
+  border: 1px solid $color-secondary-hover-button;
+}
+
+.btn-secondary:visited, .btn-secondary:focus {
+  background-color: $color-secondary-clicked-button;
+  border: 1px solid $color-secondary-clicked-button;
+}
+
+.custom-text-secondary {
+  color: $color-secondary;
+}

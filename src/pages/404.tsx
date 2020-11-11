@@ -1,9 +1,8 @@
 import React from 'react';
 
-import Layout from '@core/layout/layout';
 import SEO from '@core/seo/seo';
 
-function NotFoundPageContent(): React.ReactElement {
+export default function NotFoundPage(): React.ReactElement {
   return (
     <>
       <SEO title="404: Not found" />
@@ -11,8 +10,4 @@ function NotFoundPageContent(): React.ReactElement {
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </>
   );
-}
-
-export default function NotFoundPage(): React.ReactElement {
-  return <Layout content={NotFoundPageContent()} />;
 }
