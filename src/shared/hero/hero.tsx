@@ -11,12 +11,14 @@ type HeroProps = {
   subTitle: string;
   backgroundImage: string;
   backgroundColor: object;
+  color?: string;
   size?: string;
   link?: LinkProps;
 };
 
 Hero.defaultProps = {
-  size: '',
+  color: 'text-white',
+  size: 'md',
   link: undefined
 };
 
@@ -40,7 +42,7 @@ const getSourceImage = (fileName: string) => {
 };
 
 export default function Hero({
-  title, subTitle, link, size, backgroundColor, backgroundImage
+  title, subTitle, link, size, color, backgroundColor, backgroundImage
 }: HeroProps): React.ReactElement {
   let styleHero = backgroundColor;
 
@@ -49,21 +51,27 @@ export default function Hero({
 
     styleHero = {
       ...backgroundColor,
-      backgroundImage: `url(${image.src})`
+      backgroundImage: `url(${image.src})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat'
     };
   }
 
-  const heroClass = (size) ? `hero-${size}` : 'hero';
+  const heroDefaultClass = 'hero d-flex align-items-center';
+  const heroContentDefaultClass = 'hero-content';
+  const heroTitleDefaultClass = 'hero-title mb-2';
+  const heroSubTitleDefaultClass = 'hero-subtitle';
 
   return (
     <div
-      className={heroClass}
+      className={`${heroDefaultClass} ${size}`}
       style={styleHero}
     >
-      <Container className="hero-container">
-        <div className="hero-content d-flex flex-column justify-content-center">
-          <h1 className="hero-title mb-2 text-white">{title}</h1>
-          <p className="hero-subtitle text-white">{subTitle}</p>
+      <Container>
+        <div className={`${heroContentDefaultClass}`}>
+          <h1 className={`${heroTitleDefaultClass} ${color}`}>{title}</h1>
+          <p className={`${heroSubTitleDefaultClass} ${color}`}>{subTitle}</p>
+
           {link && <Link to={link.link}>{link.label}</Link>}
         </div>
       </Container>
