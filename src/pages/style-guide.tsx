@@ -16,6 +16,7 @@ import SEO from '@core/seo/seo';
 import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
+import Box from '@shared/box/box';
 
 import '@styles/base.scss';
 
@@ -480,6 +481,40 @@ export default function StyleGuidePage(): React.ReactElement {
         imageToLeft={false}
         buttonText="Let's to talk"
       />
+      <div className="custom-divider" />
+      <h1>Boxes</h1>
+      <h4>Default box (logo) </h4>
+      <Row>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+      </Row>
+      <div className="custom-divider" />
+      <h4>Box with icon an title</h4>
+      <Row>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+      </Row>
+      <div className="custom-divider" />
     </Container>
   );
 }
