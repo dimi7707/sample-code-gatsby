@@ -15,6 +15,7 @@ import SEO from '@core/seo/seo';
 
 import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
+import HeroSlider from '@shared/hero-slider/hero-slider';
 
 import '@styles/base.scss';
 
@@ -24,6 +25,27 @@ Quae doloremque doloribus nam ab, commodi non nisi iure!
 `;
 
 export default function StyleGuidePage(): React.ReactElement {
+  const heroList = [
+    {
+      title: 'Hero 1',
+      subTitle: 'I am subtitle',
+      backgroundImage: 'imagen-for-hero.png',
+      backgroundColor: { backgroundColor: 'red' }
+    },
+    {
+      title: 'Hero 2',
+      subTitle: 'I am subtitle 2',
+      backgroundImage: 'imagen-for-hero.png',
+      backgroundColor: { backgroundColor: 'red' }
+    },
+    {
+      title: 'Hero 3',
+      subTitle: 'I am subtitle 3',
+      backgroundImage: 'imagen-for-hero.png',
+      backgroundColor: { backgroundColor: 'red' }
+    }
+  ];
+
   return (
     <Container>
       <SEO title="Home" />
@@ -429,6 +451,16 @@ export default function StyleGuidePage(): React.ReactElement {
         backgroundColor={{ background: 'red' }}
         size="lg"
       />
+
+      <Hero
+        title="With background image and link"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+      />
+      <div className="custom-divider" />
+      <h1>Hero Slider</h1>
+      <HeroSlider list={heroList} />
       <div className="custom-divider" />
       <h1>Banner</h1>
       <h4>Default (Image to left)</h4>

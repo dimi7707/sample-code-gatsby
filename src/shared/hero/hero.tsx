@@ -2,19 +2,9 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
-import { LinkProps } from '@props/link';
+import { HeroProps } from '@props/hero';
 
 import './hero.scss';
-
-type HeroProps = {
-  title: string;
-  subTitle: string;
-  backgroundImage: string;
-  backgroundColor: object;
-  color?: string;
-  size?: string;
-  link?: LinkProps;
-};
 
 Hero.defaultProps = {
   color: 'text-white',
