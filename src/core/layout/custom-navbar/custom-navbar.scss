@@ -1,0 +1,34 @@
+@import '@styles/_variables.scss';
+
+.navbar {
+  background-color: $white;
+
+  a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-small-logo {
+    padding-top: 1em;
+    max-width: 10em;
+    height: auto;
+  }
+
+  .navbar-light, .navbar-nav, .nav-link {
+    color: $black !important;
+    font-weight: bold;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: .96em;
+    display: inline-block;
+  }
+  
+  .nav-link:hover {
+    color: $orange-header-menu !important;
+  } 
+  
+  .orange-arrow {
+    color: $orange-arrow;
+  }
+}
