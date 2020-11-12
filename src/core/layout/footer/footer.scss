@@ -1,0 +1,36 @@
+@import '@styles/_variables.scss';
+
+footer {
+  .logo-footer {
+    margin-bottom: 1em;
+  }
+
+  .text-copyright {
+    color: $blue-text-copyright;
+  }
+
+  h5 {
+    color: $white;
+  }
+
+  ul {
+    margin-left: 0;
+    li {
+      color: $blue-text-copyright;
+      font-size: .79em;
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    color: $blue-text-copyright;
+    font-size: .79em;
+  }
+
+  .custom-icon-colors {
+    margin: 5px 3px 0 0;
+    padding-right: 1em;
+    color: $white;
+    font-size: 1em;
+  }
+}

@@ -17,6 +17,7 @@ import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
+import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
 
@@ -514,7 +515,13 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
       <div className="custom-divider" />
+      <h1>Footer</h1>
+      <Footer
+        image="automatation.png"
+        backgroundColor={{ background: '#04182e' }}
+      />
     </Container>
   );
 }
