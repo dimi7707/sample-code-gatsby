@@ -3,8 +3,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
-import { LinkProps } from '@shared/props/link';
-import { NavbarProps } from '@shared/props/navbar';
+import { LinkProps } from '@props/link';
+import { NavbarProps } from '@props/navbar';
 
 import './custom-navbar.scss';
 
