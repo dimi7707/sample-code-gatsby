@@ -12,7 +12,7 @@ import {
 } from 'react-bootstrap';
 
 import SEO from '@core/seo/seo';
-
+import TopBar from '@core/layout/top-bar/top-bar';
 import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
@@ -26,6 +26,24 @@ Quae doloremque doloribus nam ab, commodi non nisi iure!
 `;
 
 export default function StyleGuidePage(): React.ReactElement {
+  const topBarLinks = [
+    {
+      label: 'Events',
+      link: '/',
+      isActive: false
+    },
+    {
+      label: 'Contact us',
+      link: '/',
+      isActive: true
+    },
+    {
+      label: 'En / Es',
+      link: '/',
+      isActive: false
+    }
+  ];
+
   const heroList = [
     {
       title: 'Hero 1',
@@ -421,6 +439,12 @@ export default function StyleGuidePage(): React.ReactElement {
 
       <div className="custom-divider" />
       <h1>Components</h1>
+
+      <div className="custom-divider" />
+      <h1>Top bar</h1>
+      <TopBar
+        linkList={topBarLinks}
+      />
 
       <div className="custom-divider" />
       <h1>Hero</h1>
