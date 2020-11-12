@@ -17,6 +17,7 @@ import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
+import BannerForm from '@shared/banner-form/banner-form';
 
 import '@styles/base.scss';
 
@@ -481,6 +482,16 @@ export default function StyleGuidePage(): React.ReactElement {
         imageToLeft={false}
         buttonText="Let's to talk"
       />
+
+      <div className="custom-divider" />
+      <h1>Banner Form</h1>
+      <BannerForm
+        title="Let's work together"
+        subtitle="We are ready to help you."
+        backgroundColor={{ background: '#f9fafb' }}
+        buttonText="Send"
+      />
+
       <div className="custom-divider" />
       <h1>Boxes</h1>
       <h4>Default box (logo) </h4>
