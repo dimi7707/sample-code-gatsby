@@ -11,14 +11,44 @@ import {
   Pagination
 } from 'react-bootstrap';
 
-import Layout from '@core/layout/layout';
 import SEO from '@core/seo/seo';
 
-import '@styles/style-guide.scss';
+import Hero from '@shared/hero/hero';
+import Banner from '@shared/banner/banner';
+import HeroSlider from '@shared/hero-slider/hero-slider';
+import Box from '@shared/box/box';
 
-function StyleGuidePageContent(): React.ReactElement {
+import '@styles/base.scss';
+
+const loremIpsu = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nisi
+labore expedita odit dolorem beatae, voluptatem fuga, non magnam quas nihil.
+Quae doloremque doloribus nam ab, commodi non nisi iure!
+`;
+
+export default function StyleGuidePage(): React.ReactElement {
+  const heroList = [
+    {
+      title: 'Hero 1',
+      subTitle: 'I am subtitle',
+      backgroundImage: 'imagen-for-hero.png',
+      backgroundColor: { backgroundColor: 'red' }
+    },
+    {
+      title: 'Hero 2',
+      subTitle: 'I am subtitle 2',
+      backgroundImage: 'imagen-for-hero.png',
+      backgroundColor: { backgroundColor: 'red' }
+    },
+    {
+      title: 'Hero 3',
+      subTitle: 'I am subtitle 3',
+      backgroundImage: 'imagen-for-hero.png',
+      backgroundColor: { backgroundColor: 'red' }
+    }
+  ];
+
   return (
-    <>
+    <Container>
       <SEO title="Home" />
       <h1>Typography</h1>
       <Table className="custom-table-style-guide">
@@ -53,7 +83,9 @@ function StyleGuidePageContent(): React.ReactElement {
           </tr>
         </tbody>
       </Table>
+
       <div className="custom-divider" />
+
       <h1>Font size</h1>
       <Table className="custom-table-style-guide">
         <thead>
@@ -85,7 +117,7 @@ function StyleGuidePageContent(): React.ReactElement {
             </td>
             <td>.h2 / h2</td>
             <td>
-              <h2>How Can Software Development </h2>
+              <h2>How Can Software Development</h2>
             </td>
           </tr>
           <tr>
@@ -94,7 +126,7 @@ function StyleGuidePageContent(): React.ReactElement {
             </td>
             <td>.h3 / h3</td>
             <td>
-              <h3>How Can Software Development </h3>
+              <h3>How Can Software Development</h3>
             </td>
           </tr>
           <tr>
@@ -103,7 +135,7 @@ function StyleGuidePageContent(): React.ReactElement {
             </td>
             <td>.h4 / h4</td>
             <td>
-              <h4>How Can Software Development </h4>
+              <h4>How Can Software Development</h4>
             </td>
           </tr>
           <tr>
@@ -173,6 +205,7 @@ function StyleGuidePageContent(): React.ReactElement {
         </tbody>
       </Table>
       <div className="custom-divider" />
+
       <h1>Colors</h1>
       <Container>
         <Row>
@@ -385,10 +418,104 @@ function StyleGuidePageContent(): React.ReactElement {
         <span>Sent successfully.</span>
         You have registered for the next event.
       </Alert>
-    </>
-  );
-}
 
-export default function StyleGuidePage(): React.ReactElement {
-  return <Layout content={StyleGuidePageContent()} />;
+      <div className="custom-divider" />
+      <h1>Hero</h1>
+      <Hero
+        title="With background image"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+      />
+
+      <Hero
+        title="With background color"
+        subTitle={loremIpsu}
+        backgroundImage=""
+        backgroundColor={{ background: 'red' }}
+      />
+
+      <Hero
+        title="Default background"
+        subTitle={loremIpsu}
+        backgroundImage=""
+        backgroundColor={{}}
+      />
+
+      <Hero
+        title="Hero - Large"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+        size="lg"
+      />
+
+      <Hero
+        title="With background image and link"
+        subTitle={loremIpsu}
+        backgroundImage="imagen-for-hero.png"
+        backgroundColor={{ background: 'red' }}
+      />
+
+      <div className="custom-divider" />
+      <h1>Hero Slider</h1>
+      <HeroSlider list={heroList} />
+
+      <div className="custom-divider" />
+      <h1>Banner</h1>
+      <h4>Default (Image to left)</h4>
+      <Banner
+        image="img-test-banner.jpg"
+        altImage="Banner image"
+        text="Soy el texto del banner, esto solo es una prueba del componente"
+        imageToLeft
+        buttonText="Let's to talk"
+      />
+
+      <div className="custom-divider" />
+      <h4>Image to right</h4>
+      <Banner
+        image="img-test-banner.jpg"
+        altImage="Banner image"
+        text="Soy el texto del banner, esto solo es una prueba del componente"
+        buttonText="Let's to talk"
+      />
+
+      <div className="custom-divider" />
+      <h1>Boxes</h1>
+      <h4>Default box (logo) </h4>
+      <Row>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType={false} title="Automatation" image="automatation.png" />
+        </Col>
+      </Row>
+
+      <div className="custom-divider" />
+      <h4>Box with icon an title</h4>
+      <Row>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+        <Col xs={6} md={2}>
+          <Box iconType title="Automatation" image="automatation.png" />
+        </Col>
+      </Row>
+      <div className="custom-divider" />
+    </Container>
+  );
 }
