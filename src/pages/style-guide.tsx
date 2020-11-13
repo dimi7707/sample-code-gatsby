@@ -431,9 +431,6 @@ export default function StyleGuidePage(): React.ReactElement {
       </Alert>
 
       <div className="custom-divider" />
-      <h1>Components</h1>
-
-      <div className="custom-divider" />
       <h1>Hero</h1>
       <Hero
         title="With background image"
@@ -470,9 +467,11 @@ export default function StyleGuidePage(): React.ReactElement {
         backgroundImage="imagen-for-hero.png"
         backgroundColor={{ background: 'red' }}
       />
+
       <div className="custom-divider" />
       <h1>Hero Slider</h1>
       <HeroSlider list={heroList} />
+
       <div className="custom-divider" />
       <h1>Banner</h1>
       <h4>Default (Image to left)</h4>
@@ -483,13 +482,13 @@ export default function StyleGuidePage(): React.ReactElement {
         imageToLeft
         buttonText="Let's to talk"
       />
+
       <div className="custom-divider" />
       <h4>Image to right</h4>
       <Banner
         image="img-test-banner.jpg"
         altImage="Banner image"
         text="Soy el texto del banner, esto solo es una prueba del componente"
-        imageToLeft={false}
         buttonText="Let's to talk"
       />
 
@@ -518,22 +517,7 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType={false} title="Automatation" image="automatation.png" />
         </Col>
       </Row>
-      <h1>Boxes</h1>
-      <h4>Default box (logo) </h4>
-      <Row>
-        <Col xs={6} md={2}>
-          <Box iconType={false} title="Automatation" image="automatation.png" />
-        </Col>
-        <Col xs={6} md={2}>
-          <Box iconType={false} title="Automatation" image="automatation.png" />
-        </Col>
-        <Col xs={6} md={2}>
-          <Box iconType={false} title="Automatation" image="automatation.png" />
-        </Col>
-        <Col xs={6} md={2}>
-          <Box iconType={false} title="Automatation" image="automatation.png" />
-        </Col>
-      </Row>
+
       <div className="custom-divider" />
       <h4>Box with icon an title</h4>
       <Row>
