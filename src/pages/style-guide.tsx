@@ -483,9 +483,11 @@ export default function StyleGuidePage(): React.ReactElement {
         backgroundImage="imagen-for-hero.png"
         backgroundColor={{ background: 'red' }}
       />
+
       <div className="custom-divider" />
       <h1>Hero Slider</h1>
       <HeroSlider list={heroList} />
+
       <div className="custom-divider" />
       <h1>Banner</h1>
       <h4>Default (Image to left)</h4>
@@ -496,15 +498,16 @@ export default function StyleGuidePage(): React.ReactElement {
         imageToLeft
         buttonText="Let's to talk"
       />
+
       <div className="custom-divider" />
       <h4>Image to right</h4>
       <Banner
         image="img-test-banner.jpg"
         altImage="Banner image"
         text="Soy el texto del banner, esto solo es una prueba del componente"
-        imageToLeft={false}
         buttonText="Let's to talk"
       />
+
       <div className="custom-divider" />
       <h1>Boxes</h1>
       <h4>Default box (logo) </h4>
@@ -522,6 +525,7 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType={false} title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
       <div className="custom-divider" />
       <h4>Box with icon an title</h4>
       <Row>
