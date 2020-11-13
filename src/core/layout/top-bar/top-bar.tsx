@@ -1,26 +1,44 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 
 import { LinkProps } from '@props/link';
-import { TopBarProps } from '@props/top-bar';
-
 import './top-bar.scss';
+import { Nav, Navbar } from 'react-bootstrap';
 
-export default function TopBar({ linkList }: TopBarProps): React.ReactElement {
-  const topBarLinks = linkList.map((linkElement: LinkProps) => (
-    <Col key={`top-bar-link-${linkElement.label}`} className={linkElement.isActive ? 'active' : ''}>
-      <div className="text-center text-uppercase">
-        <a href={linkElement.link}>{linkElement.label}</a>
-      </div>
-    </Col>
-  ));
+const links = [
+  {
+    label: 'Events',
+    link: '/',
+    isActive: false
+  },
+  {
+    label: 'Contact us',
+    link: '/',
+    isActive: true
+  },
+  {
+    label: 'En / Es',
+    link: '/',
+    isActive: false
+  }
+] as LinkProps[];
+
+export default function TopBar(): React.ReactElement {
   return (
-    <div className="top-bar">
-      <Row className="top-bar-row">
-        <Col xs={12} md={12 - linkList.length} />
-        {topBarLinks}
-      </Row>
-      <div className="top-bar-divider" />
-    </div>
+    <Navbar collapseOnSelect expand="lg" className="top-bar p-0">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+          {links.map((link: LinkProps) => (
+            <Nav.Link
+              key={link.label}
+              className={link.isActive ? 'active text-white' : ''}
+              href={link.link}
+            >
+              {link.label}
+            </Nav.Link>
+          ))}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }

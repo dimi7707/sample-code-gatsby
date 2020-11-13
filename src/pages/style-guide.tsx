@@ -26,24 +26,6 @@ Quae doloremque doloribus nam ab, commodi non nisi iure!
 `;
 
 export default function StyleGuidePage(): React.ReactElement {
-  const topBarLinks = [
-    {
-      label: 'Events',
-      link: '/',
-      isActive: false
-    },
-    {
-      label: 'Contact us',
-      link: '/',
-      isActive: true
-    },
-    {
-      label: 'En / Es',
-      link: '/',
-      isActive: false
-    }
-  ];
-
   const heroList = [
     {
       title: 'Hero 1',
@@ -442,9 +424,7 @@ export default function StyleGuidePage(): React.ReactElement {
 
       <div className="custom-divider" />
       <h1>Top bar</h1>
-      <TopBar
-        linkList={topBarLinks}
-      />
+      <TopBar />
 
       <div className="custom-divider" />
       <h1>Hero</h1>
