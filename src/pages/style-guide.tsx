@@ -468,7 +468,7 @@ export default function StyleGuidePage(): React.ReactElement {
         image="img-test-banner.jpg"
         altImage="Banner image"
         text="Soy el texto del banner, esto solo es una prueba del componente"
-        imageToLeft={true}
+        imageToLeft
         buttonText="Let's to talk"
       />
 
