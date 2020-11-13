@@ -13,8 +13,11 @@ import {
 
 import SEO from '@core/seo/seo';
 
-import Navbar from '@core/layout/custom-navbar/custom-navbar';
 import logo from '@assets/images/logo-rootstack.png';
+
+import Navbar from '@core/layout/custom-navbar/custom-navbar';
+import TopBar from '@core/layout/top-bar/top-bar';
+
 import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
@@ -54,6 +57,7 @@ export default function StyleGuidePage(): React.ReactElement {
       link: '/'
     }
   ];
+
   const heroList = [
     {
       title: 'Hero 1',
@@ -456,6 +460,10 @@ export default function StyleGuidePage(): React.ReactElement {
         image={logo}
         linkList={linkList}
       />
+
+      <div className="custom-divider" />
+      <h1>Top bar</h1>
+      <TopBar />
 
       <div className="custom-divider" />
       <h1>Hero</h1>
