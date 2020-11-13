@@ -13,9 +13,7 @@ import {
 
 import SEO from '@core/seo/seo';
 
-import logo from '@assets/images/logo-rootstack.png';
-
-import Navbar from '@core/layout/custom-navbar/custom-navbar';
+import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import TopBar from '@core/layout/top-bar/top-bar';
 
 import Hero from '@shared/hero/hero';
@@ -31,33 +29,6 @@ Quae doloremque doloribus nam ab, commodi non nisi iure!
 `;
 
 export default function StyleGuidePage(): React.ReactElement {
-  const linkList = [
-    {
-      label: 'Services',
-      link: '/'
-    },
-    {
-      label: 'Products',
-      link: '/'
-    },
-    {
-      label: 'Solution',
-      link: '/'
-    },
-    {
-      label: 'Work',
-      link: '/'
-    },
-    {
-      label: 'Resources',
-      link: '/'
-    },
-    {
-      label: 'Company',
-      link: '/'
-    }
-  ];
-
   const heroList = [
     {
       title: 'Hero 1',
@@ -452,14 +423,8 @@ export default function StyleGuidePage(): React.ReactElement {
       </Alert>
 
       <div className="custom-divider" />
-      <h1>Components</h1>
-
-      <div className="custom-divider" />
-      <h1>Navbar</h1>
-      <Navbar
-        image={logo}
-        linkList={linkList}
-      />
+      <h1>Navigation bar</h1>
+      <NavigationBar />
 
       <div className="custom-divider" />
       <h1>Top bar</h1>
