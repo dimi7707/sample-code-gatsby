@@ -1,4 +1,7 @@
+import { SocialIcon } from './social-icon';
+
 export type FooterProps = {
-  image: string;
+  logo: string;
   backgroundColor: object;
+  socialIconList: SocialIcon[];
 };

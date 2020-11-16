@@ -1,11 +1,12 @@
 @import '@styles/_variables.scss';
 
 footer {
-  .logo-footer {
-    margin-bottom: 1em;
+  img {
+    max-width: 200px;
+    max-height: 100px;
   }
 
-  .text-copyright {
+  .footer-text-copyright {
     color: $blue-text-copyright;
   }
 
@@ -25,12 +26,5 @@ footer {
   p {
     color: $blue-text-copyright;
     font-size: .79em;
-  }
-
-  .custom-icon-colors {
-    margin: 5px 3px 0 0;
-    padding-right: 1em;
-    color: $white;
-    font-size: 1em;
   }
 }

@@ -51,6 +51,13 @@ export default function StyleGuidePage(): React.ReactElement {
     }
   ];
 
+  const socialIconList = [
+    {
+      icon: 'gatsby-icon.png',
+      link: '/'
+    }
+  ];
+
   return (
     <Container>
       <SEO title="Home" />
@@ -531,8 +538,9 @@ export default function StyleGuidePage(): React.ReactElement {
       <div className="custom-divider" />
       <h1>Footer</h1>
       <Footer
-        image="automatation.png"
+        logo="logo-rootstack.png"
         backgroundColor={{ background: '#04182e' }}
+        socialIconList={socialIconList}
       />
     </Container>
   );
