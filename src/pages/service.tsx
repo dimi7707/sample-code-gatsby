@@ -8,6 +8,7 @@ import IntroText from '@shared/text/intro-text';
 import CardWithOutBorder from '@shared/card/card--without-border';
 import Card from '@shared/card/card';
 import Banner from '@shared/banner/banner';
+import BannerForm from '@shared/banner-form/banner-form';
 
 import '@styles/base.scss';
 
@@ -72,7 +73,7 @@ export default function ServicePage(): React.ReactElement {
           buttonText="Let's to talk"
         />
       </Container>
-      <Container className="mt-4 pt-4">
+      <Container className="mt-4 pt-4 mb-4 pb-4">
         <h4 className="text-center pb-4">Success stories</h4>
         <Row>
           <Col xs={12} md={3}>
@@ -109,7 +110,12 @@ export default function ServicePage(): React.ReactElement {
           </Col>
         </Row>
       </Container>
+      <BannerForm 
+        title="Let's work together!"
+        subtitle="We are ready to help you."
+        backgroundColor={{ background: '#f9fafb' }}
+        buttonText="Send"
+      />
     </div>
-    
   ); 
 }
