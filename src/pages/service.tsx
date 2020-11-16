@@ -7,6 +7,7 @@ import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import CardWithOutBorder from '@shared/card/card--without-border';
 import Card from '@shared/card/card';
+import Box from '@shared/box/box';
 import Banner from '@shared/banner/banner';
 import BannerForm from '@shared/banner-form/banner-form';
 import BannerVideo from '@shared/banner-video/banner-video';
@@ -66,6 +67,21 @@ export default function ServicePage(): React.ReactElement {
       <div className="mt-4 pt-4">
         <IntroText text={textForIntro} />
       </div>
+      <Container>
+        <h4 className="text-center mt-4 pt-4">Areas of expertise</h4>
+        <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+        </div>
+        <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+        </div>
+      </Container>
       <Container className="mt-4 pt-4">
         <Banner
           image="img-test-banner.jpg"

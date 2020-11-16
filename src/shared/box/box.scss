@@ -1,15 +1,10 @@
 @import '@styles/_variables.scss';
 
 .box {
-  max-height: 120px;
-  max-width: 130px;
-  border: 1px solid $color-secondary;
 
   img {
     max-height: 70px;
     max-width: 75px;
-    display: block;
-    margin: auto;
   }
 
   a {

@@ -7,6 +7,7 @@ import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import Banner from '@shared/banner/banner';
 import Card from '@shared/card/card';
+import Box from '@shared/box/box';
 import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
@@ -78,6 +79,21 @@ export default function ProfileManageTeams(): React.ReactElement {
             />
           </Col>
         </Row>
+      </Container>
+      <Container className="pb-4 mb-4">
+        <h4 className="text-center mt-4 pt-4">Areas of expertise</h4>
+        <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+        </div>
+        <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="automatation.png" />
+        </div>
       </Container>
       <BannerAdvertising 
         title="Ready to execute effective technology solutions?"

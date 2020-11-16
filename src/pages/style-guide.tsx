@@ -573,20 +573,12 @@ export default function StyleGuidePage(): React.ReactElement {
 
       <div className="custom-divider" />
       <h4>Box with icon an title</h4>
-      <Row>
-        <Col xs={6} md={2}>
-          <Box iconType title="Automatation" image="automatation.png" />
-        </Col>
-        <Col xs={6} md={2}>
-          <Box iconType title="Automatation" image="automatation.png" />
-        </Col>
-        <Col xs={6} md={2}>
-          <Box iconType title="Automatation" image="automatation.png" />
-        </Col>
-        <Col xs={6} md={2}>
-          <Box iconType title="Automatation" image="automatation.png" />
-        </Col>
-      </Row>
+      <div className="d-flex justify-content-between flex-wrap">
+        <Box iconType title="Automatation" image="automatation.png" />
+        <Box iconType title="Automatation" image="automatation.png" />
+        <Box iconType title="Automatation" image="automatation.png" />
+        <Box iconType title="Automatation" image="automatation.png" />
+      </div>
 
       <div className="custom-divider" />
       <h1>Footer</h1>

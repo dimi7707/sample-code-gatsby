@@ -9,7 +9,7 @@ import './box.scss';
 
 export default function Box({ iconType, image, title }: BoxProps): React.ReactElement {
   return (
-    <div className="box">
+    <div className="box mx-auto">
       <ImageProvider fileName={image} alt={title} className="" />
       {
         iconType
