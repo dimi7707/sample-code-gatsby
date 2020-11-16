@@ -2,8 +2,10 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import ImageProvider from '@core/providers/image/image-provider';
-import { FooterProps } from '@props/footer';
+
 import { SocialIconProps } from '@shared/props/social-icon';
+
+import { FooterProps } from '@props/footer';
 
 import './footer.scss';
 
@@ -15,6 +17,7 @@ export default function Footer({
       <ImageProvider fileName={icon.icon} className="" alt="" />
     </a>
   ));
+
   return (
     <footer className="footer pt-4" style={backgroundColor}>
       <Container className="container-fluid text-center text-md-left">
