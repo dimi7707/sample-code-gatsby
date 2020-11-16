@@ -5,64 +5,29 @@ import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
-import CardWithOutBorder from '@shared/card/card--without-border';
-import Card from '@shared/card/card';
 import Banner from '@shared/banner/banner';
-import BannerForm from '@shared/banner-form/banner-form';
-import BannerVideo from '@shared/banner-video/banner-video';
+import Card from '@shared/card/card';
+import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
-import '@styles/base.scss';
-
-export default function ServicePage(): React.ReactElement {
+export default function ProfileProjectBased(): React.ReactElement {
   const textForIntro = `We provide end-to-end development services working with the model that
   is most convenient for your business. From managing a project from start to finish to 
   providing the necessary talent to complete your team, we guarantee the most efficient
   workflow and exceptional results.`;
+
   return (
     <div>
       <TopBar />
       <NavigationBar />
       <Hero
-        title="Services"
-        subTitle="We can help you build your digital journey"
-        backgroundImage="imagen-for-hero.png"
+        title="Project-Based Model Services"
+        subTitle="Let us take care of your next technology project"
+        backgroundImage="hero-for-profile-manage-teams.png"
         backgroundColor={{ background: 'transparent' }}
+        size="lg"
+        color="#000000"
       />
-      <div className="mt-4 pt-4">
-        <IntroText text={textForIntro} />
-      </div>
-      <div className="mt-4 pt-4">
-        <Container>
-          <h4 className="text-center pb-4">What we offer</h4>
-          <Row>
-            <Col xs={12} md={4}>
-              <CardWithOutBorder 
-                title="Staff Augmentation"
-                description="Obtain the extra talent you need to make your next technology project a success"
-                image="img-card-without-border.png"
-                link="/"
-              />
-            </Col>
-            <Col xs={12} md={4}>
-              <CardWithOutBorder 
-                title="Staff Augmentation"
-                description="Obtain the extra talent you need to make your next technology project a success"
-                image="img-card-without-border.png"
-                link="/"
-              />
-            </Col>
-            <Col xs={12} md={4}>
-              <CardWithOutBorder 
-                title="Staff Augmentation"
-                description="Obtain the extra talent you need to make your next technology project a success"
-                image="img-card-without-border.png"
-                link="/"
-              />
-            </Col>
-          </Row>          
-        </Container>
-      </div>
       <div className="mt-4 pt-4">
         <IntroText text={textForIntro} />
       </div>
@@ -112,23 +77,12 @@ export default function ServicePage(): React.ReactElement {
           </Col>
         </Row>
       </Container>
-      <BannerVideo
-        title="What set us apart"
-        description="Para lograr que estas transacciones sean realizadas debemos integrar
-        su sitio de comercio electrónico
-        con un gateway de pago."
-        urlPosterVideo="https://as01.epimg.net/showroom/imagenes/2019/08/27/portada/1566912669_925189_1566913002_noticia_normal_recorte1.jpg"
-        urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
-        backgroundColor={{ background: '#f9fafb' }}
-      />
-      <Container className="mt-4 pt-4 pb-4">
-        <h4>Clients</h4>
-      </Container>
-      <BannerForm 
-        title="Let's work together!"
-        subtitle="We are ready to help you."
-        backgroundColor={{ background: '#f9fafb' }}
-        buttonText="Send"
+      <BannerAdvertising 
+        title="Ready to execute effective technology solutions?"
+        buttonText="Let’s talk !"
+        colorTitle={{ color: 'white' }}
+        backgroundImage="test-banner-advertising.png"
+        backgroundColor={{ background: 'transparent' }}
       />
       <Footer
         logo="logo-rootstack.png"
@@ -136,5 +90,5 @@ export default function ServicePage(): React.ReactElement {
         socialIconList={[]}
       />
     </div>
-  ); 
-}
+  );
+};
