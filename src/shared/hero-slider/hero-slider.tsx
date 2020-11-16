@@ -13,6 +13,7 @@ export default function HeroSlider({ list }: HeroList): React.ReactElement {
         subTitle={heroInfo.subTitle}
         backgroundImage={heroInfo.backgroundImage}
         backgroundColor={heroInfo.backgroundColor}
+        size={heroInfo.size}
       />
     </Carousel.Item>
   ));

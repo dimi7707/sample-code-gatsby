@@ -13,7 +13,7 @@ export default function Card({
     <div className="card">
       <ImageProvider className="card-image" fileName={image} alt={title} />
       <h5 className="card-title text-center pt-2">{title}</h5>
-      <div className="card-content text-center">
+      <div className="card-content text-center pb-1">
         <p className="card-description p-2">{description}</p>
         <a href={link} className="card-link">
           <span>
