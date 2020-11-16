@@ -9,6 +9,7 @@ import CardWithOutBorder from '@shared/card/card--without-border';
 import Card from '@shared/card/card';
 import Banner from '@shared/banner/banner';
 import BannerForm from '@shared/banner-form/banner-form';
+import BannerVideo from '@shared/banner-video/banner-video';
 import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
@@ -110,6 +111,18 @@ export default function ServicePage(): React.ReactElement {
             />
           </Col>
         </Row>
+      </Container>
+      <BannerVideo
+        title="What set us apart"
+        description="Para lograr que estas transacciones sean realizadas debemos integrar
+        su sitio de comercio electrónico
+        con un gateway de pago."
+        urlPosterVideo="https://as01.epimg.net/showroom/imagenes/2019/08/27/portada/1566912669_925189_1566913002_noticia_normal_recorte1.jpg"
+        urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
+        backgroundColor={{ background: '#f9fafb' }}
+      />
+      <Container className="mt-4 pt-4 pb-4">
+        <h4>Clients</h4>
       </Container>
       <BannerForm 
         title="Let's work together!"

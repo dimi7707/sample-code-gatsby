@@ -10,11 +10,7 @@ import './footer.scss';
 export default function Footer({
   logo, backgroundColor, socialIconList
 }: FooterProps): React.ReactElement {
-  const socialIcons = socialIconList.map((icon: SocialIconProps) => (
-    <a href={icon.link} key={`social-${icon.icon}`}>
-      <ImageProvider fileName={icon.icon} className="" alt="" />
-    </a>
-  ));
+  const socialIcons = ""; 
   return (
     <footer className="footer pt-4" style={backgroundColor}>
       <Container className="container-fluid text-center text-md-left">
