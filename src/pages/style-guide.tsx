@@ -20,7 +20,7 @@ import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
-import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
+import BannerAdvertising from '@shared/banner/banner-advertising';
 
 import '@styles/base.scss';
 
@@ -504,7 +504,7 @@ export default function StyleGuidePage(): React.ReactElement {
       />
 
       <div className="custom-divider" />
-      <h1>Banner advertising</h1>
+      <h4>Banner advertising</h4>
       <BannerAdvertising
         title="Ready to execute effective technology solutions?"
         buttonText="Let’s talk!"
