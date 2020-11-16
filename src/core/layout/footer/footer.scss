@@ -1,0 +1,30 @@
+@import '@styles/_variables.scss';
+
+footer {
+  img {
+    max-width: 200px;
+    max-height: 100px;
+  }
+
+  .footer-text-copyright {
+    color: $blue-text-copyright;
+  }
+
+  h5 {
+    color: $white;
+  }
+
+  ul {
+    margin-left: 0;
+    li {
+      color: $blue-text-copyright;
+      font-size: .79em;
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    color: $blue-text-copyright;
+    font-size: .79em;
+  }
+}

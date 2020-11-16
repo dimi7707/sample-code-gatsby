@@ -21,6 +21,7 @@ import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
 import BannerForm from '@shared/banner-form/banner-form';
+import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
 
@@ -48,6 +49,13 @@ export default function StyleGuidePage(): React.ReactElement {
       subTitle: 'I am subtitle 3',
       backgroundImage: 'imagen-for-hero.png',
       backgroundColor: { backgroundColor: 'red' }
+    }
+  ];
+
+  const socialIconList = [
+    {
+      icon: 'gatsby-icon.png',
+      link: '/'
     }
   ];
 
@@ -536,7 +544,14 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
       <div className="custom-divider" />
+      <h1>Footer</h1>
+      <Footer
+        logo="logo-rootstack.png"
+        backgroundColor={{ background: '#04182e' }}
+        socialIconList={socialIconList}
+      />
     </Container>
   );
 }
