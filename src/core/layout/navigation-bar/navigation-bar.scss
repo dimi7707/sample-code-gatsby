@@ -1,0 +1,10 @@
+@import '@styles/_variables.scss';
+
+.navigation-bar {
+  background-color: $white;
+
+  .navbar-small-logo {
+    max-width: 200px;
+    height: auto;
+  }
+}
