@@ -7,6 +7,8 @@ import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import Banner from '@shared/banner/banner';
 import Card from '@shared/card/card';
+import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
+import Footer from '@core/layout/footer/footer';
 
 export default function ProfileManageTeams(): React.ReactElement {
   const textForIntro = `We provide end-to-end development services working with the model that
@@ -77,6 +79,18 @@ export default function ProfileManageTeams(): React.ReactElement {
           </Col>
         </Row>
       </Container>
+      <BannerAdvertising 
+        title="Ready to execute effective technology solutions?"
+        buttonText="Let’s talk !"
+        colorTitle={{ color: 'white' }}
+        backgroundImage="test-banner-advertising.png"
+        backgroundColor={{ background: 'transparent' }}
+      />
+      <Footer
+        logo="logo-rootstack.png"
+        backgroundColor={{ background: '#04182e' }}
+        socialIconList={[]}
+      />
     </div>
   );
 }
