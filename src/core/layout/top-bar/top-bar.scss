@@ -1,0 +1,19 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '@styles/_variables.scss';
+
+.navbar.top-bar {
+  @include media-breakpoint-up(lg) {
+    border-bottom: .1px solid $grey-divider;
+  }
+
+  .nav-link {
+    padding: 1rem;
+  }
+
+  .nav-link.active {
+    background-color: $orange-arrow;
+  }
+}

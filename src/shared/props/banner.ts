@@ -3,5 +3,5 @@ export type BannerProps = {
   altImage: string;
   text: string;
   buttonText: string;
-  imageToLeft: boolean;
+  imageToLeft?: boolean;
 };

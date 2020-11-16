@@ -13,6 +13,9 @@ import {
 
 import SEO from '@core/seo/seo';
 
+import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
+import TopBar from '@core/layout/top-bar/top-bar';
+
 import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
@@ -421,7 +424,12 @@ export default function StyleGuidePage(): React.ReactElement {
       </Alert>
 
       <div className="custom-divider" />
-      <h1>Components</h1>
+      <h1>Navigation bar</h1>
+      <NavigationBar />
+
+      <div className="custom-divider" />
+      <h1>Top bar</h1>
+      <TopBar />
 
       <div className="custom-divider" />
       <h1>Hero</h1>
@@ -460,9 +468,11 @@ export default function StyleGuidePage(): React.ReactElement {
         backgroundImage="imagen-for-hero.png"
         backgroundColor={{ background: 'red' }}
       />
+
       <div className="custom-divider" />
       <h1>Hero Slider</h1>
       <HeroSlider list={heroList} />
+
       <div className="custom-divider" />
       <h1>Banner</h1>
       <h4>Default (Image to left)</h4>
@@ -473,15 +483,16 @@ export default function StyleGuidePage(): React.ReactElement {
         imageToLeft
         buttonText="Let's to talk"
       />
+
       <div className="custom-divider" />
       <h4>Image to right</h4>
       <Banner
         image="img-test-banner.jpg"
         altImage="Banner image"
         text="Soy el texto del banner, esto solo es una prueba del componente"
-        imageToLeft={false}
         buttonText="Let's to talk"
       />
+
       <div className="custom-divider" />
       <h1>Boxes</h1>
       <h4>Default box (logo) </h4>
@@ -499,6 +510,7 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType={false} title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
       <div className="custom-divider" />
       <h4>Box with icon an title</h4>
       <Row>
