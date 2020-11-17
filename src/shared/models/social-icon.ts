@@ -1,4 +1,4 @@
-export type SocialIconProps = {
+export type SocialIcon = {
   icon: string;
   link: string;
 };
