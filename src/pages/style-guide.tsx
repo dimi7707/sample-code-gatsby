@@ -23,6 +23,7 @@ import Banner from '@shared/banner/banner';
 import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
+import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
 
@@ -577,7 +578,10 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
       <div className="custom-divider" />
+      <h1>Footer</h1>
+      <Footer />
     </Container>
   );
 }
