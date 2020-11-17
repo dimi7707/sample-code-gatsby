@@ -12,4 +12,23 @@ $default-color-banner-title: $white;
       color: $default-color-banner-title;
     }
   }
+
+  &-form {
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    .form-group {
+      label { 
+        color: $dark-blue-variant;
+        font-size: .7em !important;
+      
+        span {
+          color: $red-required-field;
+          padding-left: .3em;
+          font-size: 1em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

@@ -4,12 +4,12 @@ import { Container } from 'react-bootstrap';
 import ImageProvider from '@core/providers/image/image-provider';
 import { WhatYouSeeWhatYouGetProps } from '@props/what-you-see-what-you-get';
 
-WhatYouSeeWhatYouGet.defaultProps = {
+WYSWYG.defaultProps = {
   imageToRight: false,
   backgroundColor: { background: 'transparent' }
 };
 
-export default function WhatYouSeeWhatYouGet({
+export default function WYSWYG({
   title, textContent, image, imageToRight, backgroundColor
 }: WhatYouSeeWhatYouGetProps): React.ReactElement {
   const defaultClassImage = `${imageToRight ? 'order-3' : 'order-1'} w-50`;
