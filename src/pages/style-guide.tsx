@@ -21,6 +21,7 @@ import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
 import BannerAdvertising from '@shared/banner/banner-advertising';
+import WhatYouSeeWhatYouGet from '@shared/what-you-see-what-you-get/what-you-see-what-you-get';
 
 import '@styles/base.scss';
 
@@ -511,6 +512,18 @@ export default function StyleGuidePage(): React.ReactElement {
         backgroundImage="test-banner-advertising.png"
       />
 
+      <div className="custom-divider" /> 
+      <div className="pt-4 pb-4">
+        <h4 className="mt-4">What you see what you get</h4>
+        <WhatYouSeeWhatYouGet 
+          title="I am title"
+          textContent="probando......... sdkajdhkajhd"
+          image="img-test-banner.jpg"
+          backgroundColor={{ background: 'white' }}
+          imageToRight
+        />
+      </div>
+
       <div className="custom-divider" />
       <h1>Boxes</h1>
       <h4>Default box (logo) </h4>
@@ -545,6 +558,7 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
       <div className="custom-divider" />
     </Container>
   );
