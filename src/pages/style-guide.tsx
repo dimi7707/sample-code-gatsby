@@ -17,9 +17,10 @@ import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import TopBar from '@core/layout/top-bar/top-bar';
 
 import Hero from '@shared/hero/hero';
-import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
+import Banner from '@shared/banner/banner';
+import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 
 import '@styles/base.scss';
@@ -504,6 +505,29 @@ export default function StyleGuidePage(): React.ReactElement {
       />
 
       <div className="custom-divider" />
+      <h1>Banner with video (default) </h1>
+      <BannerVideo
+        title="What set us apart"
+        description="Para lograr que estas transacciones sean realizadas debemos integrar
+        su sitio de comercio electrónico
+        con un gateway de pago."
+        urlPosterVideo="https://as01.epimg.net/showroom/imagenes/2019/08/27/portada/1566912669_925189_1566913002_noticia_normal_recorte1.jpg"
+        urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
+        backgroundColor={{ background: '#f9fafb' }}
+      />
+
+      <div className="custom-divider" />
+      <h4>Banner variant (video to right)</h4>
+      <BannerVideo
+        title="What set us apart"
+        description="Para lograr que estas transacciones sean realizadas debemos integrar
+        su sitio de comercio electrónico
+        con un gateway de pago."
+        urlPosterVideo="https://as01.epimg.net/showroom/imagenes/2019/08/27/portada/1566912669_925189_1566913002_noticia_normal_recorte1.jpg"
+        urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
+        backgroundColor={{ background: '#f9fafb' }}
+        videoToLeft={false}
+      />
       <h4>Banner advertising</h4>
       <BannerAdvertising
         title="Ready to execute effective technology solutions?"
