@@ -9,21 +9,30 @@ import { FooterProps } from '@props/footer';
 
 import './footer.scss';
 
-export default function Footer({
-  logo, backgroundColor, socialIconList
-}: FooterProps): React.ReactElement {
-  const socialIcons = socialIconList.map((icon: SocialIconProps) => (
+export default function Footer(): React.ReactElement {
+  const footerData = {
+    logo: 'logo-rootstack.png',
+    backgroundColor: { background: '#04182e' },
+    socialIconList: [
+      {
+        icon: 'gatsby-icon.png',
+        link: '/'
+      }
+    ]
+  } as FooterProps;
+
+  const socialIcons = footerData.socialIconList.map((icon: SocialIconProps) => (
     <a href={icon.link} key={`social-${icon.icon}`}>
       <ImageProvider fileName={icon.icon} className="" alt="" />
     </a>
   ));
 
   return (
-    <footer className="footer pt-4" style={backgroundColor}>
+    <footer className="footer pt-4" style={footerData.backgroundColor}>
       <Container className="container-fluid text-center text-md-left">
         <Row>
           <Col className="col-md-6 mt-md-0 mt-3">
-            <ImageProvider fileName={logo} className="" alt="" />
+            <ImageProvider fileName={footerData.logo} className="" alt="" />
             <div className="footer-social-icons">
               {socialIcons}
             </div>
