@@ -1,0 +1,12 @@
+@import '@styles/_variables.scss';
+
+.quote-type-text-slider {
+  height: 350px;
+  
+  .carousel-indicators {
+    li {
+      background-color: $orange-variant;
+      
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '@styles/_variables.scss';
+
+.text {
+
+  &-quote-type-text {
+    .text-quote-type-text-marks {
+      font-size: 100px;
+      color: $light-orange;
+      padding: 0;
+      margin: 0;
+      line-height: 100px;
+    }
+
+    .text-quote-type-text-author {
+      color: $color-typography-header;
+      font-weight: bold;
+    }
+
+    .text-quote-type-text-position {
+      font-weight: bold;
+      color: $color-primary-button;
+    }
+  }
+
+}

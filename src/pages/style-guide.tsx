@@ -21,6 +21,7 @@ import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
 import BannerAdvertising from '@shared/banner/banner-advertising';
+import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 
 import '@styles/base.scss';
 
@@ -48,6 +49,24 @@ export default function StyleGuidePage(): React.ReactElement {
       subTitle: 'I am subtitle 3',
       backgroundImage: 'imagen-for-hero.png',
       backgroundColor: { backgroundColor: 'red' }
+    }
+  ];
+
+  const quoteTypeTextList = [
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
     }
   ];
 
@@ -545,7 +564,12 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
       <div className="custom-divider" />
+      <h4>Quote type text Slider</h4>
+      <QuoteTypeTextSlider
+        list={quoteTypeTextList}
+      />
     </Container>
   );
 }
