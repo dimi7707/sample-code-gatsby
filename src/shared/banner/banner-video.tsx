@@ -1,6 +1,9 @@
 import React from 'react';
 
 import { BannerVideoProps } from '@props/banner-video';
+import { Container } from 'react-bootstrap';
+
+import './banner.scss';
 
 BannerVideo.defaultProps = {
   videoToLeft: true,
@@ -21,8 +24,8 @@ export default function BannerVideo({
   const defaultClassBannerVideo = `${videoToLeft ? 'order-1 pr-2' : 'order-3 pl-2'} w-100`;
 
   return (
-    <div className="container d-flex banner-video" style={backgroundColor}>
-      <div className={`${defaultClassBannerVideo} banner-video-video`}>
+    <Container className="banner d-flex" style={backgroundColor}>
+      <div className={`${defaultClassBannerVideo}`}>
         <video
           poster={urlPosterVideo}
           width={widthVideo || BannerVideo.defaultProps.widthVideo}
@@ -33,10 +36,10 @@ export default function BannerVideo({
           <track kind="captions" />
         </video>
       </div>
-      <div className="banner-video-text my-auto mx-auto order-2">
+      <div className="my-auto mx-auto order-2">
         <h4>{title}</h4>
         <p className="body-2">{description}</p>
       </div>
-    </div>
+    </Container>
   );
 }
