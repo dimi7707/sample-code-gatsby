@@ -20,6 +20,7 @@ import Hero from '@shared/hero/hero';
 import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
+import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
@@ -62,240 +63,250 @@ export default function StyleGuidePage(): React.ReactElement {
     <Container>
       <SEO title="Home" />
       <h1>Typography</h1>
-      <Table className="custom-table-style-guide">
-        <thead>
-          <tr>
-            <th>
-              <Badge variant="secondary" className="custom-badge-header">Type</Badge>
-            </th>
-            <th>
-              <Badge variant="secondary" className="custom-badge-header">Preview</Badge>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <h2 className="pt-4 pl-2">Aa</h2>
-              <h3 className="pl-2">Roboto</h3>
-            </td>
-            <td>
-              <p className="big-typography">
-                Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Ñn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-              </p>
-              <p className="big-typography">1234567890 !@#$%^&()</p>
-              <p className="standard-typography">
-                The settings are more understandable and the Odoo warnings are now integrated into
-                the Odoobot. In the configuration, we find the documentation corresponding to each
-                setting with a practical link and the permissions can be changed in the
-                corresponding module. There are countless changes in the functions of each module.
-              </p>
-            </td>
-          </tr>
-        </tbody>
-      </Table>
-
+      <Row>
+        <Col>
+          <Table className="custom-table-style-guide">
+            <thead>
+              <tr>
+                <th>
+                  <Badge variant="secondary" className="custom-badge-header">Type</Badge>
+                </th>
+                <th>
+                  <Badge variant="secondary" className="custom-badge-header">Preview</Badge>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h2 className="pt-4 pl-2">Aa</h2>
+                  <h3 className="pl-2">Roboto</h3>
+                </td>
+                <td>
+                  <p className="big-typography">
+                    Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Ñn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+                  </p>
+                  <p className="big-typography">1234567890 !@#$%^&()</p>
+                  <p className="standard-typography">
+                    The settings are more understandable and the Odoo warnings are now integrated
+                    intothe Odoobot. In the configuration, we find the documentation corresponding
+                    to each setting with a practical link and the permissions can be changed in
+                    the corresponding module. There are countless changes in the functions of each
+                    module.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
       <div className="custom-divider" />
 
       <h1>Font size</h1>
-      <Table className="custom-table-style-guide">
-        <thead>
-          <tr>
-            <th>
-              <Badge variant="secondary" className="customBadgeHeader">Title</Badge>
-            </th>
-            <th>
-              <Badge variant="secondary" className="customBadgeHeader">Class name / tag</Badge>
-            </th>
-            <th>
-              <Badge variant="secondary" className="customBadgeHeader">Preview</Badge>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <h1>H1</h1>
-            </td>
-            <td>.h1 / h1</td>
-            <td>
-              <h1>How Can Software Development</h1>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h2>H2</h2>
-            </td>
-            <td>.h2 / h2</td>
-            <td>
-              <h2>How Can Software Development</h2>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h3>H3</h3>
-            </td>
-            <td>.h3 / h3</td>
-            <td>
-              <h3>How Can Software Development</h3>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h4>H4</h4>
-            </td>
-            <td>.h4 / h4</td>
-            <td>
-              <h4>How Can Software Development</h4>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h5>H5</h5>
-            </td>
-            <td>.h5 / h5</td>
-            <td>
-              <h5>How Can Software Development</h5>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h6>H6</h6>
-            </td>
-            <td>.h6 / h6</td>
-            <td>
-              <h6>How Can Software Development</h6>
-            </td>
-          </tr>
-          <tr>
-            <td>Body 1</td>
-            <td>.body-1</td>
-            <td>
-              <div className="body-1">
-                The settings are more understandable and the Odoo warnings are now integrated into
-                the Odoobot. In the configuration, we find the documentation corresponding to each
-                setting with a practical link and the permissions can be changed in the
-                corresponding module. There are countless changes in the functions of each module.
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Body 2</td>
-            <td>.body-2</td>
-            <td>
-              <div className="body-2">
-                The settings are more understandable and the Odoo warnings are now integrated into
-                the Odoobot. In the configuration, we find the documentation corresponding to each
-                setting with a practical link and the permissions can be changed in the
-                corresponding module. There are countless changes in the functions of each module.
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Body 3</td>
-            <td>.body-3</td>
-            <td>
-              <div className="body-3">
-                The settings are more understandable and the Odoo warnings are now integrated into
-                the Odoobot. In the configuration, we find the documentation corresponding to each
-                setting with a practical link and the permissions can be changed in the
-                corresponding module. There are countless changes in the functions of each module.
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Body 4</td>
-            <td>.body-4</td>
-            <td>
-              <div className="body-4">
-                The settings are more understandable and the Odoo warnings are now integrated into
-                the Odoobot.
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </Table>
+      <Row>
+        <Col>
+          <Table className="custom-table-style-guide">
+            <thead>
+              <tr>
+                <th>
+                  <Badge variant="secondary" className="customBadgeHeader">Title</Badge>
+                </th>
+                <th>
+                  <Badge variant="secondary" className="customBadgeHeader">Class name / tag</Badge>
+                </th>
+                <th>
+                  <Badge variant="secondary" className="customBadgeHeader">Preview</Badge>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h1>H1</h1>
+                </td>
+                <td>.h1 / h1</td>
+                <td>
+                  <h1>How Can Software Development</h1>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2>H2</h2>
+                </td>
+                <td>.h2 / h2</td>
+                <td>
+                  <h2>How Can Software Development</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>H3</h3>
+                </td>
+                <td>.h3 / h3</td>
+                <td>
+                  <h3>How Can Software Development</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>H4</h4>
+                </td>
+                <td>.h4 / h4</td>
+                <td>
+                  <h4>How Can Software Development</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h5>H5</h5>
+                </td>
+                <td>.h5 / h5</td>
+                <td>
+                  <h5>How Can Software Development</h5>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h6>H6</h6>
+                </td>
+                <td>.h6 / h6</td>
+                <td>
+                  <h6>How Can Software Development</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>Body 1</td>
+                <td>.body-1</td>
+                <td>
+                  <div className="body-1">
+                    The settings are more understandable and the Odoo warnings are now integrated
+                    into the Odoobot. In the configuration, we find the documentation
+                    corresponding to each setting with a practical link and the permissions can be
+                    changed in the corresponding module. There are countless changes in the
+                    functions of each module.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Body 2</td>
+                <td>.body-2</td>
+                <td>
+                  <div className="body-2">
+                    The settings are more understandable and the Odoo warnings are now integrated
+                    into the Odoobot. In the configuration, we find the documentation
+                    corresponding to each setting with a practical link and the permissions can be
+                    changed in the corresponding module. There are countless changes in the
+                    functions of each module.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Body 3</td>
+                <td>.body-3</td>
+                <td>
+                  <div className="body-3">
+                    The settings are more understandable and the Odoo warnings are now integrated
+                    into the Odoobot. In the configuration, we find the documentation
+                    corresponding to each setting with a practical link and the permissions can
+                    be changed in the corresponding module. There are countless changes in the
+                    functions of each module.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Body 4</td>
+                <td>.body-4</td>
+                <td>
+                  <div className="body-4">
+                    The settings are more understandable and the Odoo warnings are now integrated\
+                    into the Odoobot.
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
       <div className="custom-divider" />
 
       <h1>Colors</h1>
-      <Container>
-        <Row>
-          <Col xs={12} md={4}>
-            <p className="body-2">Primary colors</p>
-            <ul className="horizontal-list">
-              <li>
-                <div className="frame-colors background-color-primary">#fa8f04</div>
-              </li>
-              <li>
-                <div className="frame-colors background-color-secondary">#1466b4</div>
-              </li>
-              <li>
-                <div className="frame-colors background-color-tertiary">#0a233c</div>
-              </li>
-            </ul>
-          </Col>
-          <Col xs={12} md={8}>
-            <p className="body-2">Secondary colors</p>
-            <ul className="horizontal-list">
-              <li>
-                <div className="frame-colors-secondary background-color-light-blue-1">#bdd9f0</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-light-blue-2">#e6edf3</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-melon">#fecfa2</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-light-orange text-white">#faaa5e</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-orange text-white">#e38000</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-green-apple text-white">#5cc70c</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-blue-alternative text-white">#3582cb</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-dark-blue text-white">#114b83</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-water-blue">#ddf4de</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-dark-green text-white">#177b1d</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-beige">#fef3f5</div>
-              </li>
-              <li>
-                <div className="frame-colors-secondary background-color-pink text-white">#e14a63</div>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-        <p className="body-2">Grey scale</p>
-        <Row>
-          <Col xs={12} md={8}>
-            <ul className="horizontal-list">
-              <li>
-                <div className="frame-grey-scale background-color-body text-white">#353535</div>
-              </li>
-              <li>
-                <div className="frame-grey-scale background-color-warn-grey text-white">#757272</div>
-              </li>
-              <li>
-                <div className="frame-grey-scale background-color-soft-grey">#e2e2e2</div>
-              </li>
-              <li>
-                <div className="frame-grey-scale background-color-soft-grey-variant">#ecedf1</div>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
+      <Row>
+        <Col xs={12} md={4}>
+          <p className="body-2">Primary colors</p>
+          <ul className="horizontal-list">
+            <li>
+              <div className="frame-colors background-color-primary">#fa8f04</div>
+            </li>
+            <li>
+              <div className="frame-colors background-color-secondary">#1466b4</div>
+            </li>
+            <li>
+              <div className="frame-colors background-color-tertiary">#0a233c</div>
+            </li>
+          </ul>
+        </Col>
+        <Col xs={12} md={8}>
+          <p className="body-2">Secondary colors</p>
+          <ul className="horizontal-list">
+            <li>
+              <div className="frame-colors-secondary background-color-light-blue-1">#bdd9f0</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-light-blue-2">#e6edf3</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-melon">#fecfa2</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-light-orange text-white">#faaa5e</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-orange text-white">#e38000</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-green-apple text-white">#5cc70c</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-blue-alternative text-white">#3582cb</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-dark-blue text-white">#114b83</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-water-blue">#ddf4de</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-dark-green text-white">#177b1d</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-beige">#fef3f5</div>
+            </li>
+            <li>
+              <div className="frame-colors-secondary background-color-pink text-white">#e14a63</div>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+      <p className="body-2">Grey scale</p>
+      <Row>
+        <Col xs={12} md={8}>
+          <ul className="horizontal-list">
+            <li>
+              <div className="frame-grey-scale background-color-body text-white">#353535</div>
+            </li>
+            <li>
+              <div className="frame-grey-scale background-color-warn-grey text-white">#757272</div>
+            </li>
+            <li>
+              <div className="frame-grey-scale background-color-soft-grey">#e2e2e2</div>
+            </li>
+            <li>
+              <div className="frame-grey-scale background-color-soft-grey-variant">#ecedf1</div>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+
       <div className="custom-divider" />
       <h1>Buttons</h1>
       <p className="body-1">
@@ -498,6 +509,14 @@ export default function StyleGuidePage(): React.ReactElement {
         altImage="Banner image"
         text="Soy el texto del banner, esto solo es una prueba del componente"
         buttonText="Let's to talk"
+      />
+
+      <div className="custom-divider" />
+      <h4>Banner advertising</h4>
+      <BannerAdvertising
+        title="Ready to execute effective technology solutions?"
+        buttonText="Let’s talk!"
+        backgroundImage="test-banner-advertising.png"
       />
 
       <div className="custom-divider" />

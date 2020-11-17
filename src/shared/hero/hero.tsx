@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 
 import { HeroProps } from '@props/hero';
+import getSourceImage from '@shared/utility/get-source-image';
 
 import './hero.scss';
 
@@ -10,25 +11,6 @@ Hero.defaultProps = {
   color: 'text-white',
   size: 'md',
   link: undefined
-};
-
-const getSourceImage = (fileName: string) => {
-  const { allImageSharp } = useStaticQuery(graphql`
-    query {
-      allImageSharp {
-        nodes {
-          fluid(maxWidth: 1800) {
-            originalName
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
-
-  const { fluid } = allImageSharp.nodes.find((node) => node.fluid.originalName === fileName);
-
-  return fluid;
 };
 
 export default function Hero({
