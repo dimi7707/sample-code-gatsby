@@ -11,8 +11,8 @@ WhatYouSeeWhatYouGet.defaultProps = {
 
 export default function WhatYouSeeWhatYouGet({
   title, textContent, image, imageToRight, backgroundColor
-}: WhatYouSeeWhatYouGetProps): React.ReactElement{
-  const defaultClassImage = `${imageToRight ? 'order-3' : 'order-1'} w-50`; 
+}: WhatYouSeeWhatYouGetProps): React.ReactElement {
+  const defaultClassImage = `${imageToRight ? 'order-3' : 'order-1'} w-50`;
 
   return (
     <div style={backgroundColor}>
@@ -27,4 +27,4 @@ export default function WhatYouSeeWhatYouGet({
       </Container>
     </div>
   );
-};
+}

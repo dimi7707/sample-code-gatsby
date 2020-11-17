@@ -512,10 +512,10 @@ export default function StyleGuidePage(): React.ReactElement {
         backgroundImage="test-banner-advertising.png"
       />
 
-      <div className="custom-divider" /> 
+      <div className="custom-divider" />
       <div className="pt-4 pb-4">
         <h4 className="mt-4">What you see what you get</h4>
-        <WhatYouSeeWhatYouGet 
+        <WhatYouSeeWhatYouGet
           title="I am title"
           textContent="probando......... sdkajdhkajhd"
           image="img-test-banner.jpg"
