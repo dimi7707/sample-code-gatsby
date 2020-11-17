@@ -23,6 +23,7 @@ import Banner from '@shared/banner/banner';
 import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
+import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
@@ -51,6 +52,24 @@ export default function StyleGuidePage(): React.ReactElement {
       subTitle: 'I am subtitle 3',
       backgroundImage: 'imagen-for-hero.png',
       backgroundColor: { backgroundColor: 'red' }
+    }
+  ];
+
+  const quoteTypeTextList = [
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
     }
   ];
 
@@ -580,6 +599,11 @@ export default function StyleGuidePage(): React.ReactElement {
       </Row>
 
       <div className="custom-divider" />
+      <h4>Quote type text Slider</h4>
+      <QuoteTypeTextSlider
+        list={quoteTypeTextList}
+      />
+
       <h1>Footer</h1>
       <Footer />
     </Container>
