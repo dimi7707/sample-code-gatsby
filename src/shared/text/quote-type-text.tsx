@@ -14,7 +14,6 @@ export default function QuoteTypeText({
       <p className="body-2 mx-auto w-50 pb-4">{`"${quote}"`}</p>
       <span className="text-quote-type-text-author">{author}</span>
       <span className="text-quote-type-text-position">{position}</span>
-
     </div>
   );
 }
