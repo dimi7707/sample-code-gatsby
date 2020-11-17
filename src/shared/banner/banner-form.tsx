@@ -5,14 +5,14 @@ import {
 
 import { BannerFormProps } from '@props/banner-form';
 
-import './banner-form.scss';
+import './banner.scss';
 
 export default function BannerForm({
   title, subtitle, backgroundColor, buttonText
 }: BannerFormProps): React.ReactElement {
   return (
-    <div className="banner-form" style={backgroundColor}>
-      <Container className="pt-4 pb-4">
+    <div className="banner banner-form" style={backgroundColor}>
+      <Container>
         <Row>
           <Col xs={12} md={2} />
           <Col xs={12} md={4}>

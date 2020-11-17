@@ -20,7 +20,7 @@ import Hero from '@shared/hero/hero';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
 import Banner from '@shared/banner/banner';
-import BannerForm from '@shared/banner-form/banner-form';
+import BannerForm from '@shared/banner/banner-form';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 
 import '@styles/base.scss';
