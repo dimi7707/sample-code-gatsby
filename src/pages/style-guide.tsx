@@ -20,6 +20,7 @@ import Hero from '@shared/hero/hero';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
 import Banner from '@shared/banner/banner';
+import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 
@@ -505,6 +506,13 @@ export default function StyleGuidePage(): React.ReactElement {
       />
 
       <div className="custom-divider" />
+      <h1>Banner Form</h1>
+      <BannerForm
+        title="Let's work together"
+        subtitle="We are ready to help you."
+        backgroundColor={{ background: '#f9fafb' }}
+        buttonText="Send"
+      />
       <h1>Banner with video (default) </h1>
       <BannerVideo
         title="What set us apart"
