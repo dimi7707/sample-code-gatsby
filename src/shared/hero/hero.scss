@@ -1,3 +1,6 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
 @import '@styles/_variables.scss';
 
 $default-bg-color: $dark-blue;
@@ -12,9 +15,17 @@ $hero-height-lg: 500px;
 
   &.lg {
     height: $hero-height-lg;
+  }
 
+  @include media-breakpoint-up(sm) { 
     .hero-content {
       width: 50%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    .hero-content {
+      width: 100%;
     }
   }
 }
