@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'; 
+import { Container, Row, Col } from 'react-bootstrap';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
@@ -43,7 +43,7 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
         <h4 className="text-center pb-4">Success stories</h4>
         <Row>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -51,7 +51,7 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -59,7 +59,7 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -67,7 +67,7 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -76,7 +76,7 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
           </Col>
         </Row>
       </Container>
-      <BannerAdvertising 
+      <BannerAdvertising
         title="Ready to execute effective technology solutions?"
         buttonText="Let’s talk !"
         colorTitle={{ color: 'white' }}
@@ -84,6 +84,6 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
         backgroundColor={{ background: 'transparent' }}
       />
       <Footer />
-    </div>    
+    </div>
   );
-};
+}

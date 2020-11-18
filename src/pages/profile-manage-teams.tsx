@@ -47,7 +47,7 @@ export default function ProfileManageTeams(): React.ReactElement {
         <h4 className="text-center pb-4">Success stories</h4>
         <Row>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -55,7 +55,7 @@ export default function ProfileManageTeams(): React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -63,7 +63,7 @@ export default function ProfileManageTeams(): React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -71,7 +71,7 @@ export default function ProfileManageTeams(): React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -95,15 +95,14 @@ export default function ProfileManageTeams(): React.ReactElement {
           <Box iconType title="Automatation" image="automatation.png" />
         </div>
       </Container>
-      <BannerAdvertising 
+      <BannerAdvertising
         title="Ready to execute effective technology solutions?"
         buttonText="Let’s talk !"
         colorTitle={{ color: 'white' }}
         backgroundImage="test-banner-advertising.png"
         backgroundColor={{ background: 'transparent' }}
       />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
-

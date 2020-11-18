@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'; 
+import { Container, Row, Col } from 'react-bootstrap';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
@@ -38,7 +38,7 @@ export default function ServicePage(): React.ReactElement {
           <h4 className="text-center pb-4">What we offer</h4>
           <Row>
             <Col xs={12} md={4}>
-              <CardWithOutBorder 
+              <CardWithOutBorder
                 title="Staff Augmentation"
                 description="Obtain the extra talent you need to make your next technology project a success"
                 image="img-card-without-border.png"
@@ -46,7 +46,7 @@ export default function ServicePage(): React.ReactElement {
               />
             </Col>
             <Col xs={12} md={4}>
-              <CardWithOutBorder 
+              <CardWithOutBorder
                 title="Staff Augmentation"
                 description="Obtain the extra talent you need to make your next technology project a success"
                 image="img-card-without-border.png"
@@ -54,14 +54,14 @@ export default function ServicePage(): React.ReactElement {
               />
             </Col>
             <Col xs={12} md={4}>
-              <CardWithOutBorder 
+              <CardWithOutBorder
                 title="Staff Augmentation"
                 description="Obtain the extra talent you need to make your next technology project a success"
                 image="img-card-without-border.png"
                 link="/"
               />
             </Col>
-          </Row>          
+          </Row>
         </Container>
       </div>
       <div className="mt-4 pt-4">
@@ -95,7 +95,7 @@ export default function ServicePage(): React.ReactElement {
         <h4 className="text-center pb-4">Success stories</h4>
         <Row>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -103,7 +103,7 @@ export default function ServicePage(): React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -111,7 +111,7 @@ export default function ServicePage(): React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -119,7 +119,7 @@ export default function ServicePage(): React.ReactElement {
             />
           </Col>
           <Col xs={12} md={3}>
-            <Card 
+            <Card
               title="Minfo"
               description="We built an innovative web app and a responsive website for KYC laws"
               image="img-for-succes-stories.png"
@@ -140,7 +140,7 @@ export default function ServicePage(): React.ReactElement {
       <Container className="mt-4 pt-4 pb-4">
         <h4>Clients</h4>
       </Container>
-      <BannerForm 
+      <BannerForm
         title="Let's work together!"
         subtitle="We are ready to help you."
         backgroundColor={{ background: '#f9fafb' }}
@@ -148,5 +148,5 @@ export default function ServicePage(): React.ReactElement {
       />
       <Footer />
     </div>
-  ); 
+  );
 }

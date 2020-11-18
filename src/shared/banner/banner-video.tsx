@@ -29,8 +29,7 @@ export default function BannerVideo({
           src={urlVideo}
           width={widthVideo || BannerVideo.defaultProps.widthVideo}
           height={heightVideo || BannerVideo.defaultProps.heightVideo}
-        >
-        </iframe>
+        />
       </div>
       <div className="mx-auto my-auto order-2">
         <h4>{title}</h4>
