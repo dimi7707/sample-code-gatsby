@@ -14,17 +14,20 @@ Banner.defaultProps = {
 export default function Banner({
   image, altImage, text, buttonText, imageToLeft
 }: BannerProps): React.ReactElement {
-  const bannerImageDefaultClass = `${imageToLeft ? 'order-1' : 'order-3'} w-100`;
+  const bannerImageDefaultClass = `${imageToLeft ? 'order-1 banner-image' : 'order-3 banner-image'}`;
+  const cardDefaultClass = `${ imageToLeft ? 
+    'order-2 my-auto ml-md-n5' : 
+    'order-2 my-auto mr-md-n5'}`;
 
   return (
-    <div className="banner d-flex">
+    <div className="banner banner-standard d-flex">
       <div className={bannerImageDefaultClass}>
-        <ImageProvider fileName={image} alt={altImage} className="banner-image" />
+        <ImageProvider fileName={image} alt={altImage} className="" />
       </div>
-      <Card className="order-2">
+      <Card className={cardDefaultClass}>
         <Card.Body>
           <Card.Text>{text}</Card.Text>
-          <Button variant="secondary" className="shadow-none float-right">
+          <Button variant="primary" className="shadow-none float-right text-white">
             {buttonText}
           </Button>
         </Card.Body>
