@@ -6,11 +6,12 @@
 
 .navbar.top-bar {
   @include media-breakpoint-up(lg) {
-    border-bottom: .1px solid $grey-divider;
+    border-bottom: .1px solid $soft-grey-divider;
   }
 
   .nav-link {
     padding: 1rem;
+    font-weight: 600;
   }
 
   .nav-link.active {

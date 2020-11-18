@@ -40,6 +40,7 @@ export default function HomePage(): React.ReactElement {
       size:"lg"
     }
   ];
+  
   return (
     <div>
       <TopBar />
