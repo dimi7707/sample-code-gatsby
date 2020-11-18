@@ -15,9 +15,9 @@ export default function Banner({
   image, altImage, text, buttonText, imageToLeft
 }: BannerProps): React.ReactElement {
   const bannerImageDefaultClass = `${imageToLeft ? 'order-1 banner-image' : 'order-3 banner-image'}`;
-  const cardDefaultClass = `${ imageToLeft ? 
-    'order-2 my-auto ml-md-n5' : 
-    'order-2 my-auto mr-md-n5'}`;
+  const cardDefaultClass = `${imageToLeft
+    ? 'order-2 my-auto ml-md-n5'
+    : 'order-2 my-auto mr-md-n5'}`;
 
   return (
     <div className="banner banner-standard d-flex">
