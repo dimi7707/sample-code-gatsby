@@ -13,7 +13,6 @@ BannerVideo.defaultProps = {
 export default function BannerVideo({
   title,
   description,
-  urlPosterVideo,
   urlVideo,
   backgroundColor,
   videoToLeft,
@@ -26,6 +25,7 @@ export default function BannerVideo({
     <div className="d-flex justify-content-center w-75 mx-auto" style={backgroundColor}>
       <div className={`${defaultClassBannerVideo}`}>
         <iframe
+          title={title}
           src={urlVideo}
           width={widthVideo || BannerVideo.defaultProps.widthVideo}
           height={heightVideo || BannerVideo.defaultProps.heightVideo}

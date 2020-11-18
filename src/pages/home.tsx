@@ -88,7 +88,6 @@ export default function HomePage(): React.ReactElement {
         description="Para lograr que estas transacciones sean realizadas debemos integrar
         su sitio de comercio electrónico
         con un gateway de pago."
-        urlPosterVideo="https://as01.epimg.net/showroom/imagenes/2019/08/27/portada/1566912669_925189_1566913002_noticia_normal_recorte1.jpg"
         urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
         backgroundColor={{ background: '#f9fafb' }}
       />
