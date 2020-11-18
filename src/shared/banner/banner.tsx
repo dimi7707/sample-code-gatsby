@@ -20,12 +20,12 @@ export default function Banner({
     ? 'order-2 my-auto text-white ml-md-n5 mb-md-0'
     : 'order-2 my-auto text-white mr-md-n5 mb-md-0'}`;
   const imgBackgroundCard = getSourceImage('bg-standard-banner.png');
-  const styleBackgroundCard = {  
+  const styleBackgroundCard = {
     backgroundImage: `url(${imgBackgroundCard.src})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'
   };
-  
+
   return (
     <div className="banner banner-standard d-flex">
       <div className={bannerImageDefaultClass}>
@@ -33,7 +33,7 @@ export default function Banner({
       </div>
       <Card className={cardDefaultClass} style={styleBackgroundCard}>
         <Card.Body>
-          <Card.Text className="w-75 text-white" >{text}</Card.Text>
+          <Card.Text className="w-75 text-white">{text}</Card.Text>
           <Button variant="primary" className="shadow-none text-white float-right">
             {buttonText}
           </Button>
