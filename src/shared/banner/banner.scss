@@ -38,6 +38,7 @@ $default-color-banner-title: $white;
 
   &-video {
     height: 350px;
+    
     .video-wrap {
       position:relative;
       padding-bottom: 55%;
@@ -57,6 +58,5 @@ $default-color-banner-title: $white;
       flex-direction: column;
       height: 550px;
     }
-
   }
 }
