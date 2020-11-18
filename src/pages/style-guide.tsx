@@ -17,13 +17,14 @@ import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import TopBar from '@core/layout/top-bar/top-bar';
 
 import Hero from '@shared/hero/hero';
-import Banner from '@shared/banner/banner';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
-import BannerForm from '@shared/banner-form/banner-form';
-import BannerVideo from '@shared/banner-video/banner-video';
+import Banner from '@shared/banner/banner';
+import BannerForm from '@shared/banner/banner-form';
+import BannerVideo from '@shared/banner/banner-video';
+import BannerAdvertising from '@shared/banner/banner-advertising';
+import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import Footer from '@core/layout/footer/footer';
-import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
 
 import '@styles/base.scss';
 
@@ -54,10 +55,21 @@ export default function StyleGuidePage(): React.ReactElement {
     }
   ];
 
-  const socialIconList = [
+  const quoteTypeTextList = [
     {
-      icon: 'gatsby-icon.png',
-      link: '/'
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: 'Es un gran equipo que realiza un enorme trabajo, muchas gracias.',
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
     }
   ];
 
@@ -514,7 +526,6 @@ export default function StyleGuidePage(): React.ReactElement {
       />
 
       <div className="custom-divider" />
-
       <h1>Banner Form</h1>
       <BannerForm
         title="Let's work together"
@@ -546,7 +557,7 @@ export default function StyleGuidePage(): React.ReactElement {
         videoToLeft={false}
       />
 
-      <h1>Banner advertising</h1>
+      <h4>Banner advertising</h4>
       <BannerAdvertising
         title="Ready to execute effective technology solutions?"
         buttonText="Let’s talk!"
@@ -581,12 +592,13 @@ export default function StyleGuidePage(): React.ReactElement {
       </div>
 
       <div className="custom-divider" />
-      <h1>Footer</h1>
-      <Footer
-        logo="logo-rootstack.png"
-        backgroundColor={{ background: '#04182e' }}
-        socialIconList={socialIconList}
+      <h4>Quote type text Slider</h4>
+      <QuoteTypeTextSlider
+        list={quoteTypeTextList}
       />
+
+      <h1>Footer</h1>
+      <Footer />
     </Container>
   );
 }

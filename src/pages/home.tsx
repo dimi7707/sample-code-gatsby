@@ -8,8 +8,8 @@ import IntroText from '@shared/text/intro-text';
 import CardWithOutBorder from '@shared/card/card--without-border';
 import Card from '@shared/card/card';
 import Banner from '@shared/banner/banner';
-import BannerVideo from '@shared/banner-video/banner-video';
-import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
+import BannerVideo from '@shared/banner/banner-video';
+import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
 export default function HomePage(): React.ReactElement {
@@ -144,11 +144,7 @@ export default function HomePage(): React.ReactElement {
         backgroundImage="test-banner-advertising.png"
         backgroundColor={{ background: 'transparent' }}
       />
-      <Footer
-        logo="logo-rootstack.png"
-        backgroundColor={{ background: '#04182e' }}
-        socialIconList={[]}
-      />
+      <Footer />
     </div>
   );
 };

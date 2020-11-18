@@ -4,9 +4,9 @@ import { Button } from 'react-bootstrap';
 import getSourceImage from '@shared/utility/get-source-image';
 import { BannerAdvertisingProps } from '@props/banner-advertising';
 
-import './banner-advertising.scss';
+import './banner.scss';
 
-export default function BannerAdverstising({
+export default function BannerAdvertising({
   title, buttonText, colorTitle, backgroundColor, backgroundImage
 }: BannerAdvertisingProps): React.ReactElement {
   let styleBannerAdvertising: object;
@@ -26,7 +26,7 @@ export default function BannerAdverstising({
   }
 
   return (
-    <div className="banner-advertising d-flex align-items-center" style={styleBannerAdvertising}>
+    <div className="banner banner-advertising d-flex align-items-center" style={styleBannerAdvertising}>
       <h3 className="pl-2 pr-2" style={colorTitle}>{title}</h3>
       <Button variant="primary" className="mt-4">{buttonText}</Button>
     </div>

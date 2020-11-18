@@ -9,8 +9,8 @@ import CardWithOutBorder from '@shared/card/card--without-border';
 import Card from '@shared/card/card';
 import Box from '@shared/box/box';
 import Banner from '@shared/banner/banner';
-import BannerForm from '@shared/banner-form/banner-form';
-import BannerVideo from '@shared/banner-video/banner-video';
+import BannerForm from '@shared/banner/banner-form';
+import BannerVideo from '@shared/banner/banner-video';
 import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
@@ -146,11 +146,7 @@ export default function ServicePage(): React.ReactElement {
         backgroundColor={{ background: '#f9fafb' }}
         buttonText="Send"
       />
-      <Footer
-        logo="logo-rootstack.png"
-        backgroundColor={{ background: '#04182e' }}
-        socialIconList={[]}
-      />
+      <Footer />
     </div>
   ); 
 }

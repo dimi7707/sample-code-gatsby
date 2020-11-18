@@ -1,6 +1,34 @@
+@import '@styles/_variables.scss';
+
+$default-color-banner-title: $white;
+
 .banner {
-  .card {
-    align-items: center;
-    vertical-align: middle;
+  &-advertising {
+    height: 300px;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+      color: $default-color-banner-title;
+    }
+  }
+
+  &-form {
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    .form-group {
+      label { 
+        color: $dark-blue-variant;
+        font-size: .7em !important;
+      
+        span {
+          color: $red-required-field;
+          padding-left: .3em;
+          font-size: 1em;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }

@@ -8,7 +8,7 @@ import IntroText from '@shared/text/intro-text';
 import Banner from '@shared/banner/banner';
 import Card from '@shared/card/card';
 import Box from '@shared/box/box';
-import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
+import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
 export default function ProfileManageTeams(): React.ReactElement {
@@ -102,11 +102,7 @@ export default function ProfileManageTeams(): React.ReactElement {
         backgroundImage="test-banner-advertising.png"
         backgroundColor={{ background: 'transparent' }}
       />
-      <Footer
-        logo="logo-rootstack.png"
-        backgroundColor={{ background: '#04182e' }}
-        socialIconList={[]}
-      />
+      <Footer/>
     </div>
   );
 }

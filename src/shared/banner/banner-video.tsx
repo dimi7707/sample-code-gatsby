@@ -2,6 +2,8 @@ import React from 'react';
 
 import { BannerVideoProps } from '@props/banner-video';
 
+import './banner.scss';
+
 BannerVideo.defaultProps = {
   videoToLeft: true,
   widthVideo: 500,

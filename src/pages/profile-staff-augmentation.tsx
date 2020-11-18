@@ -7,9 +7,8 @@ import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import Card from '@shared/card/card';
 import Banner from '@shared/banner/banner';
-import BannerAdvertising from '@shared/banner-advertising/banner-advertising';
+import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
-
 
 export default function ProfileStaffAugmentation() : React.ReactElement {
   const textForIntro = `We provide end-to-end development services working with the model that
@@ -84,11 +83,7 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
         backgroundImage="test-banner-advertising.png"
         backgroundColor={{ background: 'transparent' }}
       />
-      <Footer
-        logo="logo-rootstack.png"
-        backgroundColor={{ background: '#04182e' }}
-        socialIconList={[]}
-      />
+      <Footer />
     </div>    
   );
 };
