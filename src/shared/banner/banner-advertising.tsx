@@ -28,7 +28,7 @@ export default function BannerAdvertising({
   return (
     <div className="banner banner-advertising d-flex align-items-center" style={styleBannerAdvertising}>
       <h3 className="pl-2 pr-2" style={colorTitle}>{title}</h3>
-      <Button variant="primary" className="mt-4">{buttonText}</Button>
+      <Button variant="secondary" className="mt-4 text-white">{buttonText}</Button>
     </div>
   );
 }

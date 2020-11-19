@@ -7,6 +7,7 @@ import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import Card from '@shared/card/card';
 import Banner from '@shared/banner/banner';
+import WYSWYG from '@shared/wyswyg/wyswyg';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
@@ -28,9 +29,28 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
         color="#0000"
       />
       <div className="mt-4 pt-4">
-        <IntroText text={textForIntro} />
+        <IntroText sideDecoration text={textForIntro} />
       </div>
-      <Container className="mt-4 pt-4">
+      <div className="mt-4 pt-4">
+        <WYSWYG
+          title="How it works"
+          textContent={`Do you need a team of qualified experts to lead and execute your next
+            technology project? Rootstack quickly takes care of the selection process from
+            start to finish puts together the team that meets your specific tech profile
+            requirements. This way, you can execute your project the way you need it with
+            teams that work autonomously but communicate on your schedule. Access 
+            English-fluent talent and senior talent that
+            works efficiently to deliver high-quality solutions.
+            With our Managed Team services, obtain high-performing teams to boost your 
+            projects and work with the deep-rooted industry expertise you need to thrive in
+            your digital journey.
+          `}
+          image="img-profile-manage.png"
+          imageToRight
+          backgroundColor={{ background: 'transparent'}}
+        />
+      </div>
+      <Container className="mt-4 pb-4 pt-4">
         <Banner
           image="img-test-banner.jpg"
           altImage="Banner image"
@@ -39,6 +59,25 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
           buttonText="Let's to talk"
         />
       </Container>
+      <div className="mt-4">
+        <WYSWYG
+          title="How it works"
+          textContent={`Do you need a team of qualified experts to lead and execute your next
+            technology project? Rootstack quickly takes care of the selection process from
+            start to finish puts together the team that meets your specific tech profile
+            requirements. This way, you can execute your project the way you need it with
+            teams that work autonomously but communicate on your schedule. Access 
+            English-fluent talent and senior talent that
+            works efficiently to deliver high-quality solutions.
+            With our Managed Team services, obtain high-performing teams to boost your 
+            projects and work with the deep-rooted industry expertise you need to thrive in
+            your digital journey.
+          `}
+          image="image-test-how-it-works.png"
+          imageToRight
+          backgroundColor={{ background: '#f6f6f6'}}
+        />
+      </div>
       <Container className="mt-4 pt-4 mb-4 pb-4">
         <h4 className="text-center pb-4">Success stories</h4>
         <Row>

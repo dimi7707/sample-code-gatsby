@@ -32,7 +32,6 @@ export default function Footer(): React.ReactElement {
           <Col className="col-md-6 mt-md-0 mt-3">
             <ImageProvider fileName={footerData.logo} className="footer-main-logo" alt="" />
             <div className="footer-social-icons">
-              {socialIcons}
             </div>
             <p className="footer-text-copyright small">
               Copyright © 2017 Rootstack. All Rights Reserved.
