@@ -32,9 +32,9 @@ export default function Banner({
         <ImageProvider fileName={image} alt={altImage} className="" />
       </div>
       <Card className={cardDefaultClass} style={styleBackgroundCard}>
-        <Card.Body>
+        <Card.Body className="d-flex">
           <Card.Text className="w-75 text-white">{text}</Card.Text>
-          <Button variant="primary" className="shadow-none text-white float-right">
+          <Button variant="primary" className="shadow-none text-white my-auto">
             {buttonText}
           </Button>
         </Card.Body>

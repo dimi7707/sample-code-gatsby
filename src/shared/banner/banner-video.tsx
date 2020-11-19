@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 import './banner.scss';
 
 BannerVideo.defaultProps = {
-  videoToLeft: true,
+  videoToLeft: false,
   widthVideo: 500,
   heightVideo: 314
 };

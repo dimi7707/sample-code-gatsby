@@ -1,13 +1,19 @@
 @import '@styles/_variables.scss';
 
 footer {
-  img {
+  .footer-main-logo {
     max-width: 200px;
     max-height: 100px;
   }
 
   .footer-text-copyright {
     color: $blue-text-copyright;
+  }
+
+  .footer-link-social-icon{
+    img {
+      max-height: 30px;
+    }
   }
 
   h5 {

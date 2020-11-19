@@ -3,12 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
+import ImageProvider from '@core/providers/image/image-provider';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import IntroText from '@shared/text/intro-text';
 import CardWithOutBorder from '@shared/card/card--without-border';
 import Card from '@shared/card/card';
 import Banner from '@shared/banner/banner';
 import BannerVideo from '@shared/banner/banner-video';
+import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
@@ -40,6 +42,26 @@ export default function HomePage(): React.ReactElement {
       size: 'lg'
     }
   ];
+  const quoteTypeTextList = [
+    {
+      quote: `“Thanks so much for the awesome customer service. So many companies, large and
+        small, have a lot to learn from you. Great job!”`,
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: `“Thanks so much for the awesome customer service. So many companies, large and
+        small, have a lot to learn from you. Great job!”`,
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: `“Thanks so much for the awesome customer service. So many companies, large and
+        small, have a lot to learn from you. Great job!”`,
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    }
+  ];
 
   return (
     <div>
@@ -47,8 +69,8 @@ export default function HomePage(): React.ReactElement {
       <NavigationBar />
       <HeroSlider list={heroList} />
       <h3 className="text-center mt-4 pt-4">We Deliver unparalleled solutions</h3>
-      <div className="pt-4">
-        <IntroText text={textForIntro} />
+      <div className="pt-4 w-75 mx-auto">
+        <IntroText sideDecoration text={textForIntro} />
       </div>
       <h4 className="text-center mt-4 pt-4">Services</h4>
       <div className="pt-2">
@@ -84,12 +106,12 @@ export default function HomePage(): React.ReactElement {
         </Row>
       </Container>
       <BannerVideo
-        title="What set us apart"
-        description="Para lograr que estas transacciones sean realizadas debemos integrar
-        su sitio de comercio electrónico
-        con un gateway de pago."
+        title="A+ Teams"
+        description={`Our software engineers are creative, innovative and experts in their
+          fields. We work with a diverse group of tech profiles certified in the latest
+          technologies and methodologies. Our A+ talent truly sets us apart.`}
         urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
-        backgroundColor={{ background: '#f9fafb' }}
+        backgroundColor={{ background: 'transparent' }}
       />
       <Container className="mt-4 pt-4 mb-4 pb-4">
         <h4 className="text-center pb-4">Success stories</h4>
@@ -132,11 +154,15 @@ export default function HomePage(): React.ReactElement {
         <Banner
           image="img-test-banner.jpg"
           altImage="Banner image"
-          text="Soy el texto del banner, esto solo es una prueba del componente"
+          text="With Rootstack, work with a 
+          team of highly experienced engineers."
           imageToLeft
           buttonText="Let's to talk"
         />
       </Container>
+      <QuoteTypeTextSlider
+        list={quoteTypeTextList}
+      />
       <BannerAdvertising
         title="Ready to execute effective technology solutions?"
         buttonText="Let’s talk !"
