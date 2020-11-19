@@ -21,8 +21,10 @@ export default function PingPong({
   return (
     <Container className="d-flex ping-pong">
       <Card className={defaultClassCard}>
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
+        <Card.Body className="mt-4">
+          <Card.Title>
+            <h3>{title}</h3>
+          </Card.Title>
           <Card.Text className="pt-2">{textContent}</Card.Text>
           <div className={defaultClassButton}>
             <Button variant="primary" className="text-white">{buttonText}</Button>
