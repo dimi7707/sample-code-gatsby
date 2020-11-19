@@ -9,7 +9,7 @@ import './footer.scss';
 
 export default function Footer(): React.ReactElement {
   const footerData = {
-    logo: 'logo-rootstack.png',
+    logo: 'logo-rootstack-footer.svg',
     backgroundColor: { background: '#04182e' },
     socialIconList: [
       {
