@@ -16,6 +16,7 @@ import SEO from '@core/seo/seo';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import TopBar from '@core/layout/top-bar/top-bar';
 
+import IntroText from '@shared/text/intro-text';
 import Hero from '@shared/hero/hero';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
@@ -463,6 +464,24 @@ export default function StyleGuidePage(): React.ReactElement {
       <div className="custom-divider" />
       <h1>Top bar</h1>
       <TopBar />
+
+      <div className="custom-divider" />
+      <h4>Intro text</h4>
+      <IntroText
+        text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Repellendus voluptatum quaerat repellat reprehenderit atque deleniti culpa
+          optio accusantium, porro, beatae suscipit ratione aut obcaecati laudantium
+          non, unde at ea quam?`}
+      />
+      <div className="custom-divider" />
+      <h4>Intro text - variant</h4>
+      <IntroText
+        text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Repellendus voluptatum quaerat repellat reprehenderit atque deleniti culpa
+          optio accusantium, porro, beatae suscipit ratione aut obcaecati laudantium
+          non, unde at ea quam?`}
+        sideDecoration
+      />
 
       <div className="custom-divider" />
       <h1>Hero</h1>
