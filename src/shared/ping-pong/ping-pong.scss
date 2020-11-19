@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '@styles/_variables.scss';
+
+.ping-pong {
+  .ping-pong-text-section{
+    flex-basis: 100%;
+
+    .card-text {
+      line-height: 1.7;
+    }
+  }
+
+  .ping-pong-image-section {
+    flex-basis: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+
+    .left-decoration {
+      border-radius: 0;
+    }
+  
+    .right-decoration {
+      border-radius: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .left-decoration {
+      border-radius: 0 0 0 100px;
+    }
+  
+    .right-decoration {
+      border-radius: 0 0 100px 0;
+    }
+  }
+}

@@ -24,6 +24,7 @@ import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
+import PingPong from '@shared/ping-pong/ping-pong';
 import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
@@ -588,6 +589,19 @@ export default function StyleGuidePage(): React.ReactElement {
         <Box iconType title="Automatation" image="automatation.png" />
         <Box iconType title="Automatation" image="automatation.png" />
       </div>
+
+      <div className="custom-divider" />
+      <h4 className="mt-4 mb-4">Ping pong</h4>
+      <PingPong
+        title="Tourism Authority Panama App"
+        textContent={`The Tourism Authority of Panama or ATP is the governmental institution in 
+          charge of managing everything related to tourism within the country, and promoting
+          the typical tourist sites and activities of Panama. And as such, they have a great
+          weight on their shoulders, when it comes to national tourism.`}
+        image="img-test-ping-pong.jpg"
+        buttonText="See more >>"
+        imageToRight
+      />
 
       <div className="custom-divider" />
       <h4>Quote type text Slider</h4>
