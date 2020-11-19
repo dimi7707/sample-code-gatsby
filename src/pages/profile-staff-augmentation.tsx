@@ -33,7 +33,7 @@ export default function ProfileStaffAugmentation() : React.ReactElement {
       </div>
       <div className="mt-4 pt-4">
         <WYSWYG
-          title="How it works"
+          title="Benefits"
           textContent={`Do you need a team of qualified experts to lead and execute your next
             technology project? Rootstack quickly takes care of the selection process from
             start to finish puts together the team that meets your specific tech profile

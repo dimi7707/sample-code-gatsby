@@ -19,7 +19,7 @@ export default function WYSWYG({
   return (
     <div style={backgroundColor}>
       <Container className="wyswyg d-flex justify-content-md-between">
-        <div className={`${defaultClassImage} wyswyg-item my-auto pt-4 pb-4`}>
+        <div className={`${defaultClassImage} wyswyg-item my-auto mx-auto pt-4 pb-4`}>
           <ImageProvider fileName={image} className="" alt="" />
         </div>
         <div className="order-2 wyswyg-item ml-4 mr-4 pt-4 pb-4">
