@@ -61,4 +61,28 @@ $default-color-banner-title: $white;
       }
     }
   }
+
+  &-video {
+    height: 350px;
+    
+    .video-wrap {
+      position:relative;
+      padding-bottom: 55%;
+      padding-top: 30px;
+      height: 0;
+      overflow:hidden;
+    }
+
+    .video-wrap iframe,
+    .video-wrap object,
+    .video-wrap embed {
+      position:absolute;
+      top:0;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      height: 550px;
+    }
+  }
 }
