@@ -1,13 +1,11 @@
 @import '@styles/_variables.scss';
 
 .box {
-
-  img {
-    max-height: 70px;
-    max-width: 75px;
-  }
-
   a {
     color: $color-secondary;
   }
+}
+
+.simple-border {
+  border: 1px solid $soft-grey-divider;
 }

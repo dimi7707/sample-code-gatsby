@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
+import ImageProvider from '@core/providers/image/image-provider';
 import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import CardWithOutBorder from '@shared/card/card--without-border';
@@ -14,6 +15,7 @@ import BannerVideo from '@shared/banner/banner-video';
 import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
+import './service.scss';
 
 export default function ServicePage(): React.ReactElement {
   const textForIntro = `We provide end-to-end development services working with the model that
@@ -30,8 +32,8 @@ export default function ServicePage(): React.ReactElement {
         backgroundImage="imagen-for-hero.png"
         backgroundColor={{ background: 'transparent' }}
       />
-      <div className="mt-4 pt-4">
-        <IntroText text={textForIntro} />
+      <div className="mt-4 pt-4 mx-auto">
+        <IntroText sideDecoration text={textForIntro} />
       </div>
       <div className="mt-4 pt-4">
         <Container>
@@ -138,6 +140,156 @@ export default function ServicePage(): React.ReactElement {
       />
       <Container className="mt-4 pt-4 pb-4">
         <h4>Clients</h4>
+        <div className="d-flex clients-section">
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+        </div>
+        <div className="d-flex clients-section mt-2">
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+        </div>
+        <div className="d-flex clients-section mt-2">
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.png"
+            className="" 
+            hasBorder
+          />
+        </div>
       </Container>
       <BannerForm
         title="Let's work together!"
