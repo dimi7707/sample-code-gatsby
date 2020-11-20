@@ -93,6 +93,19 @@ $default-color-banner-title: $white;
       top:0;
     }
 
+    .frame-decorator {
+      border: 8px solid #f58b02;
+      padding: 3em;
+      height: 90%;
+      
+    }
+
+    @include media-breakpoint-up(md){
+      .frame-decorator {
+        margin-right: -20px !important;
+      }
+    } 
+
     @include media-breakpoint-down(md) {
       flex-direction: column;
       height: 550px;

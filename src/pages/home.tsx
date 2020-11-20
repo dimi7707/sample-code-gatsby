@@ -109,8 +109,9 @@ export default function HomePage(): React.ReactElement {
         description={`Our software engineers are creative, innovative and experts in their
           fields. We work with a diverse group of tech profiles certified in the latest
           technologies and methodologies. Our A+ talent truly sets us apart.`}
-        urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
+        urlVideo="https://www.youtube.com/embed/QFaFIcGhPoM"
         backgroundColor={{ background: 'transparent' }}
+        frameDecorator
       />
       <Container className="mt-4 pt-4 mb-4 pb-4">
         <h4 className="text-center pb-4">Success stories</h4>

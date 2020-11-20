@@ -6,4 +6,5 @@ export type BannerVideoProps = {
   videoToLeft?: boolean;
   widthVideo?: number;
   heightVideo?: number;
+  frameDecorator?: boolean;
 };
