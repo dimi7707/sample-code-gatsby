@@ -16,9 +16,8 @@ import Footer from '@core/layout/footer/footer';
 
 
 export default function SuccessStoriesPage(): React.ReactElement {
-  const textForIntro = `Working with the latest technologies and methodologies, we create
-    unique solutions that adapt perfectly to your particular needs. Check out our case
-    studies and discover how we can help you with your digital journey`
+  const textForIntro = ` We have more than 10 years of experience working with global organizations 
+    of all sizes and industries.`
   
     const quoteTypeTextList = [
       {
@@ -53,8 +52,11 @@ export default function SuccessStoriesPage(): React.ReactElement {
         backgroundImage="hero-for-success-stories.png"
         backgroundColor={{ background: 'transparent' }}
       />
-      <div className="mt-4 pt-4 pb-4">
-        <IntroText text={textForIntro} />
+      <div className="mt-4 pt-4 pb-4">        
+        <h4 className="text-center">Our clients make us who we are</h4>
+        <div className="pt-2 pb-4">
+          <IntroText text={textForIntro} />
+        </div>
       </div>
       <PingPong 
         title="Tourism Authority Panama App"

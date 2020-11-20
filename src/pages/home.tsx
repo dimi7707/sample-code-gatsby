@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
-import ImageProvider from '@core/providers/image/image-provider';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import IntroText from '@shared/text/intro-text';
 import CardWithOutBorder from '@shared/card/card--without-border';
@@ -69,11 +68,11 @@ export default function HomePage(): React.ReactElement {
       <NavigationBar />
       <HeroSlider list={heroList} />
       <h3 className="text-center mt-4 pt-4">We Deliver unparalleled solutions</h3>
-      <div className="pt-4 w-75 mx-auto">
+      <div className="pt-4 mx-auto">
         <IntroText sideDecoration text={textForIntro} />
       </div>
       <h4 className="text-center mt-4 pt-4">Services</h4>
-      <div className="pt-2">
+      <div className="pt-4 mx-auto">
         <IntroText text="We deliver world-class projects the way you need them." />
       </div>
       <Container className="mb-4 pb-4">
