@@ -2,11 +2,18 @@ import React from 'react';
 
 type IntroTextProps = {
   text: string;
+  sideDecoration?: boolean;
 };
 
-export default function IntroText({ text }: IntroTextProps): React.ReactElement {
+IntroText.defaultProps = {
+  sideDecoration: false
+};
+
+export default function IntroText({ text, sideDecoration }: IntroTextProps): React.ReactElement {
+  const defaultClassIntoText = sideDecoration ? 'side-decoration' : '';
+
   return (
-    <div className="mt-2">
+    <div className={`${defaultClassIntoText} w-75 mx-auto`}>
       <p className="body-2 w-75 mx-auto text-center">{text}</p>
     </div>
   );
