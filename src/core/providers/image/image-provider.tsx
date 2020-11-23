@@ -9,20 +9,42 @@ type ImageProviderProps = {
 };
 
 export default function ImageProvider({ className, fileName, alt }: ImageProviderProps) {
-  const { allImageSharp } = useStaticQuery(graphql`
+  const { allFile } = useStaticQuery(graphql`
     query {
-      allImageSharp {
-        nodes {
-          fluid(maxWidth: 1800) {
-            originalName
-            ...GatsbyImageSharpFluid_withWebp
+      allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(png)|(jpeg)|(svg)/" }
+        }
+      ) {
+        edges {
+          node {
+            base
+            extension
+            publicURL
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
     }
   `);
 
-  const { fluid } = allImageSharp.nodes.find((n) => n.fluid.originalName === fileName);
+  const { node } = allFile.edges.find((edge) => edge.node.base === fileName);
 
-  return (<Img className={className} fluid={fluid} alt={alt} />);
+  if (!node.childImageSharp && node.extension === 'svg') {
+    return (
+      <img className={className} src={node.publicURL} alt={alt} />
+    );
+  }
+
+  return (
+    <Img
+      className={className}
+      fluid={node.childImageSharp.fluid}
+      alt={alt}
+    />
+  );
 }
