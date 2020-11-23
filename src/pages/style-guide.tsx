@@ -23,6 +23,7 @@ import Banner from '@shared/banner/banner';
 import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
+import EventCard from '@shared/event-card/event-card';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import Footer from '@core/layout/footer/footer';
 
@@ -597,6 +598,18 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
+      <div className="custom-divider" />
+      <h4>Event card</h4>
+      <EventCard 
+        label="Webinar"
+        title="How technology empowering E-commerce!"
+        description="El comercio electrónico se ha convertido en algo indispensable, aumentando y mejorando la economía de muchas empresas ya que le da ese valor agregado a los clientes."
+        day="Thursday"
+        fullDate="08 Diciembre, 2020"
+        time="11:00 to 12:00"
+        status="open"
+      />
 
       <div className="custom-divider" />
       <h4>Quote type text Slider</h4>
