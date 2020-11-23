@@ -7,8 +7,8 @@
 .event-card {
   &-standard {
     box-shadow: 3px 3px 3px 3px $soft-grey;
+
     .card-body {
-  
       @include media-breakpoint-down(md) {
         flex-direction: column;
   
@@ -85,7 +85,6 @@
           border-radius: 0;
           font-size: 1.5em;
         }
-        
       }
 
       .event-card-image, .event-card-shedule {
@@ -110,7 +109,6 @@
         background: $deep-sea-blue;
         color: $white;
       }
-
     } 
   }
 }
