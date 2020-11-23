@@ -20,9 +20,10 @@ export default function BannerVideo({
   widthVideo,
   heightVideo
 }: BannerVideoProps): React.ReactElement {
-  const defaultClassBannerVideo = `${videoToLeft
-    ? 'order-1 pr-2 video-wrap pt-4'
-    : 'order-3 pl-2 video-wrap pt-4'} w-100`;
+  let defaultClassBannerVideo = 'video-wrap pt-4';
+  defaultClassBannerVideo = videoToLeft 
+    ? `order-1 pr-2 ${videoToLeft}`
+    : `order-3 pl-2 w-100 ${videoToLeft}`;
 
   return (
     <Container className="banner banner-video d-flex" style={backgroundColor}>
