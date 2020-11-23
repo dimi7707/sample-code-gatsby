@@ -569,7 +569,10 @@ export default function StyleGuidePage(): React.ReactElement {
         <h4 className="mt-4">What you see what you get</h4>
         <WYSWYG
           title="I am title"
-          textContent="probando......... sdkajdhkajhd"
+          textContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae,
+            sit eligendi, doloribus explicabo ea doloremque consectetur iste provident
+            molestias soluta animi. Ab asperiores dolor, aspernatur laborum doloribus labore
+            quo."
           image="img-test-banner.jpg"
           backgroundColor={{ background: 'white' }}
           imageToRight
