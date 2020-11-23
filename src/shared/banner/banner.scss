@@ -7,6 +7,22 @@
 $default-color-banner-title: $white;
 
 .banner {
+  &-standard {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+
+      .banner-image {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .banner-image {
+        width: 50%;
+      }
+    }
+  }
+
   &-advertising {
     height: 300px;
     justify-content: center;

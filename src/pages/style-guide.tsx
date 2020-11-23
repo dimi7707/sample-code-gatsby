@@ -531,7 +531,8 @@ export default function StyleGuidePage(): React.ReactElement {
       <Banner
         image="img-test-banner.jpg"
         altImage="Banner image"
-        text="Soy el texto del banner, esto solo es una prueba del componente"
+        text={`Soy el texto del banner, esto solo es una prueba del componente. 
+          Soy el texto del banner`}
         imageToLeft
         buttonText="Let's to talk"
       />
@@ -541,7 +542,8 @@ export default function StyleGuidePage(): React.ReactElement {
       <Banner
         image="img-test-banner.jpg"
         altImage="Banner image"
-        text="Soy el texto del banner, esto solo es una prueba del componente"
+        text={`Soy el texto del banner, esto solo es una prueba del componente. 
+          Soy el texto del banner`}
         buttonText="Let's to talk"
       />
 
