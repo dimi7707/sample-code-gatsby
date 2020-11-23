@@ -601,7 +601,7 @@ export default function StyleGuidePage(): React.ReactElement {
 
       <div className="custom-divider" />
       <h4>Event card</h4>
-      <EventCard 
+      <EventCard
         label="Webinar"
         title="How technology empowering E-commerce!"
         description="El comercio electrónico se ha convertido en algo indispensable, aumentando y mejorando la economía de muchas empresas ya que le da ese valor agregado a los clientes."

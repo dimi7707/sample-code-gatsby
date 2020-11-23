@@ -26,8 +26,8 @@ export default function EventCard({
           <div className="event-card-see-event mt-3 p-3">
             <ul className="pl-0">
               <li>
-                Time: 
-                <span className="ml-1">{time}</span> 
+                Time:
+                <span className="ml-1">{time}</span>
               </li>
               <li>
                 Registration:
@@ -35,7 +35,7 @@ export default function EventCard({
               </li>
             </ul>
             <a href="/">
-              See event 
+              See event
               <FontAwesomeIcon className="ml-1" icon={faAngleDoubleRight} />
             </a>
           </div>
