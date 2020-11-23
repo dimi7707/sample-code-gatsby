@@ -16,9 +16,9 @@ export default function Banner({
   image, altImage, text, buttonText, imageToLeft
 }: BannerProps): React.ReactElement {
   const bannerImageDefaultClass = `${imageToLeft ? 'order-1 banner-image' : 'order-3 banner-image'}`;
-  let cardDefaultClass =  'order-2 border-0 my-auto text-white mb-md-0';
-  cardDefaultClass = imageToLeft 
-    ? `${cardDefaultClass} ml-md-n5` 
+  let cardDefaultClass = 'order-2 border-0 my-auto text-white mb-md-0';
+  cardDefaultClass = imageToLeft
+    ? `${cardDefaultClass} ml-md-n5`
     : `${cardDefaultClass} mr-md-n5`;
   const imgBackgroundCard = getSourceImage('bg-standard-banner.png');
   const styleBackgroundCard = {
