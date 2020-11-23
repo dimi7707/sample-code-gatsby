@@ -25,6 +25,7 @@ import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 import EventCard from '@shared/event-card/event-card';
+import EventCardFeatured from '@shared/event-card/event-card-featured';
 import WYSWYG from '@shared/wyswyg/wyswyg';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import Footer from '@core/layout/footer/footer';
@@ -635,14 +636,38 @@ export default function StyleGuidePage(): React.ReactElement {
       </Row>
 
       <div className="custom-divider" />
+      <h4>Event card featured</h4>
+      <EventCardFeatured
+        label="Webinar"
+        title="Validated ID | Personal Identification
+          Digital Solutions"
+        description="In this free webinar, we'll be talking about creating an omnichannel
+          platform with Twilio and other platforms. Once registered, you will receive an email
+          with the address to access the webinar."
+        day="08"
+        month="December"
+        year="2020"
+        dayWeek="Thursday"
+        startTime="11:00"
+        endTime="12:00"
+        status="open"
+        image="img-test-banner.jpg"
+      />
+
+      <div className="custom-divider" />
       <h4>Event card</h4>
       <EventCard
         label="Webinar"
         title="How technology empowering E-commerce!"
-        description="El comercio electrónico se ha convertido en algo indispensable, aumentando y mejorando la economía de muchas empresas ya que le da ese valor agregado a los clientes."
-        day="Thursday"
-        fullDate="08 Diciembre, 2020"
-        time="11:00 to 12:00"
+        description="In this free webinar, we'll be talking about creating an omnichannel
+          platform with Twilio and other platforms. Once registered, you will receive an email
+          with the address to access the webinar."
+        day="08"
+        month="December"
+        year="2020"
+        dayWeek="Thursday"
+        startTime="11:00"
+        endTime="12:00"
         status="open"
       />
 

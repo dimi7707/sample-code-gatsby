@@ -3,7 +3,11 @@ export type EventCardProps = {
   title: string;
   description: string;
   day: string;
-  fullDate: string;
-  time: string;
+  month: string;
+  dayWeek: string;
+  startTime: string;
+  endTime: string;
   status: string;
+  year?: string;
+  image?: string;
 };
