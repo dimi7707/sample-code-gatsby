@@ -21,7 +21,7 @@ export default function BannerVideo({
   heightVideo
 }: BannerVideoProps): React.ReactElement {
   let defaultClassBannerVideo = 'video-wrap pt-4';
-  defaultClassBannerVideo = videoToLeft 
+  defaultClassBannerVideo = videoToLeft
     ? `order-1 pr-2 ${videoToLeft}`
     : `order-3 pl-2 w-100 ${videoToLeft}`;
 
