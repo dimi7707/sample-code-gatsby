@@ -16,6 +16,7 @@ import SEO from '@core/seo/seo';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import TopBar from '@core/layout/top-bar/top-bar';
 
+import IntroText from '@shared/text/intro-text';
 import Hero from '@shared/hero/hero';
 import HeroSlider from '@shared/hero-slider/hero-slider';
 import Box from '@shared/box/box';
@@ -23,6 +24,7 @@ import Banner from '@shared/banner/banner';
 import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
+import WYSWYG from '@shared/wyswyg/wyswyg';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import Footer from '@core/layout/footer/footer';
 
@@ -464,6 +466,24 @@ export default function StyleGuidePage(): React.ReactElement {
       <TopBar />
 
       <div className="custom-divider" />
+      <h4>Intro text</h4>
+      <IntroText
+        text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Repellendus voluptatum quaerat repellat reprehenderit atque deleniti culpa
+          optio accusantium, porro, beatae suscipit ratione aut obcaecati laudantium
+          non, unde at ea quam?`}
+      />
+      <div className="custom-divider" />
+      <h4>Intro text - variant</h4>
+      <IntroText
+        text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Repellendus voluptatum quaerat repellat reprehenderit atque deleniti culpa
+          optio accusantium, porro, beatae suscipit ratione aut obcaecati laudantium
+          non, unde at ea quam?`}
+        sideDecoration
+      />
+
+      <div className="custom-divider" />
       <h1>Hero</h1>
       <Hero
         title="With background image"
@@ -564,6 +584,21 @@ export default function StyleGuidePage(): React.ReactElement {
         buttonText="Let’s talk!"
         backgroundImage="test-banner-advertising.png"
       />
+
+      <div className="custom-divider" />
+      <div className="pt-4 pb-4">
+        <h4 className="mt-4">What you see what you get</h4>
+        <WYSWYG
+          title="I am title"
+          textContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae,
+            sit eligendi, doloribus explicabo ea doloremque consectetur iste provident
+            molestias soluta animi. Ab asperiores dolor, aspernatur laborum doloribus labore
+            quo."
+          image="img-test-banner.jpg"
+          backgroundColor={{ background: 'white' }}
+          imageToRight
+        />
+      </div>
 
       <div className="custom-divider" />
       <h1>Boxes</h1>
