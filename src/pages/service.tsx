@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
-import ImageProvider from '@core/providers/image/image-provider';
 import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import CardWithOutBorder from '@shared/card/card--without-border';
@@ -72,23 +71,24 @@ export default function ServicePage(): React.ReactElement {
       <Container>
         <h4 className="text-center mt-4 pt-4">Areas of expertise</h4>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
-          <Box iconType title="Automatation" image="automatation.png" />
-          <Box iconType title="Automatation" image="automatation.png" />
-          <Box iconType title="Automatation" image="automatation.png" />
-          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
+          <Box iconType title="Web developer" image="flow.svg"  hasBorder />
+          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
+          <Box iconType title="Automatation" image="flow.svg" hasBorder />
         </div>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
-          <Box iconType title="Automatation" image="automatation.png" />
-          <Box iconType title="Automatation" image="automatation.png" />
-          <Box iconType title="Automatation" image="automatation.png" />
-          <Box iconType title="Automatation" image="automatation.png" />
+          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
+          <Box iconType title="Web developer" image="flow.svg"  hasBorder />
+          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
+          <Box iconType title="Automatation" image="flow.svg" hasBorder />
         </div>
       </Container>
       <Container className="mt-4 pt-4">
         <Banner
           image="img-test-banner.jpg"
           altImage="Banner image"
-          text="Soy el texto del banner, esto solo es una prueba del componente"
+          text="With Rootstack, work with a 
+            team of highly experienced engineers."
           imageToLeft
           buttonText="Let's to talk"
         />
@@ -142,50 +142,50 @@ export default function ServicePage(): React.ReactElement {
         <h4>Clients</h4>
         <div className="d-flex clients-section">
           <Box
-            title="Automatation"
-            image="asamblea-nacional.png"
+            title=""
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className=""
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className=""
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
@@ -193,49 +193,49 @@ export default function ServicePage(): React.ReactElement {
         <div className="d-flex clients-section mt-2">
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className=""
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className=""
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
@@ -243,49 +243,49 @@ export default function ServicePage(): React.ReactElement {
         <div className="d-flex clients-section mt-2">
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className=""
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className=""
             hasBorder
           />
           <Box
             title="Automatation"
-            image="asamblea-nacional.png"
+            image="asamblea-nacional.svg"
             className="" 
             hasBorder
           />

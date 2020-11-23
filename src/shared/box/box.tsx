@@ -18,9 +18,9 @@ Box.defaultProps = {
 };
 
 export default function Box({ 
-  iconType, image, title, className, link, hasBorder
+  iconType, image, title, className, hasBorder
 }: BoxProps): React.ReactElement {
-  let defaultClassBox = iconType ? 'box mx-auto' : 'box mx-auto w-100';
+  let defaultClassBox = 'box mx-auto text-center';
   if (hasBorder) {
     defaultClassBox = `${defaultClassBox} simple-border`;
   } 
@@ -31,12 +31,8 @@ export default function Box({
       {
         iconType
           && (
-            <div className="text-center">
-              <h6 className="text-center orange-text">{title}</h6>
-              <a href={link.link} className="body-1">
-                {link.label}
-                <FontAwesomeIcon className="ml-1" icon={faAngleDoubleRight} />
-              </a>
+            <div className="text-center mx-auto mt-4">
+              <h6>{title}</h6>
             </div>
           )
       }
