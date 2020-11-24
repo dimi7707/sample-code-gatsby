@@ -29,6 +29,7 @@ import EventCardFeatured from '@shared/event-card/event-card-featured';
 import WYSWYG from '@shared/wyswyg/wyswyg';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import Footer from '@core/layout/footer/footer';
+import { Event } from '@models/event';
 
 import '@styles/base.scss';
 
@@ -76,6 +77,24 @@ export default function StyleGuidePage(): React.ReactElement {
       position: 'Executive producer'
     }
   ];
+
+  const event = {
+    info: {
+      label: 'Webinar',
+      title: 'Validated ID | Personal Identification Digital Solutions',
+      description: `In this free webinar, we'll be talking about creating an omnichannel
+        platform with Twilio and other platforms. Once registered, you will receive an email
+        with the address to access the webinar.`,
+      day: '08',
+      month: 'December',
+      year: '2020',
+      dayWeek: 'Thursday',
+      startTime: '11:00',
+      endTime: '12:00',
+      status: 'open',
+      image: 'img-test-banner.jpg'
+    }
+  } as Event;
 
   return (
     <Container>
