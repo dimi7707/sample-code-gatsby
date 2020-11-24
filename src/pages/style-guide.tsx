@@ -532,7 +532,8 @@ export default function StyleGuidePage(): React.ReactElement {
       <Banner
         image="img-test-banner.jpg"
         altImage="Banner image"
-        text="Soy el texto del banner, esto solo es una prueba del componente"
+        text={`Soy el texto del banner, esto solo es una prueba del componente. 
+          Soy el texto del banner`}
         imageToLeft
         buttonText="Let's to talk"
       />
@@ -542,7 +543,8 @@ export default function StyleGuidePage(): React.ReactElement {
       <Banner
         image="img-test-banner.jpg"
         altImage="Banner image"
-        text="Soy el texto del banner, esto solo es una prueba del componente"
+        text={`Soy el texto del banner, esto solo es una prueba del componente. 
+          Soy el texto del banner`}
         buttonText="Let's to talk"
       />
 
@@ -560,7 +562,6 @@ export default function StyleGuidePage(): React.ReactElement {
         description="Para lograr que estas transacciones sean realizadas debemos integrar
         su sitio de comercio electrónico
         con un gateway de pago."
-        urlPosterVideo="https://as01.epimg.net/showroom/imagenes/2019/08/27/portada/1566912669_925189_1566913002_noticia_normal_recorte1.jpg"
         urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
         backgroundColor={{ background: '#f9fafb' }}
       />
@@ -572,7 +573,6 @@ export default function StyleGuidePage(): React.ReactElement {
         description="Para lograr que estas transacciones sean realizadas debemos integrar
         su sitio de comercio electrónico
         con un gateway de pago."
-        urlPosterVideo="https://as01.epimg.net/showroom/imagenes/2019/08/27/portada/1566912669_925189_1566913002_noticia_normal_recorte1.jpg"
         urlVideo="https://www.youtube.com/embed/dHDXPW9heJo"
         backgroundColor={{ background: '#f9fafb' }}
         videoToLeft={false}
