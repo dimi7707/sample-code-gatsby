@@ -23,9 +23,9 @@ export default function EventCardFeatured({
         </div>
         <div className="event-card-shedule text-center">
           <div className="event-card-schedule-calendar pt-2 pb-2">
-            <p className="mb-0 h6 text-white">{dayWeek}</p>
-            <p className="mb-0 display-4">{day}</p>
-            <p className="mb-0 h6 text-white">{month}</p>
+            <p className="mb-0 h6 text-white small">{dayWeek}</p>
+            <p className="mb-0 display-4 big">{day}</p>
+            <p className="mb-0 h6 text-white small">{month}</p>
           </div>
           <ul className="pl-0 text-md-left mt-4">
             <li>
