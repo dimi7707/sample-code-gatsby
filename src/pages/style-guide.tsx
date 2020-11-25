@@ -25,6 +25,7 @@ import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 import WYSWYG from '@shared/wyswyg/wyswyg';
+import BlogCard from '@shared/blog-card/blog-card';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import PingPong from '@shared/ping-pong/ping-pong';
 import Footer from '@core/layout/footer/footer';
@@ -590,7 +591,10 @@ export default function StyleGuidePage(): React.ReactElement {
         <h4 className="mt-4">What you see what you get</h4>
         <WYSWYG
           title="I am title"
-          textContent="probando......... sdkajdhkajhd"
+          textContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae,
+            sit eligendi, doloribus explicabo ea doloremque consectetur iste provident
+            molestias soluta animi. Ab asperiores dolor, aspernatur laborum doloribus labore
+            quo."
           image="img-test-banner.jpg"
           backgroundColor={{ background: 'white' }}
           imageToRight
@@ -622,6 +626,38 @@ export default function StyleGuidePage(): React.ReactElement {
         <Box iconType title="Automatation" image="automatation.png" />
         <Box iconType title="Automatation" image="automatation.png" />
         <Box iconType title="Automatation" image="automatation.png" />
+      </div>
+
+      <div className="custom-divider mb-5" />
+      <div className="d-flex">
+        <div className="mr-4">
+          <BlogCard
+            image="img-test-banner.jpg"
+            title="When Should You Consider Outsourcing Your Technology Projects?"
+            fullDate="October 26, 2020"
+            tags="Marketing, Data, Science, Business, Intelligence"
+            shortText={`The Coronavirus pandemic has disrupted our daily lives and
+              consequently accelerated the adoption of many technologies, some of which were
+              already on the rise, and some of which were slowly emerging. In this article,
+              we’ll take a look at the latest tech trends and understand their implications.
+              Let’s go!`}
+            link={{ label: 'See more', link: '/' }}
+          />
+        </div>
+        <div className="ml-4">
+          <BlogCard
+            image="img-test-banner.jpg"
+            title="When Should You Consider Outsourcing Your Technology Projects?"
+            fullDate="October 26, 2020"
+            tags="Marketing, Data, Science, Business, Intelligence"
+            shortText={`The Coronavirus pandemic has disrupted our daily lives and
+            consequently accelerated the adoption of many technologies, some of which were
+            already on the rise, and some of which were slowly emerging. In this article,
+            we’ll take a look at the latest tech trends and understand their implications.
+            Let’s go!`}
+            link={{ label: 'See more', link: '/' }}
+          />
+        </div>
       </div>
 
       <div className="custom-divider" />

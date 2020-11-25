@@ -8,29 +8,6 @@ $default-color-banner-title: $white;
 
 .banner {
   &-standard {
-    .card {
-      border: 0;
-      padding-bottom: 0 !important;
-
-      .card-body {
-        margin-top: 0;
-
-        @include media-breakpoint-down(md) {
-          flex-direction: column;
-          align-items: center;
-
-          button {
-            width: 50%;
-          }
-        }
-      }
-
-      .card-text {
-        font-size: 1.3em;
-        line-height: 1.5;
-      }
-    }
-
     @include media-breakpoint-down(sm) {
       flex-direction: column;
 
@@ -79,18 +56,17 @@ $default-color-banner-title: $white;
     height: 350px;
     
     .video-wrap {
-      position:relative;
-      padding-bottom: 55%;
-      padding-top: 30px;
+      position: relative;
+      padding-bottom: 50%;
       height: 0;
-      overflow:hidden;
+      overflow: hidden;
     }
 
     .video-wrap iframe,
     .video-wrap object,
     .video-wrap embed {
-      position:absolute;
-      top:0;
+      position: absolute;
+      top: 0;
     }
 
     .frame-decorator {

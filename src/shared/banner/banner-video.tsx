@@ -22,9 +22,10 @@ export default function BannerVideo({
   heightVideo,
   frameDecorator
 }: BannerVideoProps): React.ReactElement {
-  const defaultClassBannerVideo = `${videoToLeft
-    ? 'order-1 pr-2 video-wrap'
-    : 'order-3 pl-2 video-wrap'} w-100`;
+  let defaultClassBannerVideo = 'video-wrap pt-4';
+  defaultClassBannerVideo = videoToLeft
+    ? `order-1 pr-2 ${videoToLeft}`
+    : `order-3 pl-2 w-100 ${videoToLeft}`;
   const defaultClassTextContent = frameDecorator 
     ? 'mx-auto mt-n2 order-2 item frame-decorator' 
     : 'mx-auto my-auto order-2 item';

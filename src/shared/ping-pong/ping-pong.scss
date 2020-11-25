@@ -5,7 +5,7 @@
 @import '@styles/_variables.scss';
 
 .ping-pong {
-  .ping-pong-text-section{
+  .ping-pong-text-section {
     flex-basis: 100%;
 
     .card-text {
@@ -31,11 +31,11 @@
 
   @include media-breakpoint-up(md) {
     .left-decoration {
-      border-radius: 0 0 0 100px;
+      border-bottom-left-radius: 100px;
     }
   
     .right-decoration {
-      border-radius: 0 0 100px 0;
+      border-bottom-right-radius: 100px;
     }
   }
 }
