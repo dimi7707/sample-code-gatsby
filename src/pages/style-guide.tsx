@@ -29,6 +29,7 @@ import BlogCard from '@shared/blog-card/blog-card';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import PresentationCard from '@shared/presentation-card/presentation-card';
 import PingPong from '@shared/ping-pong/ping-pong';
+import CustomTabs from '@shared/custom-tabs/custom-tabs';
 import Footer from '@core/layout/footer/footer';
 
 import '@styles/base.scss';
@@ -640,6 +641,10 @@ export default function StyleGuidePage(): React.ReactElement {
           <Box iconType={false} title="Automatation" image="automatation.png" />
         </Col>
       </Row>
+
+      <div className="custom-divider" />
+      <h4>Tabs form</h4>
+      <CustomTabs />
 
       <div className="custom-divider" />
       <h4>Box with icon an title</h4>
