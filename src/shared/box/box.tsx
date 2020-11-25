@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 import ImageProvider from '@core/providers/image/image-provider';
 import { BoxProps } from '@shared/props/box';
@@ -17,13 +15,13 @@ Box.defaultProps = {
   hasBorder: false
 };
 
-export default function Box({ 
+export default function Box({
   iconType, image, title, className, hasBorder
 }: BoxProps): React.ReactElement {
   let defaultClassBox = 'box mx-auto text-center';
   if (hasBorder) {
     defaultClassBox = `${defaultClassBox} simple-border`;
-  } 
+  }
 
   return (
     <div className={defaultClassBox}>

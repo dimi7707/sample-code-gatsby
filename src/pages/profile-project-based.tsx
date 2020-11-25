@@ -44,7 +44,7 @@ export default function ProfileProjectBased(): React.ReactElement {
           `}
           image="img-profile-manage.png"
           imageToRight
-          backgroundColor={{ background: 'transparent'}}
+          backgroundColor={{ background: 'transparent' }}
         />
       </div>
       <Container className="mt-4 pt-4">
@@ -72,7 +72,7 @@ export default function ProfileProjectBased(): React.ReactElement {
           `}
           image="image-test-how-it-works.png"
           imageToRight
-          backgroundColor={{ background: '#f6f6f6'}}
+          backgroundColor={{ background: '#f6f6f6' }}
         />
       </div>
       <Container className="mt-4 pt-4 mb-4 pb-4">

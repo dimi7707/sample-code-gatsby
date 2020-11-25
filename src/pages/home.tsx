@@ -154,7 +154,7 @@ export default function HomePage(): React.ReactElement {
         <Banner
           image="img-test-banner.jpg"
           altImage="Banner image"
-          text="With Rootstack, work with a 
+          text="With Rootstack, work with a
           team of highly experienced engineers."
           imageToLeft
           buttonText="Let's to talk"

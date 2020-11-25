@@ -7,7 +7,7 @@ import { HeroList } from '@shared/props/hero-list';
 
 export default function HeroSlider({ list }: HeroList): React.ReactElement {
   const carouselItems = list.map((heroInfo: HeroProps, key: number) => (
-    <Carousel.Item key={`carousel-${heroInfo.title}-${key*2}`} interval={4000}>
+    <Carousel.Item key={`carousel-${heroInfo.title}-${key * 2}`} interval={4000}>
       <Hero
         title={heroInfo.title}
         subTitle={heroInfo.subTitle}

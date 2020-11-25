@@ -3,5 +3,5 @@ export type BoxProps = {
   image: string;
   title: string;
   className?: string;
-  hasBorder?: boolean; 
+  hasBorder?: boolean;
 };

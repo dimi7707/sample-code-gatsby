@@ -20,7 +20,7 @@ export default function Footer(): React.ReactElement {
   } as FooterProps;
 
   const socialIcons = footerData.socialIconList.map((icon: SocialIcon) => (
-    <a href={icon.link} key={`social-${icon.icon}`} className="footer-link-social-icon" >
+    <a href={icon.link} key={`social-${icon.icon}`} className="footer-link-social-icon">
       <ImageProvider fileName={icon.icon} className="" alt="" />
     </a>
   ));
@@ -32,6 +32,7 @@ export default function Footer(): React.ReactElement {
           <Col className="col-md-6 mt-md-0 mt-3">
             <ImageProvider fileName={footerData.logo} className="footer-main-logo" alt="" />
             <div className="footer-social-icons">
+              {socialIcons}
             </div>
             <p className="footer-text-copyright small">
               Copyright © 2017 Rootstack. All Rights Reserved.

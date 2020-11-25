@@ -72,13 +72,13 @@ export default function ServicePage(): React.ReactElement {
         <h4 className="text-center mt-4 pt-4">Areas of expertise</h4>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
           <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
-          <Box iconType title="Web developer" image="flow.svg"  hasBorder />
+          <Box iconType title="Web developer" image="flow.svg" hasBorder />
           <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
           <Box iconType title="Automatation" image="flow.svg" hasBorder />
         </div>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
           <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
-          <Box iconType title="Web developer" image="flow.svg"  hasBorder />
+          <Box iconType title="Web developer" image="flow.svg" hasBorder />
           <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
           <Box iconType title="Automatation" image="flow.svg" hasBorder />
         </div>
@@ -87,7 +87,7 @@ export default function ServicePage(): React.ReactElement {
         <Banner
           image="img-test-banner.jpg"
           altImage="Banner image"
-          text="With Rootstack, work with a 
+          text="With Rootstack, work with a
             team of highly experienced engineers."
           imageToLeft
           buttonText="Let's to talk"
@@ -144,25 +144,7 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title=""
             image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
+            className=""
             hasBorder
           />
           <Box
@@ -174,7 +156,7 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
+            className=""
             hasBorder
           />
           <Box
@@ -186,7 +168,25 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
             hasBorder
           />
         </div>
@@ -194,25 +194,7 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
+            className=""
             hasBorder
           />
           <Box
@@ -224,7 +206,7 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
+            className=""
             hasBorder
           />
           <Box
@@ -236,7 +218,25 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
             hasBorder
           />
         </div>
@@ -244,25 +244,7 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className="" 
+            className=""
             hasBorder
           />
           <Box
@@ -274,7 +256,7 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
+            className=""
             hasBorder
           />
           <Box
@@ -286,7 +268,25 @@ export default function ServicePage(): React.ReactElement {
           <Box
             title="Automatation"
             image="asamblea-nacional.svg"
-            className="" 
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
+            hasBorder
+          />
+          <Box
+            title="Automatation"
+            image="asamblea-nacional.svg"
+            className=""
             hasBorder
           />
         </div>

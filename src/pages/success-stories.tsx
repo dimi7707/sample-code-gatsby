@@ -1,44 +1,43 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import {
+  Container, Row, Col, Button
+} from 'react-bootstrap';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import PingPong from '@shared/ping-pong/ping-pong';
-import Banner from '@shared/banner/banner';
 import Card from '@shared/card/card';
-import Box from '@shared/box/box';
 import WYSWYG from '@shared/wyswyg/wyswyg';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
-
 export default function SuccessStoriesPage(): React.ReactElement {
   const textForIntro = ` We have more than 10 years of experience working with global organizations 
-    of all sizes and industries.`
-  
-    const quoteTypeTextList = [
-      {
-        quote: `“Thanks so much for the awesome customer service. So many companies, large and
+    of all sizes and industries.`;
+
+  const quoteTypeTextList = [
+    {
+      quote: `“Thanks so much for the awesome customer service. So many companies, large and
           small, have a lot to learn from you. Great job!”`,
-        author: 'Akyra Toriyama',
-        position: 'Executive producer'
-      },
-      {
-        quote: `“Thanks so much for the awesome customer service. So many companies, large and
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: `“Thanks so much for the awesome customer service. So many companies, large and
           small, have a lot to learn from you. Great job!”`,
-        author: 'Akyra Toriyama',
-        position: 'Executive producer'
-      },
-      {
-        quote: `“Thanks so much for the awesome customer service. So many companies, large and
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    },
+    {
+      quote: `“Thanks so much for the awesome customer service. So many companies, large and
           small, have a lot to learn from you. Great job!”`,
-        author: 'Akyra Toriyama',
-        position: 'Executive producer'
-      }
-    ];
+      author: 'Akyra Toriyama',
+      position: 'Executive producer'
+    }
+  ];
 
   return (
     <div>
@@ -52,13 +51,13 @@ export default function SuccessStoriesPage(): React.ReactElement {
         backgroundImage="hero-for-success-stories.png"
         backgroundColor={{ background: 'transparent' }}
       />
-      <div className="mt-4 pt-4 pb-4">        
+      <div className="mt-4 pt-4 pb-4">
         <h4 className="text-center">Our clients make us who we are</h4>
         <div className="pt-2 pb-4">
           <IntroText text={textForIntro} />
         </div>
       </div>
-      <PingPong 
+      <PingPong
         title="Tourism Authority Panama App"
         textContent={`The Tourism Authority of Panama or ATP is the governmental institution
           in charge of managing everything related to tourism within the country, and
@@ -226,7 +225,7 @@ export default function SuccessStoriesPage(): React.ReactElement {
           `}
           image="wyswyg-success-stories.png"
           imageToRight
-          backgroundColor={{ background: 'transparent'}}
+          backgroundColor={{ background: 'transparent' }}
         />
       </div>
       <BannerAdvertising
@@ -239,5 +238,4 @@ export default function SuccessStoriesPage(): React.ReactElement {
       <Footer />
     </div>
   );
-  
 }
