@@ -8,7 +8,7 @@ import ImageProvider from '@core/providers/image/image-provider';
 
 import './event-card.scss';
 
-export default function EventCardFeatured({event}: EventCardProps): React.ReactElement {
+export default function EventCardFeatured({ event }: EventCardProps): React.ReactElement {
   return (
     <Card className="event-card event-card-featured">
       <Card.Body className="d-flex p-0">

@@ -7,7 +7,7 @@ import { EventCardProps } from '@props/event-card';
 
 import './event-card.scss';
 
-export default function EventCard({event}: EventCardProps): React.ReactElement {
+export default function EventCard({ event }: EventCardProps): React.ReactElement {
   return (
     <Card className="event-card event-card-standard">
       <Card.Body className="d-flex p-0">

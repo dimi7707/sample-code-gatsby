@@ -17,12 +17,12 @@ export default function BlogCard({
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <ul className="pl-0">
-            <li className="blog-card-hightlight-date">{fullDate}</li>
-            <li className="blog-card-tags">
-              Tags:
-              <span className="ml-1">{tags}</span>
-            </li>
-          </ul>
+          <li className="blog-card-hightlight-date">{fullDate}</li>
+          <li className="blog-card-tags">
+            Tags:
+            <span className="ml-1">{tags}</span>
+          </li>
+        </ul>
         <Card.Text>
           <span>{shortText}</span>
         </Card.Text>
