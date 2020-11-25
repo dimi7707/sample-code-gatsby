@@ -27,7 +27,9 @@ import BannerAdvertising from '@shared/banner/banner-advertising';
 import EventCard from '@shared/event-card/event-card';
 import EventCardFeatured from '@shared/event-card/event-card-featured';
 import WYSWYG from '@shared/wyswyg/wyswyg';
+import BlogCard from '@shared/blog-card/blog-card';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
+import PingPong from '@shared/ping-pong/ping-pong';
 import Footer from '@core/layout/footer/footer';
 import { Event } from '@models/event';
 
@@ -79,21 +81,19 @@ export default function StyleGuidePage(): React.ReactElement {
   ];
 
   const event = {
-    info: {
-      label: 'Webinar',
-      title: 'Validated ID | Personal Identification Digital Solutions',
-      description: `In this free webinar, we'll be talking about creating an omnichannel
-        platform with Twilio and other platforms. Once registered, you will receive an email
-        with the address to access the webinar.`,
-      day: '08',
-      month: 'December',
-      year: '2020',
-      dayWeek: 'Thursday',
-      startTime: '11:00',
-      endTime: '12:00',
-      status: 'open',
-      image: 'img-test-banner.jpg'
-    }
+    label: 'Webinar',
+    title: 'Validated ID | Personal Identification Digital Solutions',
+    description: `In this free webinar, we'll be talking about creating an omnichannel
+      platform with Twilio and other platforms. Once registered, you will receive an email
+      with the address to access the webinar.`,
+    day: '08',
+    month: 'December',
+    year: '2020',
+    dayWeek: 'Thursday',
+    startTime: '11:00',
+    endTime: '12:00',
+    status: 'open',
+    image: 'img-test-banner.jpg'
   } as Event;
 
   return (
@@ -654,41 +654,58 @@ export default function StyleGuidePage(): React.ReactElement {
         </Col>
       </Row>
 
+      <div className="custom-divider mb-5" />
+      <div className="d-flex">
+        <div className="mr-4">
+          <BlogCard
+            image="img-test-banner.jpg"
+            title="When Should You Consider Outsourcing Your Technology Projects?"
+            fullDate="October 26, 2020"
+            tags="Marketing, Data, Science, Business, Intelligence"
+            shortText={`The Coronavirus pandemic has disrupted our daily lives and
+              consequently accelerated the adoption of many technologies, some of which were
+              already on the rise, and some of which were slowly emerging. In this article,
+              we’ll take a look at the latest tech trends and understand their implications.
+              Let’s go!`}
+            link={{ label: 'See more', link: '/' }}
+          />
+        </div>
+        <div className="ml-4">
+          <BlogCard
+            image="img-test-banner.jpg"
+            title="When Should You Consider Outsourcing Your Technology Projects?"
+            fullDate="October 26, 2020"
+            tags="Marketing, Data, Science, Business, Intelligence"
+            shortText={`The Coronavirus pandemic has disrupted our daily lives and
+            consequently accelerated the adoption of many technologies, some of which were
+            already on the rise, and some of which were slowly emerging. In this article,
+            we’ll take a look at the latest tech trends and understand their implications.
+            Let’s go!`}
+            link={{ label: 'See more', link: '/' }}
+          />
+        </div>
+      </div>
+
       <div className="custom-divider" />
-      <h4>Event card featured</h4>
-      <EventCardFeatured
-        label="Webinar"
-        title="Validated ID | Personal Identification
-          Digital Solutions"
-        description="In this free webinar, we'll be talking about creating an omnichannel
-          platform with Twilio and other platforms. Once registered, you will receive an email
-          with the address to access the webinar."
-        day="08"
-        month="December"
-        year="2020"
-        dayWeek="Thursday"
-        startTime="11:00"
-        endTime="12:00"
-        status="open"
-        image="img-test-banner.jpg"
+      <h4 className="mt-4 mb-4">Ping pong</h4>
+      <PingPong
+        title="Tourism Authority Panama App"
+        textContent={`The Tourism Authority of Panama or ATP is the governmental institution in 
+          charge of managing everything related to tourism within the country, and promoting
+          the typical tourist sites and activities of Panama. And as such, they have a great
+          weight on their shoulders, when it comes to national tourism.`}
+        image="img-test-ping-pong.jpg"
+        buttonText="See more >>"
+        imageToRight
       />
 
       <div className="custom-divider" />
+      <h4>Event card featured</h4>
+      <EventCardFeatured event={event} />
+
+      <div className="custom-divider" />
       <h4>Event card</h4>
-      <EventCard
-        label="Webinar"
-        title="How technology empowering E-commerce!"
-        description="In this free webinar, we'll be talking about creating an omnichannel
-          platform with Twilio and other platforms. Once registered, you will receive an email
-          with the address to access the webinar."
-        day="08"
-        month="December"
-        year="2020"
-        dayWeek="Thursday"
-        startTime="11:00"
-        endTime="12:00"
-        status="open"
-      />
+      <EventCard event={event} />
 
       <div className="custom-divider" />
       <h4>Quote type text Slider</h4>
