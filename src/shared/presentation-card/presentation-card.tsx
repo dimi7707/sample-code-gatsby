@@ -22,12 +22,10 @@ export default function PresentationCard({
         <h3 className="text-white">{title}</h3>
         <p className="small text-white w-75">{address}</p>
         <div className="d-flex">
-          <div>
-            <ul>
-              <li className="small text-sky-blue">Information</li>
-              <li className="text-white small">{phoneNumber}</li>
-            </ul>
-          </div>
+          <ul>
+            <li className="small text-sky-blue">Information</li>
+            <li className="text-white small">{phoneNumber}</li>
+          </ul>
           <div className="ml-auto">
             <a href={link.link}>{link.label}</a>
           </div>

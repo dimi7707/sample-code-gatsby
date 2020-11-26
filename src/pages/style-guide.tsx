@@ -29,9 +29,9 @@ import EventCardFeatured from '@shared/event-card/event-card-featured';
 import WYSWYG from '@shared/wyswyg/wyswyg';
 import BlogCard from '@shared/blog-card/blog-card';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
-import PresentationCard from '@shared/presentation-card/presentation-card';
 import PingPong from '@shared/ping-pong/ping-pong';
 import CustomTabs from '@shared/custom-tabs/custom-tabs';
+import PresentationCard from '@shared/presentation-card/presentation-card';
 import Footer from '@core/layout/footer/footer';
 import { Event } from '@models/event';
 
