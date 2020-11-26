@@ -1,0 +1,23 @@
+@import '@styles/_variables.scss';
+
+.presentation-card {
+  border-radius: 25px;
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  a {
+    color: $sandy;
+    font-weight: 600;
+  }
+
+  .text-sky-blue {
+    color: $sky-blue;
+    font-weight: 600;
+  }
+}
