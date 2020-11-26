@@ -27,6 +27,7 @@ import BannerAdvertising from '@shared/banner/banner-advertising';
 import WYSWYG from '@shared/wyswyg/wyswyg';
 import BlogCard from '@shared/blog-card/blog-card';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
+import PresentationCard from '@shared/presentation-card/presentation-card';
 import PingPong from '@shared/ping-pong/ping-pong';
 import Footer from '@core/layout/footer/footer';
 
@@ -597,6 +598,27 @@ export default function StyleGuidePage(): React.ReactElement {
           image="img-test-banner.jpg"
           backgroundColor={{ background: 'white' }}
           imageToRight
+        />
+      </div>
+
+      <div className="custom-divider" />
+      <h4>PresentationCard</h4>
+      <div className="d-flex">
+        <PresentationCard
+          title="Colombia"
+          address={`Medellin, Antioquia Complex Route N. Calle 
+          67 52-20 Tower A. Office 3033. Medellín.`}
+          phoneNumber="+57 443 10 559"
+          link={{ label: 'View map', link: '/' }}
+          backgroundImage="img-test-banner.jpg"
+        />
+        <PresentationCard
+          title="Colombia"
+          address={`Medellin, Antioquia Complex Route N. Calle 
+          67 52-20 Tower A. Office 3033. Medellín.`}
+          phoneNumber="+57 443 10 559"
+          link={{ label: 'View map', link: '/' }}
+          backgroundImage="img-test-banner.jpg"
         />
       </div>
 
