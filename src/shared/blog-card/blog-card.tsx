@@ -16,15 +16,15 @@ export default function BlogCard({
       <ImageProvider fileName={image} className="card-img-top" alt="" />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
+        <ul className="pl-0">
+          <li className="blog-card-hightlight-date">{fullDate}</li>
+          <li className="blog-card-tags">
+            Tags:
+            <span className="ml-1">{tags}</span>
+          </li>
+        </ul>
         <Card.Text>
-          <ul className="pl-0">
-            <li className="blog-card-hightlight-date">{fullDate}</li>
-            <li className="blog-card-tags">
-              Tags:
-              <span className="ml-1">{tags}</span>
-            </li>
-          </ul>
-          <p>{shortText}</p>
+          <span>{shortText}</span>
         </Card.Text>
         <div className="blog-card-see-more text-right">
           <a href={link.link}>

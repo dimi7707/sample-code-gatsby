@@ -24,12 +24,15 @@ import Banner from '@shared/banner/banner';
 import BannerForm from '@shared/banner/banner-form';
 import BannerVideo from '@shared/banner/banner-video';
 import BannerAdvertising from '@shared/banner/banner-advertising';
+import EventCard from '@shared/event-card/event-card';
+import EventCardFeatured from '@shared/event-card/event-card-featured';
 import WYSWYG from '@shared/wyswyg/wyswyg';
 import BlogCard from '@shared/blog-card/blog-card';
 import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 import PresentationCard from '@shared/presentation-card/presentation-card';
 import PingPong from '@shared/ping-pong/ping-pong';
 import Footer from '@core/layout/footer/footer';
+import { Event } from '@models/event';
 
 import '@styles/base.scss';
 
@@ -77,6 +80,22 @@ export default function StyleGuidePage(): React.ReactElement {
       position: 'Executive producer'
     }
   ];
+
+  const event = {
+    label: 'Webinar',
+    title: 'Validated ID | Personal Identification Digital Solutions',
+    description: `In this free webinar, we'll be talking about creating an omnichannel
+      platform with Twilio and other platforms. Once registered, you will receive an email
+      with the address to access the webinar.`,
+    day: '08',
+    month: 'December',
+    year: '2020',
+    dayWeek: 'Thursday',
+    startTime: '11:00',
+    endTime: '12:00',
+    status: 'open',
+    image: 'img-test-banner.jpg'
+  } as Event;
 
   return (
     <Container>
@@ -701,6 +720,14 @@ export default function StyleGuidePage(): React.ReactElement {
         buttonText="See more >>"
         imageToRight
       />
+
+      <div className="custom-divider" />
+      <h4>Event card featured</h4>
+      <EventCardFeatured event={event} />
+
+      <div className="custom-divider" />
+      <h4>Event card</h4>
+      <EventCard event={event} />
 
       <div className="custom-divider" />
       <h4>Quote type text Slider</h4>
