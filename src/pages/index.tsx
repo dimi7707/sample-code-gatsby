@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import SEO from '@core/seo/seo';
 
@@ -12,8 +13,8 @@ import '@styles/base.scss';
 
 const entries = [
   {
-    title: 'Soy el card 1',
-    description: 'Soy el description del card',
+    title: 'I am card 1',
+    description: 'I am card description',
     image: 'gatsby-astronaut.png',
     link: '/'
   }
@@ -34,17 +35,34 @@ const cardsContent = entries.map((entry: CardProps, index: number) => (
   </Col>
 ));
 
-export default function IndexPage(): React.ReactElement {
+function fetchDataFromDrupal() {
+  const test = useStaticQuery(graphql`
+    query{
+      allNodeArticle {
+        nodes {
+          id
+          title
+          body {
+            processed
+          }
+        }
+      }
+    }
+  `);
+  return test;
+}
+
+export default function IndexPage() {
+  const data = fetchDataFromDrupal();
+  const { nodes } = data.allNodeArticle;
   return (
     <div className="mb-5">
       <SEO title="Home" />
 
       <Container>
-        <h3 className="text-center">We Deliver</h3>
+        <h3 className="text-center">{nodes[0].title}</h3>
         <IntroText
-          text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ut fugit
-          repudiandae quia assumenda dolores labore, repellat modi aliquid minima consequatur
-          corporis odio odit voluptatibus."
+          text={nodes[0].body.processed}
         />
         <Row>
           {cardsContent}

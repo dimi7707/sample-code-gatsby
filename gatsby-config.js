@@ -59,6 +59,16 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    {
+      resolve: 'gatsby-source-drupal',
+      options: {
+        baseUrl: 'http://rootstack-d8.lndo.site:8000/',
+        basicAuth: {
+          username: 'gatsby',
+          password: 'ThisIsMyPassword%MineAlone4',
+        },
+      },
+    },
   ]
 };
