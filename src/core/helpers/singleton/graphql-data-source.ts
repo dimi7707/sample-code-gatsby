@@ -10,7 +10,7 @@ export default class GraphqlDataSource extends DataSource {
 
   getAllLandingPages() {
     this.serviceResponse = useStaticQuery(graphql`
-      query{
+      query {
         allNodeArticle {
           nodes {
             id
