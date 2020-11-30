@@ -63,10 +63,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-drupal',
       options: {
-        baseUrl: 'http://rootstack-d8.lndo.site:8000/',
+        baseUrl: process.env.BASE_URL_API,
         basicAuth: {
-          username: 'gatsby',
-          password: 'ThisIsMyPassword%MineAlone4',
+          username: process.env.BASIC_AUTH_USER,
+          password: process.env.BASIC_AUTH_PASSWORD,
         },
       },
     },
