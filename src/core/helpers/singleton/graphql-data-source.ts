@@ -26,7 +26,7 @@ export default class GraphqlDataSource extends DataSource {
         }
       }
     `).allNodeLandingPage.nodes;
-    
+
     return this.landingPages;
   }
 }
