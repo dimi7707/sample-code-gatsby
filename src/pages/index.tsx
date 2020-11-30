@@ -5,7 +5,6 @@ import SEO from '@core/seo/seo';
 import IntroText from '@shared/text/intro-text';
 import Card from '@shared/card/card';
 import { CardProps } from '@props/card';
-import GraphqlDataServices from '@core/services/graphql-data-services';
 
 import '@styles/base.scss';
 
@@ -33,18 +32,15 @@ const cardsContent = entries.map((entry: CardProps, index: number) => (
   </Col>
 ));
 
-export default function IndexPage() {
-  const dataService = new GraphqlDataServices();
-  const data = dataService.getAllLandingPages();
-
+export default function IndexPage(): React.ReactElement {
   return (
     <div className="mb-5">
       <SEO title="Home" />
 
       <Container>
-        <h3 className="text-center">{data.allNodeArticle.nodes[0].title}</h3>
+        <h3 className="text-center">I am test...</h3>
         <IntroText
-          text={data.allNodeArticle.nodes[0].body.processed}
+          text="lorem ipsum.... this is a lorem ipsum"
         />
         <Row>
           {cardsContent}

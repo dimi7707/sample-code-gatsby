@@ -1,27 +1,31 @@
 import { graphql, useStaticQuery } from 'gatsby';
+import { LandingPageNode } from '@models/landing-page-node';
 import DataSource from './data-source';
 
 export default class GraphqlDataSource extends DataSource {
-  serviceResponse: any;
+  landingPages: LandingPageNode[];
 
   constructor() {
     super('graphql');
   }
 
-  getAllLandingPages() {
-    this.serviceResponse = useStaticQuery(graphql`
+  getAllLandingPages(): LandingPageNode[] {
+    this.landingPages = useStaticQuery(graphql`
       query {
-        allNodeArticle {
+        allNodeLandingPage {
           nodes {
-            id
-            title
             body {
+              format
               processed
+              summary
+              value
             }
+            created
+            title
           }
         }
       }
-    `);
-    return this.serviceResponse;
+    `).allNodeLandingPage.nodes;
+    return this.landingPages;
   }
 }
