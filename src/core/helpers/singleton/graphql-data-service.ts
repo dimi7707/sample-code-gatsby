@@ -1,15 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { LandingPageNode } from '@models/landing-page-node';
-import DataSource from './data-source';
+import { DataService } from './data-service';
 
-export default class GraphqlDataSource extends DataSource {
+export default class GraphqlDataService implements DataService {
   landingPages: LandingPageNode[];
 
-  constructor() {
-    super('graphql');
-  }
-
-  getAllLandingPages(): LandingPageNode[] {
+  getLandingPages(): LandingPageNode[] {
     this.landingPages = useStaticQuery(graphql`
       query {
         allNodeLandingPage {
