@@ -6,8 +6,10 @@ export default class GraphqlServices {
 
   createFactory(type: string) {
     this.factory = new DataServiceFactory();
-    
-    this.factory.register('graphql', () => new GraphqlDataServices());
+
+    if (type === 'graphql') {
+      this.factory.register(type, () => new GraphqlDataServices());
+    }
 
     return this.factory;
   }
