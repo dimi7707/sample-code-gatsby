@@ -5,7 +5,7 @@ import { DataService } from './data-service';
 export default class GraphqlDataService implements DataService {
   landingPages: LandingPageNode[];
 
-  getLandingPages(): LandingPageNode[] {
+  getLandingPages(): Promise<LandingPageNode[]> {
     this.landingPages = useStaticQuery(graphql`
       query {
         allNodeLandingPage {
@@ -23,6 +23,6 @@ export default class GraphqlDataService implements DataService {
       }
     `).allNodeLandingPage.nodes;
 
-    return this.landingPages;
+    return new Promise((resolve) => resolve(this.landingPages));
   }
 }

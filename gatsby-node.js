@@ -13,6 +13,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@assets': path.resolve(__dirname, 'src/assets'),
         '@styles': path.resolve(__dirname, 'src/assets/styles'),
         '@core': path.resolve(__dirname, 'src/core'),
+        '@config': path.resolve(__dirname, 'src/config'),
         '@shared': path.resolve(__dirname, 'src/shared'),
         '@models': path.resolve(__dirname, 'src/shared/models'),
         '@props': path.resolve(__dirname, 'src/shared/props')
