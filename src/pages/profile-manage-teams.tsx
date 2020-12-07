@@ -18,7 +18,7 @@ export default function ProfileManageTeams(): React.ReactElement {
   providing the necessary talent to complete your team, we guarantee the most efficient
   workflow and exceptional results.`;
   return (
-    <div>
+    <div className="servicePage">
       <TopBar />
       <NavigationBar />
       <Hero

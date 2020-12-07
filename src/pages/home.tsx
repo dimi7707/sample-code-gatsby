@@ -63,7 +63,7 @@ export default function HomePage(): React.ReactElement {
   ];
 
   return (
-    <div>
+    <div className="homepage">
       <TopBar />
       <NavigationBar />
       <HeroSlider list={heroList} />

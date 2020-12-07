@@ -18,7 +18,7 @@ export default function ProfileProjectBased(): React.ReactElement {
   workflow and exceptional results.`;
 
   return (
-    <div>
+    <div className="servicePage">
       <TopBar />
       <NavigationBar />
       <Hero
