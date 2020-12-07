@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-graphql',
       options: {
-        typeName: 'Rootstack',
-        fieldName: 'rootstack',
+        typeName: 'rootstack',
+        fieldName: 'drupalsource',
         url: process.env.DRUPAL_GRAPHQL_API_URL,
         headers: {
           Authorization: `Basic: ${Buffer.from(`${process.env.BASIC_AUTH_USER}:${process.env.BASIC_AUTH_PASSWORD}`).toString('base64')}`,

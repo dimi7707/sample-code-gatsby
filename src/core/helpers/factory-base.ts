@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Base class for factory templates.
  */
 export default class FactoryBase<FactoryMethod> {

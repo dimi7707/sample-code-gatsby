@@ -1,4 +1,4 @@
-﻿import FactoryBase from './factory-base';
+import FactoryBase from './factory-base';
 
 /**
  * Template for factory with creation options (configuration).

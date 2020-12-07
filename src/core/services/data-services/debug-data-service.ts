@@ -1,4 +1,4 @@
-﻿import { LandingPageNode } from '@models/landing-page-node';
+import { LandingPageNode } from '@models/landing-page-node';
 import { DataService } from './data-service';
 
 export default class DebugDataService implements DataService {
