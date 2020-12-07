@@ -22,8 +22,16 @@
   }
 }
 
-.side-decoration {
-  border-left: 10px solid $orange;
-  border-right: 10px solid $orange;
-  border-radius: 10px 10px 0 0;
+.left-decorator {
+  border-right: 10px solid $orange-variant;
+  border-radius: 35px 5px 0 0;
+  width: 5px;
+  height: 35px;
+}
+
+.right-decorator {
+  border-right: 10px solid $orange-variant;
+  border-radius: 5px 35px 0 0;
+  width: 5px;
+  height: 35px;
 }
