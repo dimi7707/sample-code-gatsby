@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
@@ -12,25 +13,104 @@ import BannerAdvertising from '@shared/banner/banner-advertising';
 import Footer from '@core/layout/footer/footer';
 
 export default function ProfileProjectBased(): React.ReactElement {
-  const textForIntro = `We provide end-to-end development services working with the model that
-  is most convenient for your business. From managing a project from start to finish to 
-  providing the necessary talent to complete your team, we guarantee the most efficient
-  workflow and exceptional results.`;
+  const servicesPages = useStaticQuery(graphql`
+    query {
+      allNodeService {
+        nodes {
+          body {
+            format
+            processed
+            summary
+            value
+          }
+          relationships {
+            field_content_main {
+              ... on paragraph__paragraph_cards {
+                id
+                field_pg_title
+                relationships {
+                  field_pg_card {
+                    field_pg_title
+                    field_pg_wysiwyg {
+                      value
+                      processed
+                    }
+                    relationships {
+                      field_pg_image {
+                        name
+                        relationships {
+                          field_media_image {
+                            uri {
+                              url
+                              value
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              ... on paragraph__paragraph_hero {
+                id
+                field_pg_title
+                field_pg_subtitle
+                relationships {
+                  field_pg_background {
+                    name
+                    relationships {
+                      field_media_image {
+                        uri {
+                          url
+                          value
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              ... on paragraph__paragraph_wysiwyg {
+                field_pg_title
+                field_pg_wysiwyg {
+                  value
+                  processed
+                }
+              }
+            }
+          }
+          title
+        }
+      }
+    }
+  `).allNodeService.nodes[0];
+  const contentMain = servicesPages.relationships.field_content_main;
+  const successStoriesCards = contentMain[2].relationships.field_pg_card.map(
+    (contentForCard, index) => (
+      <Col xs="12" md="3" key={`card-${index * 2}`}>
+        <Card
+          title={contentForCard.field_pg_title}
+          description={contentForCard.field_pg_wysiwyg.value}
+          image="img-for-succes-stories.png"
+          link="/"
+        />
+      </Col>
+    )
+  );
 
   return (
     <div className="servicePage">
       <TopBar />
       <NavigationBar />
       <Hero
-        title="Project-Based Model Services"
-        subTitle="Let us take care of your next technology project"
+        title={contentMain[0].field_pg_title}
+        subTitle={servicesPages.relationships.field_content_main[0].field_pg_subtitle}
         backgroundImage="hero-for-profile-manage-teams.png"
         backgroundColor={{ background: 'transparent' }}
         size="lg"
         color="#000000"
       />
       <div className="mt-4 pt-4 pb-4">
-        <IntroText sideDecoration text={textForIntro} />
+        <IntroText sideDecoration text={contentMain[1].field_pg_wysiwyg.value} />
       </div>
       <div className="pt-4 mt-4">
         <WYSWYG
@@ -76,40 +156,9 @@ export default function ProfileProjectBased(): React.ReactElement {
         />
       </div>
       <Container className="mt-4 pt-4 mb-4 pb-4">
-        <h4 className="text-center pb-4">Success stories</h4>
+        <h4 className="text-center pb-4">{ contentMain[2].field_pg_title }</h4>
         <Row>
-          <Col xs={12} md={3}>
-            <Card
-              title="Minfo"
-              description="We built an innovative web app and a responsive website for KYC laws"
-              image="img-for-succes-stories.png"
-              link="/"
-            />
-          </Col>
-          <Col xs={12} md={3}>
-            <Card
-              title="Minfo"
-              description="We built an innovative web app and a responsive website for KYC laws"
-              image="img-for-succes-stories.png"
-              link="/"
-            />
-          </Col>
-          <Col xs={12} md={3}>
-            <Card
-              title="Minfo"
-              description="We built an innovative web app and a responsive website for KYC laws"
-              image="img-for-succes-stories.png"
-              link="/"
-            />
-          </Col>
-          <Col xs={12} md={3}>
-            <Card
-              title="Minfo"
-              description="We built an innovative web app and a responsive website for KYC laws"
-              image="img-for-succes-stories.png"
-              link="/"
-            />
-          </Col>
+          {successStoriesCards}
         </Row>
       </Container>
       <BannerAdvertising

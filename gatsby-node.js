@@ -23,11 +23,11 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 };
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
+  const { createTypes } = actions;
   const typeDefs = `
     type LandingPage implements Node {
       joinedAt: Date
     }
-  `
-  createTypes(typeDefs)
+  `;
+  createTypes(typeDefs);
 };

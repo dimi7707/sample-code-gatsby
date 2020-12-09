@@ -70,7 +70,6 @@ export default function getServicesPages<ServicePage>(): Promise<ServicePage> {
         }
       }
     }
-  `
-  ).allNodeService.nodes;
+  `).allNodeService.nodes;
   return new Promise((resolve) => resolve(servicePages));
 }

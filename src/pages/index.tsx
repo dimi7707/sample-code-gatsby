@@ -47,9 +47,11 @@ export default function IndexPage(): React.ReactElement {
   const [landingPages, setLandingPages] = useState([] as LandingPageNode[]);
 
   useEffect(() => {
-    const bootstrapAsync = async () => setLandingPages((await dataService.getLandingPages()));
-
-    bootstrapAsync();
+    const bootstrap = async () => {
+      const pages = await dataService.getLandingPages();
+      setLandingPages(pages);
+    };
+    bootstrap();
   }, []);
 
   return (
