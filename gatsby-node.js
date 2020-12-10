@@ -22,12 +22,42 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   });
 };
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-  const typeDefs = `
-    type LandingPage implements Node {
-      joinedAt: Date
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
+
+  const serviceTemplate = path.resolve(`src/templates/service.js`)
+  return graphql(
+    `
+      {
+        services: allNodeService {
+          edges {
+            node {
+              body {
+                processed
+              }
+              id
+              path {
+                langcode
+                alias
+              }
+            }
+          }
+        }
+      }
+    `
+  ).then(result => {
+    if (result.errors) {
+      throw result.errors
     }
-  `;
-  createTypes(typeDefs);
+
+    result.data.services.edges.forEach(({ node }) => {
+      createPage({
+        path: node.path.alias,
+        component: serviceTemplate,
+        context: {
+          id: node.id,
+        },
+      })
+    })
+  })
 };
