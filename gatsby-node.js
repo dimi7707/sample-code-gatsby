@@ -23,9 +23,9 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 };
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
-  const serviceTemplate = path.resolve(`src/templates/service.js`)
+  const serviceTemplate = path.resolve('src/templates/service.js');
   return graphql(
     `
       {
@@ -45,9 +45,9 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     `
-  ).then(result => {
+  ).then((result) => {
     if (result.errors) {
-      throw result.errors
+      throw result.errors;
     }
 
     result.data.services.edges.forEach(({ node }) => {
@@ -57,7 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           id: node.id,
         },
-      })
-    })
-  })
+      });
+    });
+  });
 };
