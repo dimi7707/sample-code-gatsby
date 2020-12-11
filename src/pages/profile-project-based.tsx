@@ -156,7 +156,7 @@ export default function ProfileProjectBased(): React.ReactElement {
         />
       </div>
       <Container className="mt-4 pt-4 mb-4 pb-4">
-        <h4 className="text-center pb-4">{ contentMain[2].field_pg_title }</h4>
+        <h4 className="text-center pb-4">{contentMain[2].field_pg_title}</h4>
         <Row>
           {successStoriesCards}
         </Row>
