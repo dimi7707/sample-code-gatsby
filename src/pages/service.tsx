@@ -90,16 +90,12 @@ export default function ServicePage(): React.ReactElement {
         <h4 className="text-center mt-4 pt-4">Areas of expertise</h4>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
           {
-            boxesAreasExpertise.map((box) => {
-              return <Box iconType title={box.title} image={box.image} hasBorder />   
-            })
+            boxesAreasExpertise.map((box, index) => <div key={`${index * 2}`}><Box iconType title={box.title} image={box.image} hasBorder /></div>)
           }
         </div>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
           {
-            boxesAreasExpertise.map((box) => {
-              return <Box iconType title={box.title} image={box.image} hasBorder />   
-            })
+            boxesAreasExpertise.map((box, index) => <div key={`${index * 2}`}><Box iconType title={box.title} image={box.image} hasBorder /></div>)
           }
         </div>
       </Container>
