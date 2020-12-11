@@ -25,20 +25,27 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const serviceTemplate = path.resolve('src/templates/service.js');
   return graphql(
     `
       {
+        landingPages: allNodeLandingPage {
+          edges {
+            node {
+              id
+              path {
+                alias
+                langcode
+              }
+            }
+          }
+        }
         services: allNodeService {
           edges {
             node {
-              body {
-                processed
-              }
               id
               path {
-                langcode
                 alias
+                langcode
               }
             }
           }
@@ -49,15 +56,28 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       throw result.errors;
     }
-
-    result.data.services.edges.forEach(({ node }) => {
+    const allContentTypes = result.data.landingPages.edges.concat(
+      result.data.services.edges
+    ); 
+    allContentTypes.forEach(({ node }) => {
+      const template = resolvePath(node.path.alias);
       createPage({
         path: node.path.alias,
-        component: serviceTemplate,
+        component: path.resolve(`src/templates/${template}.tsx`),
         context: {
           id: node.id,
         },
       });
     });
   });
+};
+
+const resolvePath = (path) => {
+  const slug = path.substr(1, path.indexOf('/', 1) -1);
+  switch (slug) {
+    case 'servicio':
+      return 'service';
+    default:
+      return slug;
+  } 
 };
