@@ -12,6 +12,10 @@ import IntroText from '@shared/text/intro-text';
 import WYSWYG from '@shared/wyswyg/wyswyg';
 import Card from '@shared/card/card';
 
+ServiceTemplate.propTypes = {
+  data: PropTypes.string.isRequired
+};
+
 export default function ServiceTemplate({ data }) {
   const mainContent = data.service.relationships.field_content_main;
   const contentToRender = [];
@@ -92,11 +96,7 @@ export default function ServiceTemplate({ data }) {
       <Footer />
     </div>
   );
-};
-
-ServiceTemplate.propTypes = {
-  data: PropTypes.string.isRequired
-};
+}
 
 export const query = graphql`
   query($id: String!) {

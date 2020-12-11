@@ -58,7 +58,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
     const allContentTypes = result.data.landingPages.edges.concat(
       result.data.services.edges
-    ); 
+    );
     allContentTypes.forEach(({ node }) => {
       const template = resolvePath(node.path.alias);
       createPage({
@@ -72,12 +72,12 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-const resolvePath = (path) => {
-  const slug = path.substr(1, path.indexOf('/', 1) -1);
+const resolvePath = (urlAlias) => {
+  const slug = urlAlias.substr(1, urlAlias.indexOf('/', 1) - 1);
   switch (slug) {
     case 'servicio':
       return 'service';
     default:
       return slug;
-  } 
+  }
 };
