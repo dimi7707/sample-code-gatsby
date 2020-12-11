@@ -1,13 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-const LandingTemplate = ({ data }) => (
-  <div>
-    I am landing page template {data.landingPage.body.processed}
-  </div>
-);
-
-export default LandingTemplate;
+export default function LandingTemplate({ data }) {
+  return (
+    <div>
+      I am landing page template {data.landingPage.body.processed}
+    </div>
+  );
+}
 
 export const query = graphql`
   query($id: String!) {  
