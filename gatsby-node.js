@@ -60,21 +60,6 @@ exports.createPages = ({ actions, graphql }) => {
     const allContentTypes = result.data.landingPages.edges.concat(
       result.data.services.edges
     );
-    /* let arrayTranslates = [];
-    for (const iterator of allContentTypes) {
-      arrayTranslates.push({
-        node: {
-          id: '',
-          path: {
-            alias: iterator.node.path.alias,
-            langcode: 'es'
-          }
-        }
-      })
-    }
-    allContentTypes = allContentTypes.concat(
-      arrayTranslates
-    ); */
     allContentTypes.forEach(({ node }) => {
       const template = resolvePath(node.path.alias);
       createPage({

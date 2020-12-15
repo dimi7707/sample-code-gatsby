@@ -7,11 +7,6 @@ import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
 import Footer from '@core/layout/footer/footer';
 
-import Hero from '@shared/hero/hero';
-import IntroText from '@shared/text/intro-text';
-import WYSWYG from '@shared/wyswyg/wyswyg';
-import Card from '@shared/card/card';
-
 import ComponentIdentifier from '@templates/util-templates/component-identifier';
 
 ServiceTemplate.propTypes = {
