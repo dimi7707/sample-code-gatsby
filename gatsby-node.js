@@ -60,7 +60,7 @@ exports.createPages = ({ actions, graphql }) => {
     const allContentTypes = result.data.landingPages.edges.concat(
       result.data.services.edges
     );
-    /*let arrayTranslates = [];
+    /* let arrayTranslates = [];
     for (const iterator of allContentTypes) {
       arrayTranslates.push({
         node: {
@@ -69,7 +69,7 @@ exports.createPages = ({ actions, graphql }) => {
             alias: iterator.node.path.alias,
             langcode: 'es'
           }
-        }        
+        }
       })
     }
     allContentTypes = allContentTypes.concat(

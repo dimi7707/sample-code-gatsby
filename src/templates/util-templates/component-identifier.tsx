@@ -67,4 +67,4 @@ export default function ComponentIdentifier(type: string, id: string, mainConten
     default:
       return null;
   }
-};
+}

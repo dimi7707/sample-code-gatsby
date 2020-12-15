@@ -13,8 +13,8 @@ LandingTemplate.propTypes = {
 };
 
 export default function LandingTemplate({ data }) {
-  const mainContent = data.landingPage.relationships.field_content; 
-  let contentToRender = [];
+  const mainContent = data.landingPage.relationships.field_content;
+  const contentToRender = [];
   mainContent.forEach((c) => {
     contentToRender.push(ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent));
   });
