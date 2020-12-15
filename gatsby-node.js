@@ -13,6 +13,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@assets': path.resolve(__dirname, 'src/assets'),
         '@styles': path.resolve(__dirname, 'src/assets/styles'),
         '@core': path.resolve(__dirname, 'src/core'),
+        '@templates': path.resolve(__dirname, 'src/templates'),
         '@config': path.resolve(__dirname, 'src/config'),
         '@shared': path.resolve(__dirname, 'src/shared'),
         '@models': path.resolve(__dirname, 'src/shared/models'),
@@ -59,10 +60,25 @@ exports.createPages = ({ actions, graphql }) => {
     const allContentTypes = result.data.landingPages.edges.concat(
       result.data.services.edges
     );
+    /*let arrayTranslates = [];
+    for (const iterator of allContentTypes) {
+      arrayTranslates.push({
+        node: {
+          id: '',
+          path: {
+            alias: iterator.node.path.alias,
+            langcode: 'es'
+          }
+        }        
+      })
+    }
+    allContentTypes = allContentTypes.concat(
+      arrayTranslates
+    ); */
     allContentTypes.forEach(({ node }) => {
       const template = resolvePath(node.path.alias);
       createPage({
-        path: node.path.alias,
+        path: `${node.path.langcode}${node.path.alias}`,
         component: path.resolve(`src/templates/${template}.tsx`),
         context: {
           id: node.id,

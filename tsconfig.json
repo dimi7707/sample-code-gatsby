@@ -8,6 +8,7 @@
       "@assets/*": [ "src/assets/*" ],
       "@styles/*": [ "src/assets/styles/*" ],
       "@config/*": [ "src/config/*" ],
+      "@templates": [ "src/templates/*" ],
       "@core/*": [ "src/core/*" ],
       "@shared/*": [ "src/shared/*" ],
       "@models/*": [ "src/shared/models/*" ],

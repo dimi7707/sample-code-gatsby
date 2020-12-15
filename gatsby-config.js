@@ -69,6 +69,6 @@ module.exports = {
           password: process.env.BASIC_AUTH_PASSWORD,
         },
       },
-    },
+    }
   ]
 };
