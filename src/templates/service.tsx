@@ -21,7 +21,11 @@ export default function ServiceTemplate({ data }) {
 
   return (
     <div>
-      <TopBar currentLanguage={data.service.path.langcode} />
+      <TopBar 
+        currentLanguage={data.service.path.langcode}
+        urlCurrentVersion={`${data.service.path.langcode}${data.service.path.alias}`}
+        urlTranslateVersion={data.service.field_slug_translate_version}
+      />
       <NavigationBar />
       {contentToRender.map((C) => (C))}
       <Footer />
