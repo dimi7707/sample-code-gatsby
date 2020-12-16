@@ -9,20 +9,19 @@ import Footer from '@core/layout/footer/footer';
 import ComponentIdentifier from '@templates/util-templates/component-identifier';
 
 ServiceTemplate.propTypes = {
-  data: PropTypes.string.isRequired
+  data: PropTypes.object.isRequired
 };
 
 export default function ServiceTemplate({ data }) {
   const mainContent = data.service.relationships.field_content_main;
   const contentToRender = [];
-
   mainContent.forEach((c) => {
     contentToRender.push(ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent));
   });
 
   return (
     <div>
-      <TopBar />
+      <TopBar currentLanguage={data.service.path.langcode} />
       <NavigationBar />
       {contentToRender.map((C) => (C))}
       <Footer />

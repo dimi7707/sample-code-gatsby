@@ -9,19 +9,26 @@ import Footer from '@core/layout/footer/footer';
 import ComponentIdentifier from '@templates/util-templates/component-identifier';
 
 LandingTemplate.propTypes = {
-  data: PropTypes.string.isRequired
+  data: PropTypes.object.isRequired
 };
 
-export default function LandingTemplate({ data }) {
+export default function LandingTemplate({data}) : React.ReactElement {
   const mainContent = data.landingPage.relationships.field_content;
   const contentToRender = [];
   mainContent.forEach((c) => {
     contentToRender.push(ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent));
   });
 
+  /*console.log(data.landingPage.path.alias);
+  console.log(data.landingPage.field_translate_version.uri);*/
+
   return (
     <div>
-      <TopBar />
+      <TopBar 
+        currentLanguage={data.landingPage.path.langcode} 
+        urlCurrentVersion={`${data.landingPage.path.langcode}${data.landingPage.path.alias}` }
+        urlTranslateVersion={data.landingPage.field_slug_translate_version}
+      />
       <NavigationBar />
       {contentToRender.map((C) => (C))}
       <Footer />
@@ -35,10 +42,11 @@ export const query = graphql`
       body {
         processed
       }
-      field_translate_version {
-        title
-        uri
+      path{
+        alias
+        langcode
       }
+      field_slug_translate_version
       relationships {
         field_content {
           ... on paragraph__intro_text {

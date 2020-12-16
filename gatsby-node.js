@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 const path = require('path');
+const { any } = require('prop-types');
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -67,7 +68,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/${template}.tsx`),
         context: {
           id: node.id,
-        },
+        }
       });
     });
   });
