@@ -98,7 +98,7 @@ export default function ProfileProjectBased(): React.ReactElement {
   );
 
   return (
-    <div className="servicePage">
+    <div className="servicepage">
       <TopBar />
       <NavigationBar />
       <Hero

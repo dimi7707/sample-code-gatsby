@@ -21,6 +21,24 @@ export default function ServicePage(): React.ReactElement {
   is most convenient for your business. From managing a project from start to finish to 
   providing the necessary talent to complete your team, we guarantee the most efficient
   workflow and exceptional results.`;
+  const boxesAreasExpertise = [
+    {
+      title: 'Automatation',
+      image: 'mobile-app.svg'
+    },
+    {
+      title: 'Web developer',
+      image: 'flow.svg'
+    },
+    {
+      title: 'Automatation',
+      image: 'mobile-app.svg'
+    },
+    {
+      title: 'Web developer',
+      image: 'mobile-app.svg'
+    }
+  ];
   return (
     <div className="main-page-service">
       <TopBar />
@@ -71,16 +89,14 @@ export default function ServicePage(): React.ReactElement {
       <Container>
         <h4 className="text-center mt-4 pt-4">Areas of expertise</h4>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
-          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
-          <Box iconType title="Web developer" image="flow.svg" hasBorder />
-          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
-          <Box iconType title="Automatation" image="flow.svg" hasBorder />
+          {
+            boxesAreasExpertise.map((box, index) => <div key={`${index * 2}`}><Box iconType title={box.title} image={box.image} hasBorder /></div>)
+          }
         </div>
         <div className="d-flex justify-content-between flex-wrap mt-4 pt-4">
-          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
-          <Box iconType title="Web developer" image="flow.svg" hasBorder />
-          <Box iconType title="Automatation" image="mobile-app.svg" hasBorder />
-          <Box iconType title="Automatation" image="flow.svg" hasBorder />
+          {
+            boxesAreasExpertise.map((box, index) => <div key={`${index * 2}`}><Box iconType title={box.title} image={box.image} hasBorder /></div>)
+          }
         </div>
       </Container>
       <Container className="mt-4 pt-4">
@@ -138,159 +154,6 @@ export default function ServicePage(): React.ReactElement {
         urlVideo="https://www.youtube.com/embed/QFaFIcGhPoM"
         backgroundColor={{ background: '#f9fafb' }}
       />
-      <Container className="mt-4 pt-4 pb-4">
-        <h4>Clients</h4>
-        <div className="d-flex clients-section">
-          <Box
-            title=""
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-        </div>
-        <div className="d-flex clients-section mt-2">
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-        </div>
-        <div className="d-flex clients-section mt-2">
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-          <Box
-            title="Automatation"
-            image="asamblea-nacional.svg"
-            className=""
-            hasBorder
-          />
-        </div>
-      </Container>
       <BannerForm
         title="Let's work together!"
         subtitle="We are ready to help you."
