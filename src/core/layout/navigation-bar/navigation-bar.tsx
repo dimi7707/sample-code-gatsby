@@ -39,9 +39,13 @@ const links = [
 
 export default function NavigationBar(): React.ReactElement {
   const navBarLinks = links.map((linkElement: LinkProps) => (
-    <Nav.Link key={`link-${linkElement.label}`} href={linkElement.link}>
+    <Nav.Link
+      key={`link-${linkElement.label}`}
+      className="small font-weight-bold mr-2 text-center"
+      href={linkElement.link}
+    >
       <span className="pr-2">{linkElement.label}</span>
-      <FontAwesomeIcon icon={faAngleDown} className="orange-arrow" />
+      <FontAwesomeIcon icon={faAngleDown} className="navigation-bar-orange-arrow" />
     </Nav.Link>
   ));
 

@@ -31,7 +31,7 @@ export default function TopBar(): React.ReactElement {
           {links.map((link: LinkProps) => (
             <Nav.Link
               key={link.label}
-              className={link.isActive ? 'active text-white' : ''}
+              className={link.isActive ? 'active text-white small' : 'small'}
               href={link.link}
             >
               {link.label}

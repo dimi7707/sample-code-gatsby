@@ -12,11 +12,11 @@ export default function Card({
   return (
     <div className="card">
       <ImageProvider className="card-image" fileName={image} alt={title} />
-      <h5 className="card-title text-center">{title}</h5>
-      <div className="card-content text-center">
-        <p className="card-description">{description}</p>
+      <h5 className="card-title text-center pt-2">{title}</h5>
+      <div className="card-content text-center pb-1">
+        <p className="card-description p-2">{description}</p>
         <a href={link} className="card-link">
-          <span className="custom-text-secondary">
+          <span>
             See more
             <FontAwesomeIcon className="ml-1" icon={faAngleDoubleRight} />
           </span>
