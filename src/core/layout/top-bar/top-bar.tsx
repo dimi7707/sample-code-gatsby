@@ -4,15 +4,14 @@ import { LinkProps } from '@props/link';
 import './top-bar.scss';
 import { Nav, Navbar } from 'react-bootstrap';
 
-export default function TopBar({ 
-  currentLanguage, urlCurrentVersion, urlTranslateVersion }): React.ReactElement {
-  const enLangActive = currentLanguage !== undefined &&  currentLanguage === 'en';
-  const spanishLink = currentLanguage === 'es' ?
-    `${process.env.URL_ROOT_MYSELF}${urlCurrentVersion}` : 
-    `${process.env.URL_ROOT_MYSELF}${urlTranslateVersion}`;
-  const englishLink = currentLanguage === 'en' ? 
-    `${process.env.URL_ROOT_MYSELF}${urlCurrentVersion}` : 
-    `${process.env.URL_ROOT_MYSELF}${urlTranslateVersion}`;
+export default function TopBar({ currentLanguage, urlCurrentVersion, urlTranslateVersion }): React.ReactElement {
+  const enLangActive = currentLanguage !== undefined && currentLanguage === 'en';
+  const spanishLink = currentLanguage === 'es'
+    ? `${process.env.URL_ROOT_MYSELF}${urlCurrentVersion}`
+    : `${process.env.URL_ROOT_MYSELF}${urlTranslateVersion}`;
+  const englishLink = currentLanguage === 'en'
+    ? `${process.env.URL_ROOT_MYSELF}${urlCurrentVersion}`
+    : `${process.env.URL_ROOT_MYSELF}${urlTranslateVersion}`;
 
   const links = [
     {

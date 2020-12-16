@@ -12,21 +12,18 @@ LandingTemplate.propTypes = {
   data: PropTypes.object.isRequired
 };
 
-export default function LandingTemplate({data}) : React.ReactElement {
+export default function LandingTemplate({ data }) : React.ReactElement {
   const mainContent = data.landingPage.relationships.field_content;
   const contentToRender = [];
   mainContent.forEach((c) => {
     contentToRender.push(ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent));
   });
 
-  /*console.log(data.landingPage.path.alias);
-  console.log(data.landingPage.field_translate_version.uri);*/
-
   return (
     <div>
-      <TopBar 
-        currentLanguage={data.landingPage.path.langcode} 
-        urlCurrentVersion={`${data.landingPage.path.langcode}${data.landingPage.path.alias}` }
+      <TopBar
+        currentLanguage={data.landingPage.path.langcode}
+        urlCurrentVersion={`${data.landingPage.path.langcode}${data.landingPage.path.alias}`}
         urlTranslateVersion={data.landingPage.field_slug_translate_version}
       />
       <NavigationBar />

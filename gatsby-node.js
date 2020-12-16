@@ -4,7 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 const path = require('path');
-const { any } = require('prop-types');
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
