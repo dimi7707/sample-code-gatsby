@@ -7,7 +7,7 @@ import WYSWYG from '@shared/wyswyg/wyswyg';
 import Card from '@shared/card/card';
 
 export default function ComponentIdentifier(type: string, id: string, mainContent: any) {
-  const componentData = mainContent.filter((c) => c.id === id)[0];
+  const componentData = mainContent.filter((content) => content.id === id)[0];
   switch (type) {
     case 'Hero':
       return (
@@ -65,6 +65,6 @@ export default function ComponentIdentifier(type: string, id: string, mainConten
         </Container>
       );
     default:
-      return <></>;
+      return null;
   }
 }

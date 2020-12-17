@@ -7,16 +7,15 @@ import Footer from '@core/layout/footer/footer';
 
 import ComponentIdentifier from '@templates/util-templates/component-identifier';
 
-type LandingTemplateProps = {
-  data: any
-};
-
-export default function LandingTemplate({ data }: LandingTemplateProps) : React.ReactElement {
+export default function LandingTemplate({ data }: any) : React.ReactElement {
   const mainContent = data.landingPage.relationships.field_content;
   const contentToRender = [];
-  mainContent.forEach((c) => {
+  mainContent.forEach((elementContent) => {
     contentToRender.push(
-      ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent)
+      ComponentIdentifier(
+        elementContent.relationships.paragraph_type.label,
+        elementContent.id, mainContent
+      )
     );
   });
 
@@ -28,7 +27,7 @@ export default function LandingTemplate({ data }: LandingTemplateProps) : React.
         urlTranslateVersion={data.landingPage.field_slug_translate_version}
       />
       <NavigationBar />
-      {contentToRender.map((C) => (C))}
+      {contentToRender.map((content) => (content))}
       <Footer />
     </div>
   );

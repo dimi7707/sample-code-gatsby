@@ -64,7 +64,11 @@ export default function HomePage(): React.ReactElement {
 
   return (
     <div className="homepage">
-      <TopBar />
+      <TopBar
+        currentLanguage="en"
+        urlCurrentVersion="/"
+        urlTranslateVersion="/"
+      />
       <NavigationBar />
       <HeroSlider list={heroList} />
       <h3 className="text-center mt-4 pt-4">We Deliver unparalleled solutions</h3>
