@@ -163,6 +163,19 @@ export const query = graphql`
             }
             field_pg_title
           }
+          ... on paragraph__testimony_slide {
+            id
+            relationships {
+              field_testimony {
+                field_pg_title
+                field_position
+                field_quote
+              }
+              paragraph_type {
+                label
+              }
+            }
+          }
         }
       }
     }

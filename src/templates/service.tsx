@@ -7,11 +7,7 @@ import Footer from '@core/layout/footer/footer';
 
 import ComponentIdentifier from '@templates/util-templates/component-identifier';
 
-type ServiceTemplateProps = {
-  data: any
-};
-
-export default function ServiceTemplate({ data }: ServiceTemplateProps) {
+export default function ServiceTemplate({ data }: any) {
   const mainContent = data.service.relationships.field_content_main;
   const contentToRender = [];
 
