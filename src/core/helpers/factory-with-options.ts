@@ -6,7 +6,7 @@ import FactoryBase from './factory-base';
 export default class FactoryWithOptions<
   Product,
   Options extends Exclude<object, string>
-> extends FactoryBase<(options: Options) => Product> {
+> extends FactoryBase<(_options: Options) => Product> {
   /**
    * Creates a new instance of the product.
    *
