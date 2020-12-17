@@ -6,6 +6,7 @@
   "extends": [
     "airbnb"
   ],
+  "ignorePatterns": [ "public/*", ".cache/*", "node_modules/*" ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -26,7 +27,15 @@
     "import/resolver": {
       "alias": [
         ["@core", "./src/core"],
-        ["@shared", "./src/shared"]
+        ["@shared", "./src/shared"],
+        ["@assets", "./src/assets" ],
+        ["@styles", "./src/assets/styles" ],
+        ["@config", "./src/config" ],
+        ["@templates", "./src/templates" ],
+        ["@core", "./src/core" ],
+        ["@shared", "./src/shared" ],
+        ["@models", "./src/shared/models" ],
+        ["@props", "./src/shared/props" ]
       ]
     }
   },

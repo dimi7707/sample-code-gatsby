@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import TopBar from '@core/layout/top-bar/top-bar';
@@ -8,20 +7,23 @@ import Footer from '@core/layout/footer/footer';
 
 import ComponentIdentifier from '@templates/util-templates/component-identifier';
 
-ServiceTemplate.propTypes = {
-  data: PropTypes.object.isRequired
+type ServiceTemplateProps = {
+  data: any
 };
 
-export default function ServiceTemplate({ data }) {
+export default function ServiceTemplate({ data }: ServiceTemplateProps) {
   const mainContent = data.service.relationships.field_content_main;
   const contentToRender = [];
-  mainContent.forEach((c) => {
-    contentToRender.push(ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent));
+
+  mainContent.forEach((content) => {
+    contentToRender.push(
+      ComponentIdentifier(content.relationships.paragraph_type.label, content.id, mainContent)
+    );
   });
 
   return (
     <div>
-      <TopBar 
+      <TopBar
         currentLanguage={data.service.path.langcode}
         urlCurrentVersion={`${data.service.path.langcode}${data.service.path.alias}`}
         urlTranslateVersion={data.service.field_slug_translate_version}
@@ -107,7 +109,7 @@ export const query = graphql`
                 label
               }
             }
-          }                
+          }
         }
       }
     }

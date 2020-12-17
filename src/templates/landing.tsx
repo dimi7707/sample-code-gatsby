@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import TopBar from '@core/layout/top-bar/top-bar';
@@ -8,15 +7,17 @@ import Footer from '@core/layout/footer/footer';
 
 import ComponentIdentifier from '@templates/util-templates/component-identifier';
 
-LandingTemplate.propTypes = {
-  data: PropTypes.object.isRequired
+type LandingTemplateProps = {
+  data: any
 };
 
-export default function LandingTemplate({ data }) : React.ReactElement {
+export default function LandingTemplate({ data }: LandingTemplateProps) : React.ReactElement {
   const mainContent = data.landingPage.relationships.field_content;
   const contentToRender = [];
   mainContent.forEach((c) => {
-    contentToRender.push(ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent));
+    contentToRender.push(
+      ComponentIdentifier(c.relationships.paragraph_type.label, c.id, mainContent)
+    );
   });
 
   return (
@@ -34,12 +35,12 @@ export default function LandingTemplate({ data }) : React.ReactElement {
 }
 
 export const query = graphql`
-  query($id: String!) {  
+  query($id: String!) {
     landingPage: nodeLandingPage(id: { eq: $id }) {
       body {
         processed
       }
-      path{
+      path {
         alias
         langcode
       }
@@ -54,7 +55,7 @@ export const query = graphql`
             field_pg_title
             field_side_decoration
             relationships {
-              paragraph_type{
+              paragraph_type {
                 label
               }
             }

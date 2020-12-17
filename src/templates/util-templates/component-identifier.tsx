@@ -65,6 +65,6 @@ export default function ComponentIdentifier(type: string, id: string, mainConten
         </Container>
       );
     default:
-      return null;
+      return <></>;
   }
 }

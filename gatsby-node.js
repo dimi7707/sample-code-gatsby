@@ -57,11 +57,14 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       throw result.errors;
     }
+
     const allContentTypes = result.data.landingPages.edges.concat(
       result.data.services.edges
     );
+
     allContentTypes.forEach(({ node }) => {
       const template = resolvePath(node.path.alias);
+
       createPage({
         path: `${node.path.langcode}${node.path.alias}`,
         component: path.resolve(`src/templates/${template}.tsx`),
@@ -75,6 +78,7 @@ exports.createPages = ({ actions, graphql }) => {
 
 const resolvePath = (urlAlias) => {
   const slug = urlAlias.substr(1, urlAlias.indexOf('/', 1) - 1);
+
   switch (slug) {
     case 'servicio':
       return 'service';

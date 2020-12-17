@@ -59,16 +59,6 @@ module.exports = {
         ],
         display: 'swap'
       }
-    },
-    {
-      resolve: 'gatsby-source-drupal',
-      options: {
-        baseUrl: process.env.BASE_URL_API,
-        basicAuth: {
-          username: process.env.BASIC_AUTH_USER,
-          password: process.env.BASIC_AUTH_PASSWORD,
-        },
-      },
     }
   ]
 };
