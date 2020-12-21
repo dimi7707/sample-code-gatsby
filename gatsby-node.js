@@ -29,25 +29,12 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(
     `
       {
-        landingPages: allNodeLandingPage {
-          edges {
-            node {
-              id
-              path {
-                alias
-                langcode
-              }
-            }
-          }
-        }
-        services: allNodeService {
-          edges {
-            node {
-              id
-              path {
-                alias
-                langcode
-              }
+        allNodePage {
+          nodes {
+            id
+            path {
+              alias
+              langcode
             }
           }
         }
@@ -58,16 +45,11 @@ exports.createPages = ({ actions, graphql }) => {
       throw result.errors;
     }
 
-    const allContentTypes = result.data.landingPages.edges.concat(
-      result.data.services.edges
-    );
-
-    allContentTypes.forEach(({ node }) => {
-      const template = resolvePath(node.path.alias);
+    result.data.allNodePage.nodes.forEach(({ node }) => {
 
       createPage({
         path: `${node.path.langcode}${node.path.alias}`,
-        component: path.resolve(`src/templates/${template}.tsx`),
+        component: path.resolve(`src/templates/landing.tsx`),
         context: {
           id: node.id,
         }

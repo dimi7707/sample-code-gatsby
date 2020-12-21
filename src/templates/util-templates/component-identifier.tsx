@@ -4,24 +4,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Hero from '@shared/hero/hero';
 import IntroText from '@shared/text/intro-text';
 import Card from '@shared/card/card';
-import QuoteTypeTextSlider from '@shared/quote-type-text-slider/quote-type-text-slider';
 
 export default function ComponentIdentifier(type: string, id: string, mainContent: any) {
   const componentData = mainContent.filter((content) => content.id === id)[0];
-  const quoteTypeTextList = [
-    {
-      quote: `“Thanks so much for the awesome customer service. So many companies, large and
-        small, have a lot to learn from you. Great job!”`,
-      author: 'Akyra Toriyama',
-      position: 'Executive producer'
-    },
-    {
-      quote: `“Thanks so much for the awesome customer service. So many companies, large and
-        small, have a lot to learn from you. Great job!”`,
-      author: 'Akyra Toriyama',
-      position: 'Executive producer'
-    }
-  ];
   switch (type) {
     case 'Hero':
       return (
@@ -44,12 +29,6 @@ export default function ComponentIdentifier(type: string, id: string, mainConten
           />
         </div>
       );
-    case 'Testimony slide':
-      return (
-        <QuoteTypeTextSlider
-          list={quoteTypeTextList}
-        />
-      );
     case 'Cards':
       return (
         <Container className="mt-4 pt-4 mb-4 pb-4" key={id}>
@@ -71,6 +50,6 @@ export default function ComponentIdentifier(type: string, id: string, mainConten
         </Container>
       );
     default:
-      return null;
+      return (<span>Dummy component! It is just a test</span>);
   }
 }

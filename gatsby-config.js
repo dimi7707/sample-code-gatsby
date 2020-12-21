@@ -20,17 +20,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'rootstack',
-        fieldName: 'drupalsource',
-        url: process.env.DRUPAL_GRAPHQL_API_URL,
-        headers: {
-          Authorization: `Basic: ${Buffer.from(`${process.env.BASIC_AUTH_USER}:${process.env.BASIC_AUTH_PASSWORD}`).toString('base64')}`,
-        },
-      },
-    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -63,11 +52,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-drupal',
       options: {
-        baseUrl: process.env.BASE_URL_API,
-        basicAuth: {
-          username: process.env.BASIC_AUTH_USER,
-          password: process.env.BASIC_AUTH_PASSWORD,
-        },
+        baseUrl: `https://using-drupal.amazee.io/`,
+        apiBase: `jsonapi`,
       },
     }
   ]
