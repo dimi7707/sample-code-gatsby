@@ -1,9 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 
 import TopBar from '@core/layout/top-bar/top-bar';
 import NavigationBar from '@core/layout/navigation-bar/navigation-bar';
-import Footer from '@core/layout/footer/footer';
 
 export default function LandingTemplate() : React.ReactElement {
   return (
@@ -14,8 +12,7 @@ export default function LandingTemplate() : React.ReactElement {
         urlTranslateVersion="/"
       />
       <NavigationBar />
-        <p>Dummy content</p>
-      <Footer />
+      <p>Dummy content</p>
     </div>
   );
 }
