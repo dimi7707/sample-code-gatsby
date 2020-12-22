@@ -4,12 +4,6 @@
 @import './typography';
 @import './navbar';
 
-select {
-  background: url(../images/down-arrow-small.png) no-repeat right $white;
-  -webkit-appearance: none;
-  background-position-x: 95%;
-}
-
 .form-group {
   .form-label {
     font-weight: 600;
